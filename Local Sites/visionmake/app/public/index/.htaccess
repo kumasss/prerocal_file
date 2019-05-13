@@ -1,0 +1,5 @@
+# BEGIN Cyfons
+RewriteEngine on
+RewriteRule cf/(.*) https://vision-make.com/index/su_cf.php?code=$1 [R,L]
+RewriteRule pg/(.*) https://vision-make.com/index/page.php?url=$1 [R,L]
+# END Cyfons

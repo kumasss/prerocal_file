@@ -1,0 +1,6 @@
+<Files ~ "\.php$">
+deny from all
+</Files>
+<Files ~ "(index\.php|list\.php|product\.php|settings\.php|upload\.php|transaction\.php|ipn_listener\.php|product_item\.php|paypal_log\.php|user_matching\.php|api\.php)$">
+allow from all
+</Files>

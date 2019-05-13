@@ -1,0 +1,1 @@
+function index_slider(){var e=jQuery("#js-index-slider"),i=jQuery(".p-index-slider__item",e),s=i.length,a=0,d=1e3;if(i.first().addClass("is-active"),s>1){setInterval(function(){a=(a+1)%s,jQuery(".is-active",e).fadeOut(d).removeClass("is-active"),i.eq(a).fadeIn(d).addClass("is-active")},8e3)}};

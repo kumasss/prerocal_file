@@ -1,0 +1,102 @@
+
+2018-09-07 04:39:53 434 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-07 04:39:53 434 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-07 04:39:53 434 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-07 04:39:53 434 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-07 04:39:53 434 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-07 04:39:53 434 [Note] InnoDB: Memory barrier is not used
+2018-09-07 04:39:53 434 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-07 04:39:53 434 [Note] InnoDB: Using Linux native AIO
+2018-09-07 04:39:53 434 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-07 04:39:53 434 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-09-07 04:39:53 434 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-07 04:39:53 434 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-07 04:39:53 434 [Note] InnoDB: The log sequence numbers 1595675 and 1595675 in ibdata files do not match the log sequence number 1595916 in the ib_logfiles!
+2018-09-07 04:39:53 434 [Note] InnoDB: Database was not shutdown normally!
+2018-09-07 04:39:53 434 [Note] InnoDB: Starting crash recovery.
+2018-09-07 04:39:53 434 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-07 04:39:53 434 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-07 04:39:53 434 [Note] InnoDB: from the doublewrite buffer...
+2018-09-07 04:39:53 434 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-07 04:39:53 434 [Note] InnoDB: Creating tablespace and datafile system tables.
+2018-09-07 04:39:53 434 [Note] InnoDB: Tablespace and datafile system tables created.
+2018-09-07 04:39:53 434 [Note] InnoDB: Waiting for purge to start
+2018-09-07 04:39:53 434 [Note] InnoDB: 5.6.34 started; log sequence number 1595916
+2018-09-07 04:39:53 434 [ERROR] mysqld: Table './mysql/user' is marked as crashed and should be repaired
+2018-09-07 04:39:53 434 [Warning] Checking table:   './mysql/user'
+2018-09-07 04:39:53 434 [ERROR] 1 client is using or hasn't closed the table properly
+2018-09-07 04:39:53 434 [Note] Binlog end
+2018-09-07 04:39:53 434 [Note] InnoDB: FTS optimize thread exiting.
+2018-09-07 04:39:53 434 [Note] InnoDB: Starting shutdown...
+2018-09-07 04:39:55 434 [Note] InnoDB: Shutdown completed; log sequence number 1600309
+180907 04:39:56 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-07 04:39:57 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-07 04:39:57 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-07 04:39:57 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 877 ...
+2018-09-07 04:39:57 877 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-07 04:39:57 877 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-07 04:39:57 877 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-07 04:39:57 877 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-07 04:39:57 877 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-07 04:39:57 877 [Note] InnoDB: Memory barrier is not used
+2018-09-07 04:39:57 877 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-07 04:39:57 877 [Note] InnoDB: Using Linux native AIO
+2018-09-07 04:39:57 877 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-07 04:39:57 877 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-09-07 04:39:57 877 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-07 04:39:57 877 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-07 04:39:57 877 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-07 04:39:57 877 [Note] InnoDB: Waiting for purge to start
+2018-09-07 04:39:57 877 [Note] InnoDB: 5.6.34 started; log sequence number 1600309
+2018-09-07 04:39:57 877 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 12e0c1ac-b258-11e8-a879-0242ac110005.
+2018-09-07 04:39:57 877 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-07 04:39:57 877 [Note] IPv6 is available.
+2018-09-07 04:39:57 877 [Note]   - '::' resolves to '::';
+2018-09-07 04:39:57 877 [Note] Server socket created on IP: '::'.
+2018-09-07 04:39:57 877 [ERROR] Column count of mysql.events_waits_current is wrong. Expected 19, found 16. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-07 04:39:57 877 [ERROR] Column count of mysql.events_waits_history is wrong. Expected 19, found 16. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-07 04:39:57 877 [ERROR] Column count of mysql.events_waits_history_long is wrong. Expected 19, found 16. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_host_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Incorrect definition of table performance_schema.events_waits_summary_by_thread_by_event_name: expected column 'THREAD_ID' at position 0 to have type bigint(20), found type int(11).
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_user_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_account_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Column count of mysql.file_summary_by_event_name is wrong. Expected 23, found 5. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-07 04:39:57 877 [ERROR] Column count of mysql.file_summary_by_instance is wrong. Expected 25, found 6. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'host_cache' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Incorrect definition of table performance_schema.mutex_instances: expected column 'LOCKED_BY_THREAD_ID' at position 2 to have type bigint(20), found type int(11).
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'objects_summary_global_by_type' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Incorrect definition of table performance_schema.rwlock_instances: expected column 'WRITE_LOCKED_BY_THREAD_ID' at position 2 to have type bigint(20), found type int(11).
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'setup_actors' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'setup_objects' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'table_io_waits_summary_by_index_usage' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'table_io_waits_summary_by_table' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'table_lock_waits_summary_by_table' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Column count of mysql.threads is wrong. Expected 14, found 3. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_stages_current' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_stages_history' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_stages_history_long' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_thread_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_account_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_user_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_host_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_global_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_statements_current' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_statements_history' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_statements_history_long' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_thread_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_account_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_user_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_host_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_global_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_digest' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'users' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'accounts' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'hosts' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'socket_instances' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'socket_summary_by_instance' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'socket_summary_by_event_name' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'session_connect_attrs' has the wrong structure
+2018-09-07 04:39:57 877 [ERROR] Native table 'performance_schema'.'session_account_connect_attrs' has the wrong structure
+2018-09-07 04:39:57 877 [Note] Event Scheduler: Loaded 0 events
+2018-09-07 04:39:57 877 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)

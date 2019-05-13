@@ -1,0 +1,12 @@
+.theme_option_field {
+  margin-bottom: 30px;
+}
+
+.theme_option_headline {
+  font-size: 1.8em;
+}
+
+.theme_option_field textarea {
+    font-family: Consolas,Monaco,monospace;
+  width: 80%;
+}

@@ -1,0 +1,6 @@
+<Files ~ "(\.php|\.log)$">
+  deny from all
+</Files>
+<Files ~ "(index\.php|install.*\.php|update.*\.php|forgot.*\.php|form_upload\.php|send_.*\.php|del_.*\.php)$">
+  allow from all
+</Files>

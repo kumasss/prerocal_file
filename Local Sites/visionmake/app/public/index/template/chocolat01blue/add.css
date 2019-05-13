@@ -1,0 +1,246 @@
+/* Author URI: http://www.af5.jp/ */
+/* ------------------style--------------------- */
+body{background: url(images/bg1.png); color: #474747;}
+
+a{color: #0000CC;text-decoration: none; }
+a:hover{color: #DA251D; text-decoration: none;}
+
+
+/* ------------------Header style-------------------- */
+header {background:transparent; margin:0px;}
+
+
+/* ------------------main-content style--------------------- */
+#content .wrap-content{
+	background-color:rgba(255,255,255,0.7); border:1px solid #ccc; margin-top: 20px;
+}
+
+#main-content article h1{
+	font-size: 28px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 10px 0 30px 0;
+	text-align: center;
+	border-bottom:3px solid #3BAFE3;
+}
+#main-content article h2{
+	font-size:20px;
+	margin:0 0 10px 0;
+	padding:2px 8px;
+	line-height:180%;
+	font-weight:bold;
+	color: #FFFFFF;
+	background:transparent url(images/blueslate_background.gif) repeat-x center center;
+	-moz-background-size:contain;
+	background-size:contain;
+}
+
+#main-content .content h3 {
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  color: #111;
+  background: rgba(190, 190, 190, 0.5);
+  font-size: 20px;
+  line-height: 1;
+  margin: 30px 0px 10px -10px;
+  padding: 14px 5px 10px 50px;
+  border-radius: 22px 0 0 22px;
+}
+#main-content .content h3:before {
+  content: "";
+  position: absolute;
+  background: #eee;
+  top: 50%;
+  left: 14px;
+  margin-top :-10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #777 inset;
+}
+
+#main-content .content h4 {
+  position: relative;
+  color: #fff;
+  background: #777;
+  font-size: 20px;
+  line-height: 1;
+  text-shadow: 1px 1px 1px #000;
+  border :1px solid #777;
+  margin: 30px -10px 10px -10px;
+  padding: 15px 5px 12px 10px;
+  border-radius: 3px;
+}
+#main-content .content h4:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  height: 0;
+  width: 0;
+  border: 10px solid transparent;
+  border-top: 10px solid #777;
+}
+
+#main-content .content h5{
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  margin:30px -30px 10px 0px;
+  padding: 15px 5px 10px 20px;
+  border-left: 10px solid #3BAFE3;
+}
+#main-content .content h5:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-bottom: 1px dashed #555;
+}
+
+#main-content .content h6{
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  margin:30px -30px 10px 0px;
+  padding: 15px 5px 10px 20px;
+  border-left: 10px solid #3BAFE3;
+}
+
+
+#main-content article .heading{
+	padding-bottom: 10px;
+}
+
+#main-content .content ul{list-style-type:square; margin-left:20px;}
+#main-content .content ul li{padding:5px;}
+
+#main-content .content ol{list-style-type:decimal; margin-left:20px;}
+#main-content .content ol li{padding:5px;}
+
+/* ------------------gnavi style--------------------- */
+
+#slatenav{
+position:relative;
+display:block;
+height:42px;
+font-size:14px;
+font-weight:bold;
+background:transparent url(images/blueslate_background.gif) repeat-x top left;
+text-transform:uppercase;
+}
+#slatenav ul{
+padding:0;
+list-style-type:none;
+width: 960px;
+margin: 0 auto;
+}
+#slatenav ul li{
+display:block;
+float:left;
+margin:0 1px 0 0;
+}
+#slatenav ul li a{
+display:block;
+float:left;
+color:#D5F1FF;
+text-decoration:none;
+padding:14px 22px 0 22px;
+height:28px;
+line-height: 100%;
+}
+#slatenav ul li a:hover,#slatenav ul li a.current{
+color:#fff;
+background:transparent url(images/blueslate_backgroundOVER.gif) no-repeat top center;
+}
+
+/* ------------------sidebar style--------------------- */
+
+#sidebar .heading h2{
+	font-size:18px; font-weight:normal; display:inline; padding:0 0px;
+}
+
+#sidebar .heading{ 
+background: url(images/icon.png) no-repeat left;
+padding:5px 0px 5px 30px; margin-top:20px; border-bottom: 2px solid #fff;
+}
+
+#sidebar{
+	background-color: rgba(190, 190, 190, 0.3);
+	color: #222222;
+}
+
+#sidebar .content ul li.topic{
+	font-size:18px;
+	font-weight:normal;
+	background: url(images/icon.png) no-repeat left;
+	padding:5px 0px 5px 30px;
+	margin-top:20px;
+	border-bottom: 2px solid #fff;
+	color: #222222;
+}
+
+#sidebar .content{margin-top: 20px;}
+#sidebar .content ul{
+	font-size:14px; list-style-type:none; margin-left:0px;
+}
+#sidebar .content ul li {
+	color: #fff;
+border-bottom: 1px solid #5c5c5c;
+padding: 10px 0px;
+}
+#sidebar .content ol{
+	font-size:14px; list-style-type:decimal-leading-zero; margin-left:20px;
+}
+#sidebar .content ol li{
+	padding:5px;
+}
+
+.top{
+	background: url(images/top.png) no-repeat left;
+}
+
+.top a{
+	margin-left: 40px;
+}
+.mail{
+	background: url(images/mail.png) no-repeat left;
+}
+
+.mail a{
+	margin-left: 40px;
+}
+.henkou{
+	background: url(images/kaiin.png) no-repeat left;
+}
+
+.henkou a{
+	margin-left: 40px;
+}
+.out{
+	background: url(images/out.png) no-repeat left;
+}
+
+.out a{
+	margin-left: 40px;
+}
+
+ul, ol {
+padding: 0px;
+margin: 0px;
+}
+
+
+/* ------------------footer style--------------------- */
+footer {background:transparent; margin-top:30px;}
+
+.copyright{text-align:center; margin-top:20px; background:transparent; padding:10px 0px;color:#545B6B;}
+
+.copyright a{text-decoration:underline; color:#000;}
+

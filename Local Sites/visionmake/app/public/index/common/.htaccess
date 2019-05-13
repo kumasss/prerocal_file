@@ -1,0 +1,6 @@
+<Files ~ ".*\.php|.*\.ini|.*\.inc">
+deny from all
+</Files>
+<Files ~ "(ajax_.*\.php|news.php)$">
+allow from all
+</Files>

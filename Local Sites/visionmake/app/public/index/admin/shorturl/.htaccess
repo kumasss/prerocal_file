@@ -1,0 +1,6 @@
+<Files ~ "\.php$">
+deny from all
+</Files>
+<Files ~ "(index\.php|list\.php|settings\.php|summary\.php|proxy\.php|regist\.php|monthly\.php|daily\.php|category\.php)$">
+allow from all
+</Files>

@@ -1,0 +1,8 @@
+/* Black */
+.cyfonsSkinBlack .mceToolbar .mceToolbarStart span, .cyfonsSkinBlack .mceToolbar .mceToolbarEnd span, .cyfonsSkinBlack .mceButton, .cyfonsSkinBlack .mceSplitButton, .cyfonsSkinBlack .mceSeparator, .cyfonsSkinBlack .mceSplitButton a.mceOpen, .cyfonsSkinBlack .mceListBox a.mceOpen {background-image:url(img/button_bg_black.png)}
+.cyfonsSkinBlack td.mceToolbar, .cyfonsSkinBlack td.mceStatusbar, .cyfonsSkinBlack .mceMenuItemTitle a, .cyfonsSkinBlack .mceMenuItemTitle span.mceText, .cyfonsSkinBlack .mceStatusbar div, .cyfonsSkinBlack .mceStatusbar span, .cyfonsSkinBlack .mceStatusbar a {background:#535353; color:#FFF}
+.cyfonsSkinBlack table.mceListBoxEnabled .mceText, cyfonsSkinBlack .mceListBox .mceText {background:#FFF; border:1px solid #CBCFD4; border-bottom-color:#989FA9; border-right:0}
+.cyfonsSkinBlack table.mceListBoxEnabled:hover .mceText, .cyfonsSkinBlack .mceListBoxHover .mceText, .cyfonsSkinBlack .mceListBoxSelected .mceText {background:#FFF; border:1px solid #FFBD69; border-right:0}
+.cyfonsSkinBlack .mceExternalToolbar, .cyfonsSkinBlack .mceListBox .mceText, .cyfonsSkinBlack div.mceMenu, .cyfonsSkinBlack table.mceLayout, .cyfonsSkinBlack .mceMenuItemTitle a, .cyfonsSkinBlack table.mceLayout tr.mceFirst td, .cyfonsSkinBlack table.mceLayout, .cyfonsSkinBlack .mceMenuItemTitle a, .cyfonsSkinBlack table.mceLayout tr.mceLast td, .cyfonsSkinBlack .mceIframeContainer {border-color: #535353;}
+.cyfonsSkinBlack table.mceSplitButtonEnabled:hover a.mceAction, .cyfonsSkinBlack .mceSplitButtonHover a.mceAction, .cyfonsSkinBlack .mceSplitButtonSelected {background-image:url(img/button_bg_black.png)}
+.cyfonsSkinBlack .mceMenu .mceMenuItemEnabled a:hover, .cyfonsSkinBlack .mceMenu .mceMenuItemActive {background-color:#FFE7A1}

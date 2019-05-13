@@ -1,0 +1,6025 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: design-plus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-23 14:51+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: atsuo okuda <okuda@design-plus.info>\n"
+"Language-Team: design plus\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/inc/404.php:4
+msgid "Settings for 404 page"
+msgstr "404ページの設定"
+
+#: admin/inc/404.php:5 admin/inc/blog.php:6 admin/inc/news.php:6
+#: admin/inc/review.php:7 functions/page_cf.php:17
+msgid "Header image"
+msgstr "ヘッダーの画像"
+
+#: admin/inc/404.php:6 admin/inc/blog.php:7 admin/inc/news.php:7
+#: admin/inc/review.php:8
+msgid "Recommend image size. Width:1450px, Height:500px"
+msgstr "推奨画像サイズ：横幅1450px、縦幅500px"
+
+#: admin/inc/404.php:12 admin/inc/basic.php:30 admin/inc/basic.php:150
+#: admin/inc/blog.php:13 admin/inc/blog.php:106 admin/inc/blog.php:135
+#: admin/inc/blog.php:170 admin/inc/blog.php:199 admin/inc/blog.php:230
+#: admin/inc/logo.php:17 admin/inc/logo.php:39 admin/inc/logo.php:61
+#: admin/inc/marketing.php:41 admin/inc/marketing.php:53
+#: admin/inc/marketing.php:88 admin/inc/marketing.php:100 admin/inc/news.php:13
+#: admin/inc/news.php:114 admin/inc/news.php:143 admin/inc/news.php:178
+#: admin/inc/news.php:207 admin/inc/news.php:238 admin/inc/review.php:14
+#: admin/inc/top.php:54 admin/inc/top.php:66 admin/inc/top.php:112
+#: admin/inc/top.php:140 admin/theme-options.php:1702
+#: admin/theme-options.php:1812 admin/theme-options.php:1825
+#: admin/theme-options.php:1912 admin/theme-options.php:1940
+#: admin/theme-options.php:2008 admin/theme-options.php:2040
+#: functions/page_cf.php:249 functions/review_cf.php:93 widget/ad.php:94
+msgid "Select Image"
+msgstr "画像を選択する"
+
+#: admin/inc/404.php:13 admin/inc/basic.php:31 admin/inc/basic.php:151
+#: admin/inc/blog.php:14 admin/inc/blog.php:107 admin/inc/blog.php:136
+#: admin/inc/blog.php:171 admin/inc/blog.php:200 admin/inc/blog.php:231
+#: admin/inc/logo.php:18 admin/inc/logo.php:40 admin/inc/logo.php:62
+#: admin/inc/marketing.php:42 admin/inc/marketing.php:54
+#: admin/inc/marketing.php:89 admin/inc/marketing.php:101 admin/inc/news.php:14
+#: admin/inc/news.php:115 admin/inc/news.php:144 admin/inc/news.php:179
+#: admin/inc/news.php:208 admin/inc/news.php:239 admin/inc/review.php:15
+#: admin/inc/top.php:55 admin/inc/top.php:67 admin/inc/top.php:113
+#: admin/inc/top.php:141 admin/theme-options.php:1703
+#: admin/theme-options.php:1813 admin/theme-options.php:1826
+#: admin/theme-options.php:1913 admin/theme-options.php:1941
+#: admin/theme-options.php:2009 admin/theme-options.php:2041
+#: functions/page_cf.php:250 functions/review_cf.php:94 widget/ad.php:95
+msgid "Remove Image"
+msgstr "画像を削除する"
+
+#: admin/inc/404.php:17 admin/inc/blog.php:18 admin/inc/blog.php:46
+#: admin/inc/marketing.php:59 admin/inc/news.php:18 admin/inc/news.php:46
+#: admin/inc/review.php:19 admin/theme-options.php:1830
+#: functions/page_cf.php:26
+msgid "Color of overlay"
+msgstr "画像の上に重ねる色"
+
+#: admin/inc/404.php:19 admin/inc/blog.php:20 admin/inc/blog.php:48
+#: admin/inc/marketing.php:60 admin/inc/news.php:20 admin/inc/news.php:48
+#: admin/inc/review.php:21 admin/theme-options.php:1832
+#: functions/page_cf.php:36
+msgid "Opacity of overlay"
+msgstr "画像の上に重ねる色の透過率"
+
+#: admin/inc/404.php:20 admin/inc/blog.php:21 admin/inc/blog.php:49
+#: admin/inc/header.php:32 admin/inc/header.php:44 admin/inc/marketing.php:61
+#: admin/inc/marketing.php:193 admin/inc/news.php:21 admin/inc/news.php:49
+#: admin/inc/review.php:22 admin/theme-options.php:1833
+#: functions/page_cf.php:37
+msgid "Please enter the number 0 - 1.0. (e.g. 0.7)"
+msgstr ""
+"透過率の数値を0（完全に透明）～1.0（完全に不透明）の範囲で設定してください。"
+
+#: admin/inc/404.php:22 admin/inc/blog.php:23 admin/inc/footer.php:12
+#: admin/inc/marketing.php:22 admin/inc/marketing.php:69
+#: admin/inc/marketing.php:177 admin/inc/news.php:23 admin/inc/review.php:24
+#: admin/inc/top.php:26 admin/inc/top.php:153 admin/inc/top.php:157
+#: admin/theme-options.php:1788 admin/theme-options.php:1887
+#: admin/theme-options.php:2095 functions/page_cf.php:46
+#: pagebuilder/modules/catchcopy.php:11 pagebuilder/modules/catchcopy.php:40
+msgid "Catchphrase"
+msgstr "キャッチフレーズ"
+
+#: admin/inc/404.php:24 admin/inc/blog.php:25 admin/inc/marketing.php:25
+#: admin/inc/marketing.php:72 admin/inc/marketing.php:181 admin/inc/news.php:25
+#: admin/inc/review.php:26 admin/inc/top.php:29 admin/inc/top.php:161
+#: admin/theme-options.php:1641 admin/theme-options.php:1692
+#: admin/theme-options.php:1791 admin/theme-options.php:1890
+#: admin/theme-options.php:2019 admin/theme-options.php:2051
+#: functions/page_cf.php:66 pagebuilder/modules/googlemap.php:235
+#: pagebuilder/modules/tab.php:638
+msgid "Description"
+msgstr "説明文"
+
+#: admin/inc/404.php:26 admin/inc/blog.php:27 admin/inc/footer.php:14
+#: admin/inc/news.php:27 admin/inc/review.php:28 admin/inc/top.php:159
+msgid "Font size of catchphrase"
+msgstr "キャッチフレーズのフォントサイズ"
+
+#: admin/inc/404.php:28 admin/inc/blog.php:29 admin/inc/news.php:29
+#: admin/inc/review.php:30 admin/inc/top.php:163
+msgid "Font size of description"
+msgstr "説明文のフォントサイズ"
+
+#: admin/inc/404.php:30 admin/inc/blog.php:31 admin/inc/blog.php:51
+#: admin/inc/footer.php:94 admin/inc/marketing.php:180
+#: admin/inc/marketing.php:183 admin/inc/news.php:31 admin/inc/news.php:51
+#: admin/inc/review.php:32 admin/inc/top.php:32 admin/inc/top.php:165
+#: admin/inc/top.php:182 admin/theme-options.php:1799 functions/page_cf.php:86
+#: pagebuilder/modules/catchcopy.php:55 pagebuilder/modules/googlemap.php:196
+#: pagebuilder/modules/googlemap.php:247 pagebuilder/modules/googlemap.php:302
+#: pagebuilder/modules/headline.php:55 pagebuilder/modules/tab.php:161
+#: pagebuilder/modules/tab.php:175 pagebuilder/modules/tab.php:406
+#: pagebuilder/modules/tab.php:420 pagebuilder/modules/tab.php:599
+#: pagebuilder/modules/tab.php:650
+msgid "Font color"
+msgstr "フォントの色"
+
+#: admin/inc/404.php:32 admin/inc/blog.php:33 admin/inc/blog.php:53
+#: admin/inc/news.php:33 admin/inc/news.php:53 admin/inc/review.php:34
+#: admin/inc/top.php:34 admin/inc/top.php:167
+msgid "Dropshadow"
+msgstr "ドロップシャドウの設定"
+
+#: admin/inc/404.php:34 admin/inc/blog.php:35 admin/inc/blog.php:55
+#: admin/inc/news.php:35 admin/inc/news.php:55 admin/inc/review.php:36
+#: admin/inc/top.php:36 admin/inc/top.php:169 functions/page_cf.php:96
+msgid "Dropshadow position (left)"
+msgstr "ドロップシャドウの位置（横）"
+
+#: admin/inc/404.php:35 admin/inc/blog.php:36 admin/inc/blog.php:56
+#: admin/inc/news.php:36 admin/inc/news.php:56 admin/inc/review.php:37
+#: admin/inc/top.php:37 admin/inc/top.php:170 functions/page_cf.php:105
+msgid "Dropshadow position (top)"
+msgstr "ドロップシャドウの位置（縦）"
+
+#: admin/inc/404.php:36 admin/inc/blog.php:37 admin/inc/blog.php:57
+#: admin/inc/news.php:37 admin/inc/news.php:57 admin/inc/review.php:38
+#: admin/inc/top.php:38 admin/inc/top.php:171 functions/page_cf.php:114
+msgid "Dropshadow size"
+msgstr "ぼかし具合"
+
+#: admin/inc/404.php:37 admin/inc/blog.php:38 admin/inc/blog.php:58
+#: admin/inc/news.php:38 admin/inc/news.php:58 admin/inc/review.php:39
+#: admin/inc/top.php:39 admin/inc/top.php:172 functions/page_cf.php:123
+msgid "Dropshadow color"
+msgstr "ドロップシャドウのカラー"
+
+#: admin/inc/404.php:39 admin/inc/basic.php:16 admin/inc/basic.php:35
+#: admin/inc/basic.php:46 admin/inc/basic.php:56 admin/inc/basic.php:63
+#: admin/inc/basic.php:73 admin/inc/basic.php:92 admin/inc/basic.php:109
+#: admin/inc/basic.php:121 admin/inc/basic.php:129 admin/inc/basic.php:155
+#: admin/inc/basic.php:165 admin/inc/basic.php:214 admin/inc/basic.php:222
+#: admin/inc/blog.php:40 admin/inc/blog.php:66 admin/inc/blog.php:84
+#: admin/inc/blog.php:115 admin/inc/blog.php:144 admin/inc/blog.php:179
+#: admin/inc/blog.php:208 admin/inc/blog.php:239 admin/inc/footer.php:40
+#: admin/inc/footer.php:53 admin/inc/footer.php:64 admin/inc/footer.php:71
+#: admin/inc/footer.php:214 admin/inc/header.php:14 admin/inc/header.php:24
+#: admin/inc/header.php:36 admin/inc/header.php:49 admin/inc/logo.php:23
+#: admin/inc/logo.php:45 admin/inc/logo.php:66 admin/inc/marketing.php:62
+#: admin/inc/marketing.php:105 admin/inc/marketing.php:113
+#: admin/inc/marketing.php:161 admin/inc/marketing.php:194
+#: admin/inc/marketing.php:202 admin/inc/marketing.php:250
+#: admin/inc/news.php:40 admin/inc/news.php:64 admin/inc/news.php:80
+#: admin/inc/news.php:92 admin/inc/news.php:123 admin/inc/news.php:152
+#: admin/inc/news.php:187 admin/inc/news.php:216 admin/inc/news.php:247
+#: admin/inc/review.php:41 admin/inc/review.php:50 admin/inc/top.php:71
+#: admin/inc/top.php:117 admin/inc/top.php:127 admin/inc/top.php:145
+#: admin/inc/top.php:192 admin/inc/top.php:196 admin/inc/top.php:209
+#: admin/inc/top.php:244 admin/theme-options.php:1710
+#: admin/theme-options.php:2134
+msgid "Save Changes"
+msgstr "設定を保存"
+
+#: admin/inc/basic.php:9
+msgid "Color setting"
+msgstr "色の設定"
+
+#: admin/inc/basic.php:10
+msgid "Primary color setting"
+msgstr "メインカラーの設定"
+
+#: admin/inc/basic.php:12
+msgid "Secondary color setting"
+msgstr "サブカラーの設定"
+
+#: admin/inc/basic.php:14
+msgid "Tertiary color setting"
+msgstr "サブカラー2の設定"
+
+#: admin/inc/basic.php:21
+msgid "Favicon setup"
+msgstr "ファビコンの設定"
+
+#: admin/inc/basic.php:22
+msgid "Setting for the favicon displayed at browser address bar or tab."
+msgstr ""
+"ブラウザのアドレスバーやタブで表示されるファビコン（サイトアイコン）を設定し"
+"ます。"
+
+#: admin/inc/basic.php:23
+msgid "Favicon file"
+msgstr "ファビコン画像"
+
+#: admin/inc/basic.php:23
+msgid " (Recommended size: width:16px, height:16px)"
+msgstr "推奨サイズ：横幅16px、縦幅16px（正方形の画像をご用意ください）"
+
+#: admin/inc/basic.php:24
+msgid ""
+"You can use .ico, .png or .gif file, and we recommed you to use .ico file."
+msgstr ""
+".ico、.png、.gif形式のファイルが利用できます。.icoファイルを利用されることを"
+"お勧めします。"
+
+#: admin/inc/basic.php:39
+msgid "Font type"
+msgstr "フォントタイプ"
+
+#: admin/inc/basic.php:40
+msgid "Please set the font type of all text except for headline."
+msgstr ""
+"見出し以外のすべてのテキスト要素で使用するベースフォントを3種類から選択できま"
+"す。<br>※フォントがインストールされていない環境では近い書体が自動的に適用され"
+"ます。"
+
+#: admin/inc/basic.php:50
+msgid "Font type of headline"
+msgstr "大見出しのフォントタイプ"
+
+#: admin/inc/basic.php:60
+msgid "Emoji setup"
+msgstr "絵文字の設定"
+
+#: admin/inc/basic.php:61
+msgid ""
+"We recommend to checkoff this option if you dont use any Emoji in your post "
+"content."
+msgstr ""
+"記事本文に絵文字を使っていない場合は、「絵文字を使う」からチェックを外すこと"
+"をお勧めします。<br />チェックが外された場合、絵文字関連のjavascript等を読み"
+"込まないため、ページの表示速度が改善されます。"
+
+#: admin/inc/basic.php:62
+msgid "Use emoji"
+msgstr "絵文字を使う"
+
+#: admin/inc/basic.php:67
+msgid "Responsive design setting"
+msgstr "レスポンシブデザインの設定"
+
+#: admin/inc/basic.php:77
+msgid "Loading screen setting"
+msgstr "ロード画面の設定"
+
+#: admin/inc/basic.php:78
+msgid "Use load icon."
+msgstr "ロード画面を表示する"
+
+#: admin/inc/basic.php:79
+msgid "Type of loader"
+msgstr "ロードアイコンのタイプ"
+
+#: admin/inc/basic.php:85
+msgid "Maximum display time"
+msgstr "最大表示時間"
+
+#: admin/inc/basic.php:86
+msgid ""
+"Please set the maximum display time of the loading screen.<br />Even if all "
+"the content is not loaded, loading screen will disappear automatically after "
+"a lapse of time you have set at follwing."
+msgstr ""
+"ロード画面の最大表示時間を設定してください。<br />通常、ロード画面は以下で設"
+"定した時間にかかわらず、ページ内の全てのコンテンツが読み込まれると自動的に消"
+"えます。<br />以下で設定する時間は、コンテンツが全て読み込まれていない状態で"
+"もロード画面を強制的に消すために使う時間です。"
+
+#: admin/inc/basic.php:89
+msgid " seconds"
+msgstr "秒"
+
+#: admin/inc/basic.php:96
+msgid "Hover effect settings"
+msgstr "ホバーエフェクトの設定"
+
+#: admin/inc/basic.php:97
+msgid "Hover effect type"
+msgstr "ホバーエフェクトのタイプ"
+
+#: admin/inc/basic.php:98
+msgid "Please set the hover effect for thumbnail images."
+msgstr ""
+"サムネイルのホバーエフェクトを3タイプから選択できます。<br>なお、アフィリエイ"
+"トASPなどの規約に抵触する可能性がある為、広告スペースに入力したサムネイルには"
+"ホバーエフェクトは付きません。"
+
+#: admin/inc/basic.php:105
+msgid "Settings for Zoom effect"
+msgstr "ズームの設定"
+
+#: admin/inc/basic.php:106
+msgid "Please set the rate of magnification."
+msgstr "拡大率を設定してください。（初期値：1.2）"
+
+#: admin/inc/basic.php:108
+msgid "Rotate images on hover"
+msgstr "ボタンにカーソルを合わせた時に回転させる"
+
+#: admin/inc/basic.php:112
+msgid "Settings for Slide effect"
+msgstr "スライドの設定"
+
+#: admin/inc/basic.php:113
+msgid "Please set the direction of slide."
+msgstr "スライドする方向を設定してください。"
+
+#: admin/inc/basic.php:119 admin/inc/basic.php:125
+msgid "Please set the opacity. (0 - 1.0, e.g. 0.7)"
+msgstr ""
+"透過率の数値を0（完全に透明）～1.0（完全に不透明）の範囲で設定してください。"
+"（初期値：0.5）"
+
+#: admin/inc/basic.php:124
+msgid "Settings for Fade effect"
+msgstr "フェードの設定"
+
+#: admin/inc/basic.php:127
+msgid "Please set the background color."
+msgstr "背景色を設定してください。"
+
+#: admin/inc/basic.php:136
+msgid "Facebook OGP setting"
+msgstr "Facebook OGPの設定"
+
+#: admin/inc/basic.php:138
+msgid "Use OGP"
+msgstr "OGPを利用する"
+
+#: admin/inc/basic.php:139
+msgid "Your fb:admins ID"
+msgstr "あなたのfb:admins ID"
+
+#: admin/inc/basic.php:140
+msgid ""
+"<a href=\"http://design-plus1.com/tcd-w/2016/07/facebook-3.html\" target="
+"\"_blank\">Information about Facebook OGP and fb:admins ID</a>"
+msgstr ""
+"参照：<a href=\"http://design-plus1.com/tcd-w/2016/07/facebook-3.html\" "
+"target=\"_blank\">FacebookのOGP設定に必要なfb:admins IDの確認方法</a>"
+
+#: admin/inc/basic.php:142
+msgid "OGP image"
+msgstr "OGP用画像"
+
+#: admin/inc/basic.php:143
+msgid "This image is displayed for OGP if the page does not have a thumbnail."
+msgstr ""
+"ここで登録した画像はアイキャッチのない投稿記事やアーカイブページなどでOGP用画"
+"像として利用されます。"
+
+#: admin/inc/basic.php:144
+msgid "Recommend image size. Width:1200px, Height:630px"
+msgstr "推奨画像サイズ：横幅1200px、縦幅630px"
+
+#: admin/inc/basic.php:159
+msgid "Twitter Cards setting"
+msgstr "Twitter Cardsの設定"
+
+#: admin/inc/basic.php:161
+msgid "Use Twitter Cards"
+msgstr "Twitter Cardsを利用する"
+
+#: admin/inc/basic.php:162
+msgid "Your Twitter account name (exclude @ mark)"
+msgstr "あなたのtwitterアカウント名（@マークは不要）"
+
+#: admin/inc/basic.php:163
+msgid "Information about Twitter Cards."
+msgstr "Twitter Cardsとは"
+
+#: admin/inc/basic.php:169
+msgid "Social button Setup"
+msgstr "ソーシャルボタンの表示設定"
+
+#: admin/inc/basic.php:171
+msgid "Type of button on article top"
+msgstr "記事上に表示するボタンタイプ"
+
+#: admin/inc/basic.php:179
+msgid "Select the social button to show on article top"
+msgstr "記事上に表示するボタン"
+
+#: admin/inc/basic.php:181 admin/inc/basic.php:201
+msgid "Display twitter button"
+msgstr "Twitter"
+
+#: admin/inc/basic.php:182
+msgid "Display facebook like button -Button type 5 (Default button) only"
+msgstr "Facebookいいね ※ボタンタイプ5（公式ボタン）選択時のみ表示します。"
+
+#: admin/inc/basic.php:183 admin/inc/basic.php:203
+msgid "Display facebook share button"
+msgstr "Facebookシェア"
+
+#: admin/inc/basic.php:184 admin/inc/basic.php:204
+msgid "Display google+ button"
+msgstr "Google+"
+
+#: admin/inc/basic.php:185 admin/inc/basic.php:205
+msgid "Display hatena button"
+msgstr "はてなブックマーク"
+
+#: admin/inc/basic.php:186 admin/inc/basic.php:206
+msgid "Display pocket button"
+msgstr "Pocket"
+
+#: admin/inc/basic.php:187 admin/inc/basic.php:207
+msgid "Display feedly button"
+msgstr "Feedly"
+
+#: admin/inc/basic.php:188 admin/inc/basic.php:208
+msgid "Display rss button"
+msgstr "RSS"
+
+#: admin/inc/basic.php:189 admin/inc/basic.php:209
+msgid "Display pinterest button"
+msgstr "Pinterest"
+
+#: admin/inc/basic.php:191
+msgid "Type of button on article bottom"
+msgstr "記事下に表示するボタンタイプ"
+
+#: admin/inc/basic.php:199
+msgid "Select the social button to show on article bottom"
+msgstr "記事下に表示するボタン"
+
+#: admin/inc/basic.php:202
+msgid "Display facebook like button-Button type 5 (Default button) only"
+msgstr "Facebookいいね ※ボタンタイプ5（公式ボタン）選択時のみ表示します。"
+
+#: admin/inc/basic.php:211
+msgid "Setting for the twitter button"
+msgstr "Twitterボタンの設定"
+
+#: admin/inc/basic.php:212
+msgid "Set of twitter account. (ex.designplus)"
+msgstr ""
+"※Tweetボタンを表示する場合、Twitterアカウント名(@なし)を設定してください。"
+"（例：designplus）"
+
+#: admin/inc/basic.php:219
+msgid "Free input area for user definition CSS."
+msgstr "カスタムCSS（&lt;head&gt;タグ内に挿入されます）"
+
+#: admin/inc/basic.php:220
+msgid "Code example:<br /><strong>.example { font-size:12px; }</strong>"
+msgstr ""
+"デザインやレイアウトを調整したい場合にご使用ください。<br />こちらに任意のCSS"
+"を登録することで、追加CSSとして読み込ませることができ、<br />テーマファイルを"
+"直接編集することなく安全にカスタマイズを行って頂けます。<br />また、こちらに"
+"登録してあるCSSはテーマのアップデート時にもリセットされることなく引き継がれま"
+"す。<br />記入例：.example { font-size:12px; }<br />&lt;style&gt;タグは不要で"
+"す。"
+
+#: admin/inc/blog.php:5 admin/inc/news.php:5
+msgid "Setting for archive page header"
+msgstr "アーカイブページヘッダーの設定"
+
+#: admin/inc/blog.php:44 admin/inc/news.php:44 admin/inc/review.php:45
+msgid "Single Page Settings"
+msgstr "記事詳細の設定"
+
+#: admin/inc/blog.php:45 admin/inc/news.php:45
+msgid ""
+"In a single page, a thumbnail you set is displayed in the header area. If a "
+"thumbnail is not set, the header image of the archive page is used."
+msgstr ""
+"記事詳細ページでは、設定されたアイキャッチ画像がヘッダーエリアに表示されま"
+"す。アイキャッチ画像が未設定の記事ではアーカイブページ用のヘッダー画像が表示"
+"されます。"
+
+#: admin/inc/blog.php:60 admin/inc/news.php:60 admin/inc/review.php:46
+msgid "Font size of post title"
+msgstr "記事タイトルのフォントサイズ"
+
+#: admin/inc/blog.php:62 admin/inc/news.php:62 admin/inc/review.php:48
+msgid "Font size of post contents"
+msgstr "記事本文のフォントサイズ"
+
+#: admin/inc/blog.php:64
+msgid "Link color of post contents"
+msgstr "記事本文内のリンク文字色"
+
+#: admin/inc/blog.php:70 admin/inc/footer.php:28 admin/inc/news.php:68
+msgid "Display setting"
+msgstr "表示設定"
+
+#: admin/inc/blog.php:72 admin/inc/footer.php:29 admin/inc/news.php:71
+#: widget/styled_post_list1.php:130
+msgid "Display date"
+msgstr "日付を表示する"
+
+#: admin/inc/blog.php:73 admin/inc/footer.php:30
+msgid "Display category"
+msgstr "カテゴリーを表示する"
+
+#: admin/inc/blog.php:74
+msgid "Display tags"
+msgstr "タグを表示する"
+
+#: admin/inc/blog.php:75
+msgid "Display author"
+msgstr "投稿者名を表示する"
+
+#: admin/inc/blog.php:76 admin/inc/news.php:75
+msgid "Display thumbnail"
+msgstr "サムネイルを表示する"
+
+#: admin/inc/blog.php:77
+msgid "Buttons to the article top"
+msgstr "記事上にソーシャルボタンを表示する"
+
+#: admin/inc/blog.php:78
+msgid "Buttons to the article bottom"
+msgstr "記事下にソーシャルボタンを表示する"
+
+#: admin/inc/blog.php:79 admin/inc/news.php:78
+msgid "Display next previous post link"
+msgstr "次の記事、前の記事リンクを表示する"
+
+#: admin/inc/blog.php:80
+msgid "Display related post"
+msgstr "関連記事を表示する"
+
+#: admin/inc/blog.php:81
+msgid "Display comment"
+msgstr "コメントを表示する"
+
+#: admin/inc/blog.php:82
+msgid "Display trackbacks"
+msgstr "トラックバックを表示する"
+
+#: admin/inc/blog.php:88 admin/inc/blog.php:151 admin/inc/news.php:96
+#: admin/inc/news.php:159
+msgid "Single page banner setup"
+msgstr "記事詳細の広告設定"
+
+#: admin/inc/blog.php:89 admin/inc/news.php:97
+msgid "This banner will be displayed under contents."
+msgstr "この広告は記事本文の下に表示されます。"
+
+#: admin/inc/blog.php:91 admin/inc/blog.php:155 admin/inc/news.php:99
+#: admin/inc/news.php:163
+msgid "Left banner"
+msgstr "左側"
+
+#: admin/inc/blog.php:94 admin/inc/blog.php:123 admin/inc/blog.php:158
+#: admin/inc/blog.php:187 admin/inc/blog.php:218 admin/inc/news.php:102
+#: admin/inc/news.php:131 admin/inc/news.php:166 admin/inc/news.php:195
+#: admin/inc/news.php:226
+msgid "Banner code"
+msgstr "広告バナーのコードを登録する"
+
+#: admin/inc/blog.php:95 admin/inc/blog.php:124 admin/inc/blog.php:159
+#: admin/inc/blog.php:188 admin/inc/blog.php:219 admin/inc/news.php:103
+#: admin/inc/news.php:132 admin/inc/news.php:167 admin/inc/news.php:196
+#: admin/inc/news.php:227
+msgid "If you are using google adsense, enter all code below."
+msgstr "HTMLコードをご利用の場合は、そのまま以下に登録してください。"
+
+#: admin/inc/blog.php:98 admin/inc/blog.php:127 admin/inc/blog.php:162
+#: admin/inc/blog.php:191 admin/inc/blog.php:222 admin/inc/news.php:106
+#: admin/inc/news.php:135 admin/inc/news.php:170 admin/inc/news.php:199
+#: admin/inc/news.php:230
+msgid ""
+"If you are not using google adsense, you can register your banner image and "
+"affiliate code individually."
+msgstr ""
+"以下の項目を利用する事により、バナー画像とリンク先URLを個別に登録する事もでき"
+"ます。"
+
+#: admin/inc/blog.php:100 admin/inc/blog.php:129 admin/inc/blog.php:164
+#: admin/inc/blog.php:193 admin/inc/blog.php:224 admin/inc/news.php:108
+#: admin/inc/news.php:137 admin/inc/news.php:172 admin/inc/news.php:201
+#: admin/inc/news.php:232
+msgid "Register banner image."
+msgstr "画像を登録する"
+
+#: admin/inc/blog.php:100 admin/inc/blog.php:129 admin/inc/blog.php:164
+#: admin/inc/blog.php:193 admin/inc/news.php:108 admin/inc/news.php:137
+#: admin/inc/news.php:172 admin/inc/news.php:201
+msgid "Recommend size. Width:300px Height:250px"
+msgstr "推奨サイズ：横幅300px、縦幅250px"
+
+#: admin/inc/blog.php:113 admin/inc/blog.php:142 admin/inc/blog.php:177
+#: admin/inc/blog.php:206 admin/inc/blog.php:237 admin/inc/news.php:121
+#: admin/inc/news.php:150 admin/inc/news.php:185 admin/inc/news.php:214
+#: admin/inc/news.php:245
+msgid "Register affiliate code"
+msgstr "リンク先URLを登録する"
+
+#: admin/inc/blog.php:120 admin/inc/blog.php:184 admin/inc/news.php:128
+#: admin/inc/news.php:192
+msgid "Right banner"
+msgstr "右側"
+
+#: admin/inc/blog.php:152 admin/inc/news.php:160
+msgid ""
+"Please copy and paste the short code inside the content to show this banner."
+msgstr ""
+"この広告を表示するためには、下のショートコードを記事本文の中にコピーアンド"
+"ペーストしてください。"
+
+#: admin/inc/blog.php:153 admin/inc/news.php:161
+msgid "Short code"
+msgstr "ショートコード"
+
+#: admin/inc/blog.php:215 admin/inc/news.php:223
+msgid "Mobile device banner setup"
+msgstr "スマートフォン専用の広告"
+
+#: admin/inc/blog.php:216 admin/inc/news.php:224
+msgid "This banner will be displayed on mobile device."
+msgstr "この広告はスマートフォンでのみ表示されます。"
+
+#: admin/inc/footer.php:8
+msgid "Blog contents settings"
+msgstr "ブログコンテンツの設定"
+
+#: admin/inc/footer.php:9
+msgid "Display a carousel slider of blog posts in the footer area."
+msgstr ""
+"フッターエリアにカルーセルスライダー形式で表示されるブログ記事一覧を表示しま"
+"す。"
+
+#: admin/inc/footer.php:10
+msgid "Show blog contents on top page"
+msgstr "このコンテンツをトップページに表示する"
+
+#: admin/inc/footer.php:11
+msgid "Show blog contents on subpage"
+msgstr "このコンテンツを下層ページに表示する"
+
+#: admin/inc/footer.php:16
+msgid "Number of posts"
+msgstr "記事の数"
+
+#: admin/inc/footer.php:22
+msgid "Post order"
+msgstr "記事の表示順"
+
+#: admin/inc/footer.php:31
+msgid "Link to blog archive page"
+msgstr "ブログアーカイブページへのリンク"
+
+#: admin/inc/footer.php:32
+msgid "Display link for blog archive page"
+msgstr "ブログアーカイブページへのリンクを表示する"
+
+#: admin/inc/footer.php:33 admin/inc/news.php:88 admin/inc/top.php:207
+#: admin/theme-options.php:1796 admin/theme-options.php:2103
+msgid "Link text"
+msgstr "リンクテキスト"
+
+#: admin/inc/footer.php:34
+msgid "Slide speed"
+msgstr "スライダーが切り替わるスピードの設定"
+
+#: admin/inc/footer.php:37
+msgid " miliseconds"
+msgstr "ミリ秒"
+
+#: admin/inc/footer.php:44
+msgid "SNS button setting"
+msgstr "SNSボタンの設定"
+
+#: admin/inc/footer.php:45
+msgid ""
+"Enter url of your twitter and facebook page. If it is blank SNS button will "
+"not be shown."
+msgstr ""
+"あなたのtwitterとfacebookページのURLを入力してください。<br />空欄の場合は、"
+"twitterとfacebookアイコンは表示されません。"
+
+#: admin/inc/footer.php:47
+msgid "your twitter URL"
+msgstr "あなたのtwitter URL"
+
+#: admin/inc/footer.php:48
+msgid "your facebook URL"
+msgstr "あなたのfacebook URL"
+
+#: admin/inc/footer.php:49
+msgid "your instagram URL"
+msgstr "あなたのInstagramページのURL"
+
+#: admin/inc/footer.php:52
+msgid "Display RSS button"
+msgstr "RSSボタンを表示する"
+
+#: admin/inc/footer.php:57
+msgid "Company information on footer"
+msgstr "フッターに表示する会社情報"
+
+#: admin/inc/footer.php:60
+msgid "Phone number, Address, and miscs"
+msgstr "住所・電話番号等"
+
+#: admin/inc/footer.php:68
+msgid "Copyright settings"
+msgstr "著作権表示の設定"
+
+#: admin/inc/footer.php:69 admin/inc/footer.php:86 admin/inc/marketing.php:32
+#: admin/inc/marketing.php:79 admin/inc/marketing.php:188
+#: admin/inc/marketing.php:191 admin/inc/top.php:183
+#: admin/theme-options.php:1800 pagebuilder/modules/googlemap.php:306
+#: pagebuilder/modules/tab.php:165 pagebuilder/modules/tab.php:179
+#: pagebuilder/modules/tab.php:410 pagebuilder/modules/tab.php:424
+#: pagebuilder/pagebuilder.php:513
+msgid "Background color"
+msgstr "背景色"
+
+#: admin/inc/footer.php:75
+msgid "Setting of the footer bar for smart phone"
+msgstr "スマホ用固定フッターバーの設定"
+
+#: admin/inc/footer.php:76
+msgid "Please set the footer bar which is displayed with smart phone."
+msgstr ""
+"スマホ表示時のみ、フッター部に固定表示されるフッターバーの設定を行います。"
+
+#: admin/inc/footer.php:77
+msgid "Note: The footer bar is not displayed when the footer CTA is displayed."
+msgstr ""
+"※フッターCTAを表示する設定の場合、スマホ固定フッターバーは表示されません"
+
+#: admin/inc/footer.php:78
+msgid "Display type of the footer bar"
+msgstr "フッターバーの表示方法"
+
+#: admin/inc/footer.php:84
+msgid "Settings for the appearance of the footer bar"
+msgstr "フッターバーの外観の設定"
+
+#: admin/inc/footer.php:90 pagebuilder/modules/googlemap.php:314
+msgid "Border color"
+msgstr "枠線の色"
+
+#: admin/inc/footer.php:98 admin/inc/header.php:31 admin/inc/header.php:43
+msgid "Opacity of background"
+msgstr "背景色の透明度"
+
+#: admin/inc/footer.php:99
+msgid "Please enter the number 0 - 1.0. (e.g. 0.8)"
+msgstr ""
+"透過率の数値を0（完全に透明）～1.0（完全に不透明）の範囲で設定してください。"
+"（初期値：0.8）"
+
+#: admin/inc/footer.php:101
+msgid "Settings for the contents of the footer bar"
+msgstr "フッターバーの内容の設定"
+
+#: admin/inc/footer.php:102
+msgid ""
+"You can display the button with icon in footer bar. (We recommend you to set "
+"max 4 buttons.)"
+msgstr ""
+"フッターバーには任意のアイコン付きボタンを表示できます。（ボタン数は最大で4つ"
+"までを推奨いたします）"
+
+#: admin/inc/footer.php:102
+msgid "You can select button types below."
+msgstr "表示できるボタンのタイプは以下の通りです。"
+
+#: admin/inc/footer.php:105 admin/theme-options.php:722
+msgid "Default"
+msgstr "デフォルト"
+
+#: admin/inc/footer.php:106
+msgid "You can set link URL."
+msgstr ""
+"任意のリンク先URLを指定できます。<br>例：「新着情報」（ニュースアーカイブペー"
+"ジのURLを設定）「お問い合わせ」（お問い合わせページのURLを設定）など"
+
+#: admin/inc/footer.php:109 admin/theme-options.php:723
+#: admin/theme-options.php:736
+msgid "Share"
+msgstr "シェア"
+
+#: admin/inc/footer.php:110
+msgid "Share buttons are displayed if you tap this button."
+msgstr ""
+"このボタンをタップでTwitter、Facebook、LINE、はてなブックマークのシェアボタン"
+"がポップアップ表示されます。"
+
+#: admin/inc/footer.php:113 admin/theme-options.php:724
+#: admin/theme-options.php:740
+msgid "Telephone"
+msgstr "電話番号"
+
+#: admin/inc/footer.php:114
+msgid "You can call this number."
+msgstr ""
+"このボタンをタップでダイヤル画面に遷移し、設定された電話番号に電話がかけられ"
+"ます。"
+
+#: admin/inc/footer.php:117
+msgid ""
+"Click \"Add item\", and set the button for footer bar. You can drag the item "
+"to change their order."
+msgstr ""
+"「ボタンを追加する」から項目を追加し、表示内容を設定して下さい。追加したボタ"
+"ンは、各項目をドラッグして順番を変更することが出来ます。"
+
+#: admin/inc/footer.php:119 admin/theme-options.php:1897
+#: admin/theme-options.php:1992
+msgid "Delete?"
+msgstr "削除しますか？"
+
+#: admin/inc/footer.php:127 admin/inc/footer.php:174 admin/inc/marketing.php:31
+#: admin/inc/marketing.php:78 admin/inc/marketing.php:187
+msgid "Open with new window"
+msgstr "リンク先のURLを新しいタブで表示する"
+
+#: admin/inc/footer.php:130 admin/inc/footer.php:177
+msgid "Button type"
+msgstr "ボタンのタイプ"
+
+#: admin/inc/footer.php:140 admin/inc/footer.php:187 admin/inc/marketing.php:29
+#: admin/inc/marketing.php:76 admin/inc/marketing.php:185 admin/inc/top.php:43
+msgid "Button label"
+msgstr "ボタンのラベル"
+
+#: admin/inc/footer.php:144 admin/inc/footer.php:191 admin/inc/marketing.php:30
+#: admin/inc/marketing.php:77 admin/inc/marketing.php:186 admin/inc/top.php:44
+#: admin/theme-options.php:1707 admin/theme-options.php:1797
+#: pagebuilder/modules/googlemap.php:294
+msgid "Link URL"
+msgstr "リンク先のURL"
+
+#: admin/inc/footer.php:148 admin/inc/footer.php:195
+msgid "Phone number"
+msgstr "電話番号"
+
+#: admin/inc/footer.php:152 admin/inc/footer.php:199
+msgid "Button icon"
+msgstr "ボタンのアイコン"
+
+#: admin/inc/footer.php:160 admin/inc/footer.php:207
+#: admin/theme-options.php:1923 admin/theme-options.php:1951
+#: admin/theme-options.php:2023 admin/theme-options.php:2055
+msgid "Delete item"
+msgstr "項目削除"
+
+#: admin/inc/footer.php:172 pagebuilder/modules/tab.php:246
+#: pagebuilder/modules/tab.php:281 pagebuilder/modules/tab.php:292
+#: pagebuilder/modules/tab.php:547 pagebuilder/modules/tab.php:575
+#: pagebuilder/modules/tab.php:817
+msgid "New item"
+msgstr "新しいアイテム"
+
+#: admin/inc/footer.php:212 admin/theme-options.php:1957
+#: admin/theme-options.php:2061 pagebuilder/modules/slider.php:84
+#: pagebuilder/modules/tab.php:233 pagebuilder/modules/tab.php:514
+#: pagebuilder/modules/tab.php:772
+msgid "Add item"
+msgstr "新しいアイテムを追加する"
+
+#: admin/inc/header.php:8
+msgid "Header position"
+msgstr "ヘッダーバーの表示位置"
+
+#: admin/inc/header.php:18
+msgid "Header position for mobile device"
+msgstr "ヘッダーバーの表示位置（スマホ）"
+
+#: admin/inc/header.php:28
+msgid "Color of header (Top page)"
+msgstr "ヘッダーバーの色の設定（トップページ）"
+
+#: admin/inc/header.php:29 admin/inc/header.php:41
+msgid "Background color setting"
+msgstr "背景色の設定"
+
+#: admin/inc/header.php:34 admin/inc/header.php:47
+msgid "Text color setting"
+msgstr "文字色の設定"
+
+#: admin/inc/header.php:40
+msgid "Color of header (Top page after scrolling and sub page and mobile)"
+msgstr ""
+"ヘッダーバーの色の設定（トップページスクロール後・下層ページ・スマホ表示時）"
+
+#: admin/inc/header.php:45
+msgid ""
+"Note: \"Opacity of background\" is not applied to \"Normal header\" and "
+"smartphones."
+msgstr ""
+"※ヘッダーバーを「通常の表示位置」に設定している時とスマホ表示時は透過率の設定"
+"は反映されません"
+
+#: admin/inc/logo.php:5
+msgid "Header logo"
+msgstr "ヘッダーのロゴ"
+
+#: admin/inc/logo.php:7 admin/inc/logo.php:29 admin/inc/logo.php:51
+msgid "Font size for text logo"
+msgstr "ロゴのフォントサイズ"
+
+#: admin/inc/logo.php:10 admin/inc/logo.php:32 admin/inc/logo.php:54
+msgid "Image for logo"
+msgstr "ロゴの画像"
+
+#: admin/inc/logo.php:11 admin/inc/logo.php:33 admin/inc/logo.php:55
+msgid "If the image is not registered, text will be displayed instead."
+msgstr "画像が登録されていない場合は、テキストが代わりに表示されます。"
+
+#: admin/inc/logo.php:22 admin/inc/logo.php:44
+msgid "Use retina display logo image"
+msgstr "レティナディスプレイ用のロゴ画像を利用する"
+
+#: admin/inc/logo.php:27
+msgid "Header logo for mobile device"
+msgstr "ヘッダーのロゴ（スマホ用）"
+
+#: admin/inc/logo.php:49
+msgid "Footer logo"
+msgstr "フッターのロゴ"
+
+#: admin/inc/marketing.php:8
+msgid "CTA under the post content"
+msgstr "記事下CTA"
+
+#: admin/inc/marketing.php:9
+msgid "You can set up CTA under the post content."
+msgstr "記事詳細ページ下部に表示するCTAの設定を行います。"
+
+#: admin/inc/marketing.php:10 admin/inc/marketing.php:167
+msgid "You can register up to three contents."
+msgstr "最大３つまで登録することができます。"
+
+#: admin/inc/marketing.php:15 admin/inc/marketing.php:172
+msgid "Type of CTA"
+msgstr "CTAのタイプ"
+
+#: admin/inc/marketing.php:24 admin/inc/marketing.php:27
+#: admin/inc/marketing.php:71 admin/inc/marketing.php:74 admin/inc/top.php:28
+#: admin/inc/top.php:31 admin/theme-options.php:1640
+#: admin/theme-options.php:1643 admin/theme-options.php:1691
+#: admin/theme-options.php:1694 admin/theme-options.php:1790
+#: admin/theme-options.php:1793 admin/theme-options.php:1889
+#: admin/theme-options.php:1892 admin/theme-options.php:1961
+#: admin/theme-options.php:1964 admin/theme-options.php:2097
+#: functions/page_cf.php:56 functions/page_cf.php:76
+#: pagebuilder/modules/catchcopy.php:45 pagebuilder/modules/googlemap.php:188
+#: pagebuilder/modules/googlemap.php:239 pagebuilder/modules/headline.php:45
+#: pagebuilder/modules/tab.php:591 pagebuilder/modules/tab.php:642
+msgid "Font size"
+msgstr "フォントサイズ"
+
+#: admin/inc/marketing.php:28 admin/inc/marketing.php:75
+#: admin/inc/marketing.php:184
+msgid "Button settings"
+msgstr "ボタンの設定"
+
+#: admin/inc/marketing.php:33 admin/inc/marketing.php:80
+#: admin/inc/marketing.php:189 admin/theme-options.php:1802
+msgid "Background color on hover"
+msgstr "カーソルを合わせた時の背景色"
+
+#: admin/inc/marketing.php:34 admin/inc/marketing.php:81 admin/inc/top.php:47
+#: admin/theme-options.php:1695 admin/theme-options.php:1804
+#: admin/theme-options.php:1906 admin/theme-options.php:1934
+#: admin/theme-options.php:2002 admin/theme-options.php:2034
+#: functions/page_cf.php:137 pagebuilder/modules/image.php:11
+#: pagebuilder/modules/image.php:33 pagebuilder/modules/slider.php:132
+#: pagebuilder/modules/slider.php:146 pagebuilder/modules/tab.php:578
+#: pagebuilder/modules/tab.php:803 pagebuilder/modules/tab.php:820
+msgid "Image"
+msgstr "画像"
+
+#: admin/inc/marketing.php:35
+msgid "Recommend image size. Width:900px, Height:400px"
+msgstr "推奨サイズ：横幅900px、縦幅400px"
+
+#: admin/inc/marketing.php:46 admin/inc/marketing.php:93
+msgid "Image for mobile"
+msgstr "画像（スマホ用）"
+
+#: admin/inc/marketing.php:47 admin/inc/marketing.php:94
+msgid "Recommend image size. Width:320px, Height:280px"
+msgstr "推奨画像サイズ：横幅320px、縦幅280px"
+
+#: admin/inc/marketing.php:58
+msgid "Image settings"
+msgstr "画像の設定"
+
+#: admin/inc/marketing.php:65
+msgid "Layout settings"
+msgstr "レイアウトの設定"
+
+#: admin/inc/marketing.php:82
+msgid "Recommend image size. Width:450px, Height:400px"
+msgstr "推奨サイズ：横幅450px、縦幅400px"
+
+#: admin/inc/marketing.php:109
+msgid ""
+"If you want to measure the number of clicks in WYSIWYG editor, set the id "
+"attribute of the target element to \"js-cta__btn\"."
+msgstr ""
+"フリースペースでクリック測定を行いたい場合は、クリック測定を行うターゲット要"
+"素（例：a要素）に「id=“js-cta__btn”」を設定してください。"
+
+#: admin/inc/marketing.php:111 admin/inc/marketing.php:200
+#: admin/theme-options.php:771 admin/theme-options.php:822
+msgid "Wysiwyg editor"
+msgstr "フリースペース"
+
+#: admin/inc/marketing.php:118 admin/inc/marketing.php:207
+#: functions/review_cf.php:71
+msgid "Display settings"
+msgstr "表示設定"
+
+#: admin/inc/marketing.php:119
+msgid "Please select the CTA to display under the post content."
+msgstr "表示する記事下CTAを選択してください。"
+
+#: admin/inc/marketing.php:125
+msgid "Display CTA in news posts"
+msgstr "ニュース詳細で表示する"
+
+#: admin/inc/marketing.php:126
+msgid "Display CTA in review posts"
+msgstr "レビュー詳細で表示する"
+
+#: admin/inc/marketing.php:128 admin/inc/marketing.php:217
+#: admin/theme-options.php:806
+msgid "Random display"
+msgstr "ランダム表示"
+
+#: admin/inc/marketing.php:129 admin/inc/marketing.php:218
+msgid "Please select CTA to use in random display."
+msgstr "ランダム表示で使用するCTAを選択してください。"
+
+#: admin/inc/marketing.php:134 admin/inc/marketing.php:223
+msgid "A/B Testing"
+msgstr "ABテスト"
+
+#: admin/inc/marketing.php:136 admin/inc/marketing.php:225
+msgid ""
+"To measure conversions, copy and paste the following code in the editor of "
+"\"thanks page\"."
+msgstr ""
+"コンバージョンを測定するには、サンキューページ（サイト訪問者による商品購入や"
+"メルマガ登録などのアクション後に表示するページ）のエディタ内に以下のコードを"
+"コピー＆ペーストしてください。"
+
+#: admin/inc/marketing.php:142 admin/inc/marketing.php:231
+msgid "Impressions"
+msgstr "インプレッション"
+
+#: admin/inc/marketing.php:143 admin/inc/marketing.php:232
+msgid "Number of clicks"
+msgstr "クリック数"
+
+#: admin/inc/marketing.php:144 admin/inc/marketing.php:233
+msgid "Click-through rate"
+msgstr "クリック率"
+
+#: admin/inc/marketing.php:145 admin/inc/marketing.php:234
+msgid "Conversions"
+msgstr "コンバージョン"
+
+#: admin/inc/marketing.php:146 admin/inc/marketing.php:235
+msgid "Conversion rate"
+msgstr "コンバージョン率"
+
+#: admin/inc/marketing.php:147 admin/inc/marketing.php:236
+msgid "Reset"
+msgstr "リセット"
+
+#: admin/inc/marketing.php:157 admin/inc/marketing.php:246
+msgid "Reset values"
+msgstr "計測値をリセット"
+
+#: admin/inc/marketing.php:165
+msgid "Footer CTA"
+msgstr "フッターCTA"
+
+#: admin/inc/marketing.php:166
+msgid ""
+"You can set up Footer CTA which is displayed at the bottom of the footer on "
+"scroll."
+msgstr ""
+"ページをスクロールした際にフッター最下部に表示されるCTAの設定を行います。"
+
+#: admin/inc/marketing.php:178
+msgid "Newlines are converted to <br> tags only in smartphones."
+msgstr "スマートフォンの表示では改行が適用されます。"
+
+#: admin/inc/marketing.php:190
+msgid "Background color settings"
+msgstr "背景色の設定"
+
+#: admin/inc/marketing.php:192
+msgid "Opacity of Background color"
+msgstr "背景色の透過率"
+
+#: admin/inc/marketing.php:198
+msgid ""
+"If you want to measure the number of clicks in WYSIWYG editor, set the id "
+"attribute of the target element to \"js-footer-cta__btn\"."
+msgstr ""
+"フリースペースでクリック測定を行いたい場合は、クリック測定を行うターゲット要"
+"素（例：a要素）に「id=“js-footer-cta__btn”」を設定してください。"
+
+#: admin/inc/marketing.php:208
+msgid "Please select the Footer CTA to display."
+msgstr "表示するフッターCTAを選択してください。"
+
+#: admin/inc/marketing.php:209
+msgid "Note: when the Footer CTA is displayed, the footer bar is hidden."
+msgstr "※フッターCTAを選択すると、スマホ用固定フッターバーは非表示となります。"
+
+#: admin/inc/marketing.php:215
+msgid "Hide Footer CTA on front page"
+msgstr "トップページのみ表示しない"
+
+#: admin/inc/news.php:69
+msgid "Settings for archive page and post page"
+msgstr "アーカイブ・記事詳細共通の設定"
+
+#: admin/inc/news.php:73
+msgid "Settings for post page"
+msgstr "記事詳細の設定"
+
+#: admin/inc/news.php:76
+msgid "Display share button under post title"
+msgstr "記事上にソーシャルボタンを表示する"
+
+#: admin/inc/news.php:77
+msgid "Display share button under post content"
+msgstr "記事下にソーシャルボタンを表示する"
+
+#: admin/inc/news.php:84
+msgid "Setting for latest news archive"
+msgstr "最近のニュース一覧の設定"
+
+#: admin/inc/news.php:85
+msgid "This text will be displayed at the bottom of news page"
+msgstr "ニュース詳細ページの下部に表示されます。"
+
+#: admin/inc/news.php:86 admin/theme-options.php:1638
+#: admin/theme-options.php:1689 admin/theme-options.php:2015
+#: admin/theme-options.php:2047 pagebuilder/modules/googlemap.php:184
+#: pagebuilder/modules/headline.php:11 pagebuilder/modules/headline.php:40
+#: pagebuilder/modules/tab.php:321 pagebuilder/modules/tab.php:587
+msgid "Headline"
+msgstr "見出し"
+
+#: admin/inc/news.php:90
+msgid "Post number"
+msgstr "記事数"
+
+#: admin/inc/review.php:5
+msgid "Header settings"
+msgstr "ヘッダーの設定"
+
+#: admin/inc/review.php:6
+msgid "These settings will be applied to archive page and single page."
+msgstr ""
+"レビューページでは以下で登録したヘッダー画像やキャッチフレーズが、アーカイブ"
+"ページと記事詳細ページ共通で使用されます。"
+
+#: admin/inc/top.php:8
+msgid "Header content setting"
+msgstr "ヘッダーコンテンツの設定"
+
+#: admin/inc/top.php:9
+msgid "Header content type"
+msgstr "ヘッダーコンテンツのタイプ"
+
+#: admin/inc/top.php:18
+#, php-format
+msgid "Slider%s setting"
+msgstr "スライダー%sの設定"
+
+#: admin/inc/top.php:20
+msgid "Slider animation type"
+msgstr "アニメーションタイプ"
+
+#: admin/inc/top.php:41 admin/theme-options.php:1794
+msgid "Button"
+msgstr "ボタン"
+
+#: admin/inc/top.php:42 admin/theme-options.php:1795
+#: pagebuilder/modules/googlemap.php:287
+msgid "Display button"
+msgstr "ボタンを表示する"
+
+#: admin/inc/top.php:46 admin/inc/top.php:190
+#: pagebuilder/modules/googlemap.php:299
+msgid "Open link in new window"
+msgstr "リンク先のURLを新しいウィンドウで表示する"
+
+#: admin/inc/top.php:48
+msgid "Recommend image size. Width:560px, Max height:445px"
+msgstr "推奨画像サイズ：横幅560px、縦幅最大445px"
+
+#: admin/inc/top.php:59 admin/theme-options.php:1818
+msgid "Background image"
+msgstr "背景画像"
+
+#: admin/inc/top.php:60 admin/inc/top.php:106 admin/inc/top.php:134
+msgid "Recommend image size. Width:1450px or more, Height:780px or more"
+msgstr "推奨画像サイズ：横幅1450px以上、縦幅780px以上"
+
+#: admin/inc/top.php:78
+msgid "Video setting"
+msgstr "動画の設定"
+
+#: admin/inc/top.php:80
+msgid "Please upload MP4 format file."
+msgstr "MP4形式の動画ファイルをアップロードしてください。"
+
+#: admin/inc/top.php:87
+msgid "Upload video file"
+msgstr "動画ファイルをアップロードする"
+
+#: admin/inc/top.php:95
+msgid "Are you sure to delete this file?"
+msgstr "このファイルを削除してもよろしいでしょうか？"
+
+#: admin/inc/top.php:95 admin/inc/top.php:225 admin/inc/top.php:252
+#: pagebuilder/modules/slider.php:140 pagebuilder/modules/tab.php:289
+#: pagebuilder/modules/tab.php:572 pagebuilder/modules/tab.php:814
+#: pagebuilder/pagebuilder.php:381 pagebuilder/pagebuilder.php:449
+#: pagebuilder/pagebuilder.php:653
+msgid "Delete"
+msgstr "削除する"
+
+#: admin/inc/top.php:103 admin/inc/top.php:131
+msgid "Substitute image"
+msgstr "代替画像"
+
+#: admin/inc/top.php:105
+msgid ""
+"This image will be displayed instead of video in smartphone.<br /> Also this "
+"image will be displayed in the browser which MP4 video is not supported."
+msgstr ""
+"スマートフォンでは動画を背景に表示する事が出来ないため、代わりに以下の代替画"
+"像を表示します。<br />また、MP4形式の動画がサポートされていないPCのブラウザで"
+"も、動画の代わりに表示されます。"
+
+#: admin/inc/top.php:123
+msgid "Youtube setting"
+msgstr "Youtubeの動画の設定"
+
+#: admin/inc/top.php:125
+msgid "Please enter Youtube URL."
+msgstr "表示したいYoutubeの動画のURLを入力してください。"
+
+#: admin/inc/top.php:133
+msgid "This image will be displayed instead of Youtube video in smartphone."
+msgstr ""
+"スマートフォンでは動画を背景に表示する事が出来ないため、代わりに以下の代替画"
+"像を表示します。"
+
+#: admin/inc/top.php:155
+msgid "Catchphrase will be displayed on video."
+msgstr "キャッチフレーズは動画上に表示されます。"
+
+#: admin/inc/top.php:156
+msgid "Display catchphrase."
+msgstr "キャッチフレーズを表示する"
+
+#: admin/inc/top.php:175
+msgid "Button setting"
+msgstr "ボタンの設定"
+
+#: admin/inc/top.php:176
+msgid "Display button."
+msgstr "ボタンを表示する"
+
+#: admin/inc/top.php:178
+msgid "Label of button"
+msgstr "ボタンのラベル"
+
+#: admin/inc/top.php:180
+msgid "Button color setting"
+msgstr "ボタンの色の設定"
+
+#: admin/inc/top.php:184
+msgid "Font hover color"
+msgstr "ボタンにカーソルを合わせた時の文字色"
+
+#: admin/inc/top.php:185
+msgid "Background hover color"
+msgstr "ボタンにカーソルを合わせた時の背景色"
+
+#: admin/inc/top.php:188
+msgid "Button link URL"
+msgstr "ボタンのURL"
+
+#: admin/inc/top.php:200
+msgid "News ticker settings"
+msgstr "ニュースティッカーの設定"
+
+#: admin/inc/top.php:201
+msgid "Displayed at the bottom of the header content of the front page."
+msgstr "トップページのヘッダーコンテンツ下部に表示されます。"
+
+#: admin/inc/top.php:202
+msgid "Display this content on top page"
+msgstr "このコンテンツをトップページに表示する"
+
+#: admin/inc/top.php:203
+msgid "Display dates"
+msgstr "ニュースの日付を表示する"
+
+#: admin/inc/top.php:204
+msgid "Number of news to display"
+msgstr "ニュースの数"
+
+#: admin/inc/top.php:206
+msgid "Link to news archive page"
+msgstr "ニュースアーカイブページリンク"
+
+#: admin/inc/top.php:208 admin/theme-options.php:2102
+msgid "Display archive link"
+msgstr "リンクを表示する"
+
+#: admin/inc/top.php:213
+msgid "Contents Builder"
+msgstr "コンテンツビルダー"
+
+#: admin/inc/top.php:214
+msgid ""
+"<p>You can build contents freely with this function.</p><p>FIRST STEP: Click "
+"Add content button.<br />SECOND STEP: Select content from dropdown menu to "
+"show on each column.</p><p>You can change row by dragging MOVE button and "
+"you can delete row by clicking DELETE button.</p>"
+msgstr ""
+"<p>コンテンツビルダーを使うと、自由にコンテンツを組み合わせて表示する事ができ"
+"ます。</p><p>ステップ１：「コンテンツを追加」ボタンをクリックしてください。</"
+"p><p>ステップ２：表示したいコンテンツをドロップダウンメニューより選択してくだ"
+"さい。</p><p>ステップ３：表示されたコンテンツ入力欄にデータを入力し、「設定を"
+"保存」ボタンをクリックして完了します。</p><p>コンテンツの順番を変更したい場合"
+"は、「移動」タブをドラッグし、コンテンツを削除したい場合は、「削除」タブをク"
+"リックしてください。</p>"
+
+#: admin/inc/top.php:216
+msgid "Are you sure you want to delete this content?"
+msgstr "このコンテンツを削除してもよろしいでしょうか？"
+
+#: admin/inc/top.php:224 admin/inc/top.php:251
+#: pagebuilder/modules/slider.php:139 pagebuilder/modules/tab.php:288
+#: pagebuilder/modules/tab.php:571 pagebuilder/modules/tab.php:813
+msgid "Move"
+msgstr "移動する"
+
+#: admin/inc/top.php:242 pagebuilder/pagebuilder.php:149
+msgid "Add content"
+msgstr "コンテンツを追加する"
+
+#: admin/theme-options.php:15 admin/theme-options.php:16
+#: admin/theme-options.php:850
+msgid "TCD Theme Options"
+msgstr "TCDテーマオプション"
+
+#: admin/theme-options.php:502 admin/theme-options.php:519
+#: pagebuilder/modules/catchcopy.php:64 pagebuilder/modules/googlemap.php:82
+#: pagebuilder/modules/headline.php:64 pagebuilder/modules/tab.php:555
+msgid "Meiryo"
+msgstr "メイリオベース"
+
+#: admin/theme-options.php:506 admin/theme-options.php:523
+#: pagebuilder/modules/catchcopy.php:65 pagebuilder/modules/googlemap.php:83
+#: pagebuilder/modules/headline.php:65 pagebuilder/modules/tab.php:556
+msgid "YuGothic"
+msgstr "游ゴシックベース"
+
+#: admin/theme-options.php:510 admin/theme-options.php:527
+#: pagebuilder/modules/catchcopy.php:66 pagebuilder/modules/googlemap.php:84
+#: pagebuilder/modules/headline.php:66 pagebuilder/modules/tab.php:557
+msgid "YuMincho"
+msgstr "游明朝ベース"
+
+#: admin/theme-options.php:536
+msgid "Use responsive design"
+msgstr "レスポンシブデザインを利用する"
+
+#: admin/theme-options.php:540
+msgid "Do not use responsive design"
+msgstr "レスポンシブデザインを利用しない"
+
+#: admin/theme-options.php:547
+msgid "Circle"
+msgstr "サークル"
+
+#: admin/theme-options.php:548
+msgid "Square"
+msgstr "スクエア"
+
+#: admin/theme-options.php:549
+msgid "Dot"
+msgstr "ドット"
+
+#: admin/theme-options.php:563
+msgid "Zoom"
+msgstr "ズーム"
+
+#: admin/theme-options.php:567
+msgid "Slide"
+msgstr "スライド"
+
+#: admin/theme-options.php:571
+msgid "Fade"
+msgstr "フェード"
+
+#: admin/theme-options.php:578
+msgid "Left to Right"
+msgstr "右方向"
+
+#: admin/theme-options.php:582
+msgid "Right to Left"
+msgstr "左方向"
+
+#: admin/theme-options.php:591 admin/theme-options.php:761
+msgid "Type1"
+msgstr "タイプ1"
+
+#: admin/theme-options.php:596 admin/theme-options.php:766
+msgid "Type2"
+msgstr "タイプ2"
+
+#: admin/theme-options.php:601
+msgid "Type3"
+msgstr "タイプ3"
+
+#: admin/theme-options.php:611
+msgid "Image slider"
+msgstr "画像スライダー"
+
+#: admin/theme-options.php:615
+msgid "Video background"
+msgstr "動画を背景に表示する"
+
+#: admin/theme-options.php:619
+msgid "Youtube background"
+msgstr "Youtubeの動画を背景に表示する"
+
+#: admin/theme-options.php:628
+msgid "Fade in"
+msgstr "フェードイン"
+
+#: admin/theme-options.php:632
+msgid "Slide1"
+msgstr "スライド1"
+
+#: admin/theme-options.php:636
+msgid "Slide2"
+msgstr "スライド2"
+
+#: admin/theme-options.php:645
+msgid "Normal header"
+msgstr "通常の表示位置"
+
+#: admin/theme-options.php:649
+msgid "Fix at top after page scroll"
+msgstr "ページ上部に固定表示"
+
+#: admin/theme-options.php:664 widget/styled_post_list1.php:123
+msgid "Date (DESC)"
+msgstr "日付（新しい順）"
+
+#: admin/theme-options.php:668 widget/styled_post_list1.php:124
+msgid "Date (ASC)"
+msgstr "日付（古い順）"
+
+#: admin/theme-options.php:672 widget/styled_post_list1.php:125
+msgid "Random"
+msgstr "ランダム"
+
+#: admin/theme-options.php:687
+msgid "style1"
+msgstr "ボタンタイプ1（左寄せ + color）"
+
+#: admin/theme-options.php:691
+msgid "style2"
+msgstr "ボタンタイプ2（左寄せ + mono）"
+
+#: admin/theme-options.php:695
+msgid "style3"
+msgstr "ボタンタイプ3（カラム幅 + color）"
+
+#: admin/theme-options.php:699
+msgid "style4"
+msgstr "ボタンタイプ4（カラム幅 + mono）"
+
+#: admin/theme-options.php:703
+msgid "style5"
+msgstr "ボタンタイプ5（公式ボタン）"
+
+#: admin/theme-options.php:714
+msgid "Fade In"
+msgstr "フェードイン"
+
+#: admin/theme-options.php:715
+msgid "Slide In"
+msgstr "スライドイン"
+
+#: admin/theme-options.php:716
+msgid "Hide"
+msgstr "非表示"
+
+#: admin/theme-options.php:732
+msgid "Document"
+msgstr "書類"
+
+#: admin/theme-options.php:744
+msgid "Envelope"
+msgstr "メール"
+
+#: admin/theme-options.php:748
+msgid "Tag"
+msgstr "タグ"
+
+#: admin/theme-options.php:752
+msgid "Pencil"
+msgstr "鉛筆"
+
+#: admin/theme-options.php:781
+msgid "Type1 (left: text, right: image)"
+msgstr "タイプ1（左：テキスト、右：画像）"
+
+#: admin/theme-options.php:785
+msgid "Type2 (left: image, right: text)"
+msgstr "タイプ2（左：画像、右：テキスト）"
+
+#: admin/theme-options.php:810
+msgid "Hidden"
+msgstr "非表示"
+
+#: admin/theme-options.php:818
+msgid "Template"
+msgstr "テンプレート"
+
+#: admin/theme-options.php:833
+msgid "Basic"
+msgstr "基本設定"
+
+#: admin/theme-options.php:834
+msgid "Logo"
+msgstr "ロゴの設定"
+
+#: admin/theme-options.php:835
+msgid "Index"
+msgstr "トップページ"
+
+#: admin/theme-options.php:836
+msgid "Blog"
+msgstr "ブログ"
+
+#: admin/theme-options.php:837 functions.php:46
+#: template-parts/breadcrumb.php:34
+msgid "News"
+msgstr "ニュース"
+
+#: admin/theme-options.php:838 functions.php:59
+#: template-parts/breadcrumb.php:44
+msgid "Review"
+msgstr "レビュー"
+
+#: admin/theme-options.php:839
+msgid "Header"
+msgstr "ヘッダー"
+
+#: admin/theme-options.php:840
+msgid "Footer"
+msgstr "フッター"
+
+#: admin/theme-options.php:841
+msgid "404 page"
+msgstr "404ページ"
+
+#: admin/theme-options.php:842
+msgid "Marketing"
+msgstr "マーケティング"
+
+#: admin/theme-options.php:856
+msgid "Updated"
+msgstr "設定を更新しました"
+
+#: admin/theme-options.php:1111
+#, php-format
+msgid "You uploaded %s but allowed file format is PNG, GIF, JPG and MP4."
+msgstr ""
+"あなたは%sをアップロードしました。<br />アップロードできるファイル形式は、"
+"gif, jpg, png,mp4 のみになります。"
+
+#: admin/theme-options.php:1118
+#, php-format
+msgid "Directory %s is not writable. Please check permission."
+msgstr "ディレクト「 %s 」を書き込み可能なパーミッションに変更してください。"
+
+#: admin/theme-options.php:1571 admin/theme-options.php:1629
+msgid "Catchphrase and description"
+msgstr "キャッチフレーズと説明文"
+
+#: admin/theme-options.php:1572 admin/theme-options.php:1675
+msgid "Three boxes"
+msgstr "3つのボックスコンテンツ"
+
+#: admin/theme-options.php:1573 admin/theme-options.php:1773
+msgid "Showcase"
+msgstr "ショーケース"
+
+#: admin/theme-options.php:1574 admin/theme-options.php:1878
+msgid "Gallery content"
+msgstr "ギャラリーコンテンツ"
+
+#: admin/theme-options.php:1575 admin/theme-options.php:1982
+msgid "Circular images and texts"
+msgstr "円形画像とテキスト"
+
+#: admin/theme-options.php:1576 admin/theme-options.php:2086
+#: admin/theme-options.php:2098
+msgid "Review slider"
+msgstr "レビュースライダー"
+
+#: admin/theme-options.php:1577
+msgid "WYSIWYG Editor"
+msgstr "フリースペース"
+
+#: admin/theme-options.php:1587
+msgid "Choose the content"
+msgstr "コンテンツを選択してください"
+
+#: admin/theme-options.php:1629 admin/theme-options.php:1675
+#: admin/theme-options.php:1773 admin/theme-options.php:1878
+#: admin/theme-options.php:1982 admin/theme-options.php:2086
+#: admin/theme-options.php:2115 admin/theme-options.php:2128
+#: pagebuilder/modules/slider.php:143 pagebuilder/modules/tab.php:292
+#: pagebuilder/modules/tab.php:575 pagebuilder/modules/tab.php:817
+msgid "Open"
+msgstr "開く"
+
+#: admin/theme-options.php:1631 admin/theme-options.php:1678
+#: admin/theme-options.php:1775 admin/theme-options.php:1880
+#: admin/theme-options.php:1984 admin/theme-options.php:2088
+#: admin/theme-options.php:2117
+msgid "Display this content at top page"
+msgstr "このコンテンツをトップページに表示する"
+
+#: admin/theme-options.php:1634 admin/theme-options.php:1681
+#: admin/theme-options.php:1778 admin/theme-options.php:1883
+#: admin/theme-options.php:1987 admin/theme-options.php:2091
+#: admin/theme-options.php:2120
+msgid ""
+"To make it a link to jump to this content, set URL of Custom Link in Menus "
+"to the following."
+msgstr ""
+"ページ内リンクにする場合、メニューのカスタムリンクのURL欄に下記を指定してくだ"
+"さい。"
+
+#: admin/theme-options.php:1635 admin/theme-options.php:1682
+#: admin/theme-options.php:1779 admin/theme-options.php:1884
+#: admin/theme-options.php:1988 admin/theme-options.php:2092
+#: admin/theme-options.php:2121
+msgid "ID:"
+msgstr "ID名:"
+
+#: admin/theme-options.php:1677
+msgid "Display three content boxes horizontally."
+msgstr "見出し+説明文+画像のセットを3点横並びで表示します。"
+
+#: admin/theme-options.php:1687
+#, php-format
+msgid "Box%s setting"
+msgstr "ボックス%sの設定"
+
+#: admin/theme-options.php:1696
+msgid "Recommend image size. Width:680px, Height:440px"
+msgstr "推奨画像サイズ：横幅680px、縦幅440px"
+
+#: admin/theme-options.php:1709 admin/theme-options.php:1798
+msgid "Open a URL in a new window"
+msgstr "リンク先のURLを新しいウィンドウで表示する"
+
+#: admin/theme-options.php:1782
+msgid "Showcase type"
+msgstr "ショーケースのタイプ"
+
+#: admin/theme-options.php:1801
+msgid "Font color on hover"
+msgstr "カーソルを合わせた時のフォントの色"
+
+#: admin/theme-options.php:1805
+msgid "Recommend image size. Width:565px, Max height:580px"
+msgstr "推奨画像サイズ：横幅565px、縦幅最大580px"
+
+#: admin/theme-options.php:1806
+msgid "Please register a PNG image with a transparent background."
+msgstr "背景が透明なPNG画像を設定してください。"
+
+#: admin/theme-options.php:1819
+msgid "Recommended size: width:1460px, height:1160px"
+msgstr "推奨画像サイズ：横幅1460px、縦幅1160px"
+
+#: admin/theme-options.php:1893
+msgid "Carousel slider"
+msgstr "カルーセルスライダー"
+
+#: admin/theme-options.php:1894
+msgid ""
+"The gallery content will be displayed in the form of a slider if you "
+"register more than six items."
+msgstr ""
+"6件以上登録すると、スライダー形式で表示されます。5件以下では画像が横並びで表"
+"示されます。"
+
+#: admin/theme-options.php:1895
+msgid "Display carousel slider"
+msgstr "カルーセルスライダーを表示する"
+
+#: admin/theme-options.php:1905
+msgid "Recommend image size. Width:320px or more, Height:320px or more"
+msgstr "推奨画像サイズ：横幅320px以上、縦幅320px以上"
+
+#: admin/theme-options.php:1919 admin/theme-options.php:1947
+msgid "Caption"
+msgstr "キャプション"
+
+#: admin/theme-options.php:1959
+msgid "Description under carousel slider(left)"
+msgstr "カルーセルスライダーの下の説明文（左）"
+
+#: admin/theme-options.php:1962
+msgid "Description under carousel slider(right)"
+msgstr "カルーセルスライダーの下の説明文（右）"
+
+#: admin/theme-options.php:2000 functions/review_cf.php:59
+msgid "Recommended size: width:320px, height:320px"
+msgstr "推奨画像サイズ：横幅320px、縦幅320px"
+
+#: admin/theme-options.php:2001
+msgid "Note: the image is cropped in a circle shape"
+msgstr "※円形にトリミングされます。"
+
+#: admin/theme-options.php:2099
+msgid "Display review slider"
+msgstr "レビュースライダーを表示する"
+
+#: admin/theme-options.php:2100
+msgid "Slide the article of custom post type \"review\"."
+msgstr "カスタム投稿タイプ「レビュー」の記事をスライド表示します。"
+
+#: admin/theme-options.php:2101
+msgid "Archive link"
+msgstr "アーカイブリンク"
+
+#: admin/theme-options.php:2115
+msgid "WYSIWYG editor"
+msgstr "フリースペース"
+
+#: admin/theme-options.php:2135
+msgid "Close"
+msgstr "閉じる"
+
+#: archive-news.php:65
+msgid "Next News"
+msgstr "次のニュース一覧"
+
+#: archive-review.php:43
+msgid "Read more"
+msgstr "ページを見る"
+
+#: comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"この投稿はパスワードで保護されています。<br />コメントを見るにはパスワードを"
+"入力してください。"
+
+#: comments.php:24 comments.php:29
+msgid "Comment"
+msgstr "コメント"
+
+#: comments.php:25
+msgid "Trackback"
+msgstr "トラックバック"
+
+#: comments.php:30
+msgid "Trackbacks are closed."
+msgstr "トラックバックは利用できません。"
+
+#: comments.php:43
+msgid "No comments yet."
+msgstr "この記事へのコメントはありません。"
+
+#: comments.php:63 functions.php:297 functions.php:623 functions/seo.php:128
+#: functions/seo.php:199 template-parts/breadcrumb.php:28
+msgid "F jS, Y"
+msgstr "Y年 F d日"
+
+#: comments.php:63
+msgid "[ EDIT ]"
+msgstr "[ 編集 ]"
+
+#: comments.php:66
+msgid "Trackback from: "
+msgstr "トラックバック："
+
+#: comments.php:73
+msgid "No trackbacks yet."
+msgstr "この記事へのトラックバックはありません。"
+
+#: comments.php:81
+msgid "TRACKBACK URL"
+msgstr "トラックバック URL"
+
+#: comments.php:95
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "コメントするためには、 <a href=\"%s\">ログイン</a> してください。"
+
+#: comments.php:110
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
+msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。"
+
+#: comments.php:110
+msgid "[ Log out ]"
+msgstr "[ ログアウト ]"
+
+#: comments.php:117
+msgid "NAME"
+msgstr "名前"
+
+#: comments.php:117 comments.php:120
+msgid "( required )"
+msgstr "( 必須 )"
+
+#: comments.php:120
+msgid "E-MAIL"
+msgstr "E-MAIL"
+
+#: comments.php:120
+msgid "- will not be published -"
+msgstr "※ 公開されません"
+
+#: comments.php:123
+msgid "URL"
+msgstr "URL"
+
+#: comments.php:132
+msgid "Submit Comment"
+msgstr "コメントをする"
+
+#: footer.php:9
+msgid "No more post"
+msgstr "これ以上記事はございません"
+
+#: functions.php:22
+msgid "Global menu (front page)"
+msgstr "グローバルメニュー（トップページ）"
+
+#: functions.php:23
+msgid "Global menu (sub page)"
+msgstr "グローバルメニュー（下層ページ）"
+
+#: functions.php:24
+msgid "Footer menu"
+msgstr "フッターメニュー"
+
+#: functions.php:178 pagebuilder/modules/includes/media_field.php:9
+msgid "Please Select Image"
+msgstr "画像を選択してください"
+
+#: functions.php:178 pagebuilder/modules/includes/media_field.php:10
+msgid "Use this Image"
+msgstr "この画像を利用する"
+
+#: functions.php:199
+msgid "Archive page(left)"
+msgstr "ブログアーカイブ（左）"
+
+#: functions.php:209
+msgid "Archive page(center)"
+msgstr "ブログアーカイブ（中央）"
+
+#: functions.php:219
+msgid "Archive page(right)"
+msgstr "ブログアーカイブ（右）"
+
+#: functions.php:229
+msgid "Archive page(mobile)"
+msgstr "ブログアーカイブ（スマホ）"
+
+#: functions.php:239
+msgid "Post page(left)"
+msgstr "ブログ詳細（左）"
+
+#: functions.php:249
+msgid "Post page(center)"
+msgstr "ブログ詳細（中央）"
+
+#: functions.php:259
+msgid "Post page(right)"
+msgstr "ブログ詳細（右）"
+
+#: functions.php:269
+msgid "Post page(mobile)"
+msgstr "ブログ詳細（スマホ）"
+
+#: functions.php:299 functions/seo.php:130 functions/seo.php:201
+#: template-parts/breadcrumb.php:26
+msgid "F, Y"
+msgstr "Y年 F"
+
+#: functions.php:301 functions/seo.php:132 functions/seo.php:203
+#: template-parts/breadcrumb.php:24
+msgid "Y"
+msgstr "Y年"
+
+#: functions.php:303 template-parts/breadcrumb.php:22
+msgid "Search result"
+msgstr "検索結果"
+
+#: functions.php:325
+msgid "Default style"
+msgstr "通常のスタイル"
+
+#: functions.php:326
+msgid "No border"
+msgstr "枠線無し"
+
+#: functions.php:327
+msgid "Display only horizontal border"
+msgstr "横線のみ表示する"
+
+#: functions.php:556
+#, php-format
+msgid ""
+"Failed to delete file. Please check permisson of %s. All files must be "
+"writable."
+msgstr ""
+"ファイルの削除に失敗しました。「 %s 」を書き込み可能なパーミッションに変更し"
+"てください。"
+
+#: functions.php:563
+msgid "File are successfully deleted."
+msgstr "ファイルを削除しました。"
+
+#: functions.php:574
+msgid "Uploaded file size is larger than limit set in php.ini."
+msgstr ""
+"サーバーが制限している画像サイズを超えているため、アップロードできません。"
+
+#: functions.php:577
+msgid "Uploaded file size is larget than post file size."
+msgstr "画像サイズが大きすぎます。"
+
+#: functions.php:580
+msgid ""
+"The file has been uploaded only partially. Connection error may have occured"
+msgstr "画像を正常にアップロードできませんでした。再度お試しください。"
+
+#: functions.php:583
+msgid "Uploaded file size is too large."
+msgstr "画像サイズが大きすぎます。"
+
+#: functions.php:586
+msgid "No temporary directory exists. Please check PHP Setting is valid."
+msgstr "該当するディレクトが存在しません。"
+
+#: functions.php:589
+msgid "Failed to write to disk. OS file setting or something is wrong."
+msgstr "データベースに情報を保存できませんでした。"
+
+#: functions.php:592
+msgid "PHP extension module stops uploading. Check PHP setting."
+msgstr "アップロードが途中で中断されました。PHPの設定をご確認ください。"
+
+#: functions.php:595
+msgid "Upload failed. Sorry, but reasons cannot be detected."
+msgstr "アップロードに失敗しました。原因は不明です。"
+
+#: functions.php:629 functions.php:633
+msgid "REPLY"
+msgstr "返信"
+
+#: functions.php:637
+msgid "QUOTE"
+msgstr "引用"
+
+#: functions.php:638
+msgid "EDIT"
+msgstr "編集"
+
+#: functions.php:644
+msgid "Your comment is awaiting moderation."
+msgstr "このコメントは管理者の承認を待っています。"
+
+#: functions/admin_column.php:19
+msgid "Featured Image"
+msgstr "アイキャッチ画像"
+
+#: functions/admin_column.php:31 functions/recommend.php:9
+#: widget/styled_post_list1.php:105
+msgid "Recommend post"
+msgstr "おすすめ記事"
+
+#: functions/admin_column.php:53 functions/admin_column.php:88
+#: functions/quick_edit.php:51 functions/review_cf.php:18
+msgid "Display on front page"
+msgstr "トップページに表示する"
+
+#: functions/admin_column.php:81
+msgid "Recommend post1<br />"
+msgstr "おすすめ記事1<br />"
+
+#: functions/admin_column.php:82 widget/styled_post_list1.php:106
+msgid "Recommend post2"
+msgstr "おすすめ記事2"
+
+#: functions/admin_column.php:83 widget/styled_post_list1.php:107
+msgid "Recommend post3"
+msgstr "おすすめ記事3"
+
+#: functions/cta.php:18 functions/footer-cta.php:19
+msgid "Are you sure to reset these values?"
+msgstr "これらの値をリセットしてもよろしいでしょうか？"
+
+#: functions/custom_css.php:7
+msgid "You don't need to enter &lt;style&gt; tag."
+msgstr ""
+"デザインやレイアウトを調整したい場合にご使用ください。<br />こちらに任意のCSS"
+"を登録することで、追加CSSとして読み込ませることができ、<br />テーマファイルを"
+"直接編集することなく安全にカスタマイズを行って頂けます。<br />また、こちらに"
+"登録してあるCSSはテーマのアップデート時にもリセットされることなく引き継がれま"
+"す。<br />記入例：.example { font-size:12px; }<br />&lt;style&gt;タグは不要で"
+"す。"
+
+#: functions/custom_css.php:13
+msgid "Custom CSS for this post"
+msgstr "カスタムCSS（この記事のみにCSSを適用できます）"
+
+#: functions/page_cf.php:5
+msgid "Header image for page"
+msgstr "固定ページ用ヘッダー画像"
+
+#: functions/page_cf.php:18
+msgid "Recommend image size. Width:1450px, Height:400px"
+msgstr "推奨サイズ：横幅1450px、縦幅400px"
+
+#: functions/password_form.php:15
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below:"
+msgstr ""
+"この投稿はパスワードで保護されています。<br />コメントを見るにはパスワードを"
+"入力してください。"
+
+#: functions/password_form.php:16
+msgid "Password:"
+msgstr "パスワード"
+
+#: functions/quick_edit.php:20 functions/seo.php:17
+msgid "Meta title"
+msgstr "Meta title"
+
+#: functions/quick_edit.php:24 functions/seo.php:27
+msgid "Meta description"
+msgstr "Meta description"
+
+#: functions/quick_edit.php:37 functions/recommend.php:21
+msgid "Show this post for recommend post."
+msgstr "おすすめ記事1"
+
+#: functions/quick_edit.php:38 functions/recommend.php:24
+msgid "Show this post for recommend post2."
+msgstr "おすすめ記事2"
+
+#: functions/quick_edit.php:39 functions/recommend.php:27
+msgid "Show this post for recommend post3."
+msgstr "おすすめ記事3"
+
+#: functions/recommend.php:18
+msgid "Check if you want to show this post for recommend post."
+msgstr ""
+"おすすめ記事（ウィジェットで使用）に設定するには、チェックを入れてください。"
+
+#: functions/review_cf.php:5
+msgid "Settings for review page"
+msgstr "レビューページの設定"
+
+#: functions/review_cf.php:28
+msgid "Display link button to this post in archive page"
+msgstr "アーカイブページにこの投稿へのリンクボタンを表示する"
+
+#: functions/review_cf.php:38 pagebuilder/modules/tab.php:295
+msgid "Name"
+msgstr "名前"
+
+#: functions/review_cf.php:48
+msgid "Job"
+msgstr "職業"
+
+#: functions/review_cf.php:58
+msgid "Portrait"
+msgstr "人物画像"
+
+#: functions/seo.php:11
+msgid "Meta title and description"
+msgstr "meta title と meta description"
+
+#: functions/seo.php:18
+msgid "Enter meta title here."
+msgstr "meta title を入力してください"
+
+#: functions/seo.php:28
+msgid "Enter meta description here."
+msgstr "meta description を入力してください（推奨文字数：124文字以内）"
+
+#: functions/seo.php:54
+msgid "word count:"
+msgstr "現在の文字数："
+
+#: functions/seo.php:122 functions/seo.php:124 functions/seo.php:126
+#: functions/seo.php:209
+#, php-format
+msgid "Post list for %s"
+msgstr "%sに関する記事一覧"
+
+#: functions/seo.php:128 functions/seo.php:130 functions/seo.php:132
+#: functions/seo.php:136 functions/seo.php:199 functions/seo.php:201
+#: functions/seo.php:203 functions/seo.php:207
+#, php-format
+msgid "Archive for %s"
+msgstr "%sの記事一覧"
+
+#: index.php:65
+msgid "Next Blog"
+msgstr "次のブログ一覧"
+
+#: page.php:16
+msgid "Page"
+msgstr "固定ページ"
+
+#: pagebuilder/modules/catchcopy.php:50 pagebuilder/modules/googlemap.php:192
+#: pagebuilder/modules/googlemap.php:243 pagebuilder/modules/headline.php:50
+#: pagebuilder/modules/tab.php:595 pagebuilder/modules/tab.php:646
+msgid "Font size for mobile"
+msgstr "フォントサイズ（スマホ）"
+
+#: pagebuilder/modules/catchcopy.php:60 pagebuilder/modules/googlemap.php:200
+#: pagebuilder/modules/googlemap.php:251 pagebuilder/modules/headline.php:60
+#: pagebuilder/modules/tab.php:603 pagebuilder/modules/tab.php:654
+msgid "Font family"
+msgstr "フォントタイプ"
+
+#: pagebuilder/modules/catchcopy.php:80 pagebuilder/modules/googlemap.php:216
+#: pagebuilder/modules/googlemap.php:267 pagebuilder/modules/headline.php:80
+#: pagebuilder/modules/tab.php:619 pagebuilder/modules/tab.php:670
+msgid "Text align"
+msgstr "フォントの整列"
+
+#: pagebuilder/modules/catchcopy.php:83 pagebuilder/modules/googlemap.php:89
+#: pagebuilder/modules/headline.php:83 pagebuilder/modules/tab.php:562
+msgid "Align left"
+msgstr "左寄せ"
+
+#: pagebuilder/modules/catchcopy.php:84 pagebuilder/modules/googlemap.php:90
+#: pagebuilder/modules/headline.php:84 pagebuilder/modules/tab.php:563
+msgid "Align center"
+msgstr "中央寄せ"
+
+#: pagebuilder/modules/catchcopy.php:85 pagebuilder/modules/googlemap.php:91
+#: pagebuilder/modules/headline.php:85 pagebuilder/modules/tab.php:564
+msgid "Align right"
+msgstr "右寄せ"
+
+#: pagebuilder/modules/catchcopy.php:117 pagebuilder/modules/editor.php:68
+#: pagebuilder/modules/googlemap.php:353 pagebuilder/modules/headline.php:117
+#: pagebuilder/modules/image.php:92 pagebuilder/modules/slider.php:186
+#: pagebuilder/modules/tab.php:866
+msgid "Margin setting"
+msgstr "スペースの設定"
+
+#: pagebuilder/modules/catchcopy.php:119 pagebuilder/modules/editor.php:70
+#: pagebuilder/modules/googlemap.php:355 pagebuilder/modules/headline.php:119
+#: pagebuilder/modules/image.php:94 pagebuilder/modules/slider.php:188
+#: pagebuilder/modules/tab.php:868
+msgid "Margin bottom"
+msgstr "下のスペース"
+
+#: pagebuilder/modules/catchcopy.php:121 pagebuilder/modules/catchcopy.php:126
+#: pagebuilder/modules/editor.php:72 pagebuilder/modules/editor.php:77
+#: pagebuilder/modules/googlemap.php:357 pagebuilder/modules/googlemap.php:362
+#: pagebuilder/modules/headline.php:121 pagebuilder/modules/headline.php:126
+#: pagebuilder/modules/image.php:96 pagebuilder/modules/image.php:101
+#: pagebuilder/modules/slider.php:190 pagebuilder/modules/slider.php:195
+#: pagebuilder/modules/tab.php:870 pagebuilder/modules/tab.php:875
+msgid "Space below the content.<br />Default is 30px."
+msgstr "コンテンツの下に空けるスペース。<br />初期設定では30pxです。"
+
+#: pagebuilder/modules/catchcopy.php:124 pagebuilder/modules/editor.php:75
+#: pagebuilder/modules/googlemap.php:360 pagebuilder/modules/headline.php:124
+#: pagebuilder/modules/image.php:99 pagebuilder/modules/slider.php:193
+#: pagebuilder/modules/tab.php:873
+msgid "Margin bottom for mobile"
+msgstr "下のスペース（スマートフォン用）"
+
+#: pagebuilder/modules/editor.php:11 pagebuilder/modules/tab.php:326
+msgid "Sentence"
+msgstr "文章"
+
+#: pagebuilder/modules/googlemap.php:11
+msgid "Google Map"
+msgstr "Googleマップ"
+
+#: pagebuilder/modules/googlemap.php:96
+msgid "Google Maps type"
+msgstr "Googleマップのタイプ"
+
+#: pagebuilder/modules/googlemap.php:99
+msgid "Use Google map iframe code"
+msgstr "Googleマップのiframeコードを使う"
+
+#: pagebuilder/modules/googlemap.php:100 pagebuilder/modules/googlemap.php:120
+msgid "Use TCD Google Maps plugin"
+msgstr "TCD Google Mapsプラグインを使う"
+
+#: pagebuilder/modules/googlemap.php:115
+msgid "Google map iframe code"
+msgstr "Googleマップのiframeコード"
+
+#: pagebuilder/modules/googlemap.php:125
+msgid "Overlay text setting"
+msgstr "地図に重ねて表示するオーバーレイテキストの設定"
+
+#: pagebuilder/modules/googlemap.php:126
+msgid "You can display the background color and text overlaid on the map."
+msgstr "地図と一緒に住所や電話番号等のテキスト情報を表示することができます。"
+
+#: pagebuilder/modules/googlemap.php:128
+msgid "Display overlay text"
+msgstr "オーバーレイテキストを表示する"
+
+#: pagebuilder/modules/googlemap.php:132
+msgid "Overlay text layout"
+msgstr "レイアウト"
+
+#: pagebuilder/modules/googlemap.php:135
+msgid "Type1 (display text contents on the left side)"
+msgstr "タイプ1（テキスト：左）"
+
+#: pagebuilder/modules/googlemap.php:136
+msgid "Type2 (display text contents on the right side)"
+msgstr "タイプ2（テキスト：右）"
+
+#: pagebuilder/modules/googlemap.php:151
+msgid "Google map layout"
+msgstr "地図の表示幅"
+
+#: pagebuilder/modules/googlemap.php:154
+msgid "Full width"
+msgstr "フル幅"
+
+#: pagebuilder/modules/googlemap.php:155
+msgid "Half width"
+msgstr "1/2幅"
+
+#: pagebuilder/modules/googlemap.php:170
+msgid "Overlay background color"
+msgstr "テキストの背景色"
+
+#: pagebuilder/modules/googlemap.php:174
+msgid "Transparency"
+msgstr "背景色の透明度"
+
+#: pagebuilder/modules/googlemap.php:177
+msgid "Please enter the number 0 - 1.0. (e.g. 0.5)"
+msgstr ""
+"透明度の数値を0（完全に透明）～1.0（完全に不透明）の範囲で設定してください。"
+"（初期値：0.5）"
+
+#: pagebuilder/modules/googlemap.php:286
+msgid "Button Settings"
+msgstr "ボタンの設定"
+
+#: pagebuilder/modules/googlemap.php:290
+msgid "Button text"
+msgstr "ボタンラベル"
+
+#: pagebuilder/modules/googlemap.php:310
+msgid "Background color transparency"
+msgstr "背景色の透明度"
+
+#: pagebuilder/modules/googlemap.php:318
+msgid "Font color (hover)"
+msgstr "ボタンにカーソルを合わせた時のフォントの色"
+
+#: pagebuilder/modules/googlemap.php:322
+msgid "Background color (hover)"
+msgstr "ボタンにカーソルを合わせた時の背景色"
+
+#: pagebuilder/modules/googlemap.php:326
+msgid "Background color transparency (hover)"
+msgstr "ボタンにカーソルを合わせた時の背景色の透明度"
+
+#: pagebuilder/modules/googlemap.php:330
+msgid "Border color (hover)"
+msgstr "ボタンにカーソルを合わせた時の枠線の色"
+
+#: pagebuilder/modules/image.php:42
+msgid "Image size"
+msgstr "画像のサイズ"
+
+#: pagebuilder/modules/image.php:47
+msgid "Thumbnail size"
+msgstr "サムネイルサイズ"
+
+#: pagebuilder/modules/image.php:48
+msgid "Medium size"
+msgstr "中サイズ"
+
+#: pagebuilder/modules/image.php:49
+msgid "Large size"
+msgstr "大サイズ"
+
+#: pagebuilder/modules/image.php:50
+msgid "Full size"
+msgstr "フルサイズ"
+
+#: pagebuilder/modules/image.php:64 pagebuilder/modules/slider.php:155
+msgid "Link URL for image"
+msgstr "リンク先のURL"
+
+#: pagebuilder/modules/image.php:69 pagebuilder/modules/slider.php:160
+msgid "Link target"
+msgstr "リンク先のURLを新しいウィンドウで表示する"
+
+#: pagebuilder/modules/image.php:71 pagebuilder/modules/slider.php:162
+msgid "Use target blank for this link"
+msgstr "リンク先のURLを新しいウィンドウで表示する"
+
+#: pagebuilder/modules/includes/media_field.php:11
+msgid "Please Select Video"
+msgstr "動画ファイルを選択してください"
+
+#: pagebuilder/modules/includes/media_field.php:12
+msgid "Use this Video"
+msgstr "この動画ファイルを利用する"
+
+#: pagebuilder/modules/slider.php:18
+msgid "Slider"
+msgstr "スライダー"
+
+#: pagebuilder/modules/slider.php:19
+msgid "You can display gallery slider."
+msgstr "画像スライダーを表示する事ができます。"
+
+#: pagebuilder/modules/slider.php:140 pagebuilder/modules/tab.php:289
+#: pagebuilder/modules/tab.php:572 pagebuilder/modules/tab.php:814
+msgid "Are you sure you want to delete this item?"
+msgstr "このアイテムを削除してもよろしいでしょうか？"
+
+#: pagebuilder/modules/tab.php:12
+msgid "Tab"
+msgstr "タブ"
+
+#: pagebuilder/modules/tab.php:13
+msgid "You can display content using tab."
+msgstr "タブを使ったコンテンツを表示する事ができます。"
+
+#: pagebuilder/modules/tab.php:139
+msgid "Tab design"
+msgstr "タブのデザインを選択"
+
+#: pagebuilder/modules/tab.php:142
+msgid ""
+"Type 1 (Background color: White fixed, Border: Yes, Arrangement of tab: Left)"
+msgstr "タイプ1（背景色：白固定、枠線：あり、タブの配置：左寄せ）"
+
+#: pagebuilder/modules/tab.php:143
+msgid ""
+"Type 2 (background color: any color, border line: none, arrangement of tabs: "
+"even)"
+msgstr "タイプ2（背景色：任意の色、枠線：なし、タブの配置：均等）"
+
+#: pagebuilder/modules/tab.php:158
+msgid "Tab color"
+msgstr "タブの色"
+
+#: pagebuilder/modules/tab.php:172
+msgid "Active tab color"
+msgstr "選択中のタブの色の設定"
+
+#: pagebuilder/modules/tab.php:300
+msgid "Content Type"
+msgstr "コンテンツタイプ"
+
+#: pagebuilder/modules/tab.php:303
+msgid "Text only"
+msgstr "テキストのみ"
+
+#: pagebuilder/modules/tab.php:304
+msgid "Image + text (you can add items)"
+msgstr "画像+テキスト（項目追加仕様）"
+
+#: pagebuilder/modules/tab.php:305
+msgid "Image gallery (you can add items)"
+msgstr "画像ギャラリー（項目追加仕様）"
+
+#: pagebuilder/modules/tab.php:306
+msgid "Video / Youtube"
+msgstr "動画 / Youtube"
+
+#: pagebuilder/modules/tab.php:355
+msgid "Video type"
+msgstr "表示する動画の種類"
+
+#: pagebuilder/modules/tab.php:358 pagebuilder/modules/tab.php:375
+msgid "Video upload"
+msgstr "動画ファイル（MP4形式の動画ファイル）"
+
+#: pagebuilder/modules/tab.php:359
+msgid "Youtube / oEmbed"
+msgstr "Youtube動画のURL"
+
+#: pagebuilder/modules/tab.php:360 pagebuilder/modules/tab.php:397
+msgid "Embed code"
+msgstr "その他の埋め込みコード（Googleマップのiframeコードにも対応しています）"
+
+#: pagebuilder/modules/tab.php:384
+msgid "oEmbed url"
+msgstr "Youtube動画ページのURL"
+
+#: pagebuilder/modules/tab.php:392
+#, php-format
+msgid ""
+"Please enter the media URL of<a href=\"%s\" target=\"_blank\">oEmbed-"
+"compatible site</a>supported by WordPress such as Youtube"
+msgstr ""
+"Youtube等のWordPressがサポートしている<a href=\"%s\">oEmbed 対応サイト</a>の"
+"動画ページのURLを入力してください"
+
+#: pagebuilder/modules/tab.php:403
+msgid "Navigation color"
+msgstr "ナビゲーションボタンの色"
+
+#: pagebuilder/modules/tab.php:417
+msgid "Active navigation color"
+msgstr "選択中のナビゲーションボタンの色"
+
+#: pagebuilder/modules/tab.php:431
+msgid "Tab caption"
+msgstr "タブキャプション"
+
+#: pagebuilder/modules/tab.php:689
+msgid "Background Color"
+msgstr "背景色"
+
+#: pagebuilder/modules/tab.php:829
+msgid "Image caption"
+msgstr "画像の説明文（キャプション）"
+
+#: pagebuilder/pagebuilder.php:89
+msgid "Page Builder"
+msgstr "ページビルダー"
+
+#: pagebuilder/pagebuilder.php:148
+msgid "Revert to Editor"
+msgstr "通常のエディタに戻る"
+
+#: pagebuilder/pagebuilder.php:149 pagebuilder/pagebuilder.php:155
+msgid "Please click Add row button to start page builder."
+msgstr "「行の追加」をクリックして行を追加してください。"
+
+#: pagebuilder/pagebuilder.php:150 pagebuilder/pagebuilder.php:181
+msgid "Add row"
+msgstr "行を追加する"
+
+#: pagebuilder/pagebuilder.php:182
+msgid "Add"
+msgstr "追加"
+
+#: pagebuilder/pagebuilder.php:232
+msgid "Edit row"
+msgstr "行を編集する"
+
+#: pagebuilder/pagebuilder.php:233 pagebuilder/pagebuilder.php:449
+msgid ""
+"Do you want to delete this row?\n"
+"If you delete this row, registered contents will also be deleted."
+msgstr ""
+"この行を削除しますか？\n"
+"コンテンツが含まれる場合はコンテンツも削除されます。"
+
+#: pagebuilder/pagebuilder.php:233
+msgid "Delete row"
+msgstr "行を削除する"
+
+#: pagebuilder/pagebuilder.php:380 pagebuilder/pagebuilder.php:654
+msgid "Clone"
+msgstr "複製する"
+
+#: pagebuilder/pagebuilder.php:381 pagebuilder/pagebuilder.php:653
+msgid "Do you want to delete this content?"
+msgstr "このコンテンツを削除してもよろしいでしょうか？"
+
+#: pagebuilder/pagebuilder.php:411
+msgid "Row setting"
+msgstr "行の設定"
+
+#: pagebuilder/pagebuilder.php:412 pagebuilder/pagebuilder.php:615
+msgid "Done"
+msgstr "完了"
+
+#: pagebuilder/pagebuilder.php:458
+msgid "Number of column"
+msgstr "カラムの数"
+
+#: pagebuilder/pagebuilder.php:486
+msgid "Layout setting"
+msgstr "レイアウトの設定"
+
+#: pagebuilder/pagebuilder.php:489
+msgid "Margin bottom of the row"
+msgstr "行の下のスペース"
+
+#: pagebuilder/pagebuilder.php:491 pagebuilder/pagebuilder.php:497
+msgid "Space below the row.<br />Default is 30px."
+msgstr "行の下に空けるスペース。<br />初期設定では30pxです。"
+
+#: pagebuilder/pagebuilder.php:495
+msgid "Margin bottom of the row for mobile"
+msgstr "行の下のスペース（スマートフォン用）"
+
+#: pagebuilder/pagebuilder.php:501
+msgid "Gutter"
+msgstr "カラム間のスペース"
+
+#: pagebuilder/pagebuilder.php:503 pagebuilder/pagebuilder.php:509
+msgid "Amount of space between columns.<br />Default is 30px."
+msgstr "カラムとカラムの間に空けるスペース。<br />初期設定では30pxです。"
+
+#: pagebuilder/pagebuilder.php:507
+msgid "Gutter  for mobile"
+msgstr "モバイルガッター"
+
+#: pagebuilder/pagebuilder.php:518
+msgid "Row width"
+msgstr "行の横幅"
+
+#: pagebuilder/pagebuilder.php:520
+msgid ""
+"Please register the <strong>px</strong> of width if you want to change the "
+"width of this row.<br /><br />If you registered the width, the row will be "
+"center aligned."
+msgstr ""
+"任意の数字を指定することによって行の横幅を変更することが出来ます。<br /><br /"
+">横幅を指定した場合、行の配置は中央に配置されます。"
+
+#: pagebuilder/pagebuilder.php:524
+msgid "Layout of column at mobile device."
+msgstr "スマートフォンでの表示方法"
+
+#: pagebuilder/pagebuilder.php:528
+msgid "Display vertically"
+msgstr "横並びの状態を解除する"
+
+#: pagebuilder/pagebuilder.php:529
+msgid "Keep in horizontal"
+msgstr "横並びの状態を保つ"
+
+#: pagebuilder/pagebuilder.php:543
+msgid "Splitting contents"
+msgstr "ページ分割"
+
+#: pagebuilder/pagebuilder.php:545
+msgid "Display this row at next page."
+msgstr "ページ分割"
+
+#: pagebuilder/pagebuilder.php:561
+msgid "Select the content"
+msgstr "コンテンツを選択してください"
+
+#: pagebuilder/pagebuilder.php:611
+msgid " setting"
+msgstr "の設定"
+
+#: single-news.php:49 single.php:66
+msgid "Previous post"
+msgstr "前の記事"
+
+#: single-news.php:56 single.php:73
+msgid "Next post"
+msgstr "次の記事"
+
+#: single-review.php:37
+msgid "Back to archive page"
+msgstr "一覧ページに戻る"
+
+#: single.php:49
+msgid "Author"
+msgstr "投稿者"
+
+#: single.php:52
+msgid "Comments"
+msgstr "コメント"
+
+#: single.php:91
+msgid "Related posts"
+msgstr "関連記事一覧"
+
+#: single.php:115
+msgid "No related posts."
+msgstr "関連記事はありません。"
+
+#: template-parts/breadcrumb.php:16 template-parts/breadcrumb.php:30
+#: template-parts/breadcrumb.php:56
+msgid "BLOG"
+msgstr "ブログ"
+
+#: template-parts/breadcrumb.php:76
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "お探しのページは見つかりませんでした。"
+
+#: widget/ad.php:10
+msgid "AdSense (tcd ver)"
+msgstr "広告 （tcd バージョン）"
+
+#: widget/ad.php:13
+msgid "Show AdSense at random in front page."
+msgstr "登録された広告から１つだけランダムに表示します。"
+
+#: widget/ad.php:71
+msgid "One out of three AdSense will be displayed at random in front page."
+msgstr "登録された広告から１つだけランダムに表示します。"
+
+#: widget/ad.php:74
+msgid "AdSense"
+msgstr "広告"
+
+#: widget/ad.php:77
+msgid "Register AdSense code"
+msgstr "リンク先URLを登録する"
+
+#: widget/ad.php:78
+msgid ""
+"If you are using Google AdSense or similar kind of AdSense, enter all code "
+"below."
+msgstr "HTMLコードをご利用の場合は、そのまま以下に登録してください。"
+
+#: widget/ad.php:81
+msgid ""
+"If you want to register banner image and affiliate code individually, leave "
+"the field above blank and use the field below."
+msgstr ""
+"画像とアフィリエイトコードを別々に登録したい場合は、上の入力欄を空欄にして下"
+"の入力欄をご利用ください。"
+
+#: widget/ad.php:83
+msgid "Register AdSense image"
+msgstr "画像を登録する"
+
+#: widget/ad.php:100
+msgid "Register affiliate code or link url for registered image"
+msgstr ""
+"登録した画像に対するアフィリエイトコードもしくはリンクURLを登録してください"
+
+#: widget/archive_list.php:10
+msgid "Archive list (tcd ver)"
+msgstr "アーカイブ一覧 （tcd バージョン）"
+
+#: widget/archive_list.php:13
+msgid "Displays designed archive dropdown menu."
+msgstr "アーカイブ一覧（ドロップダウン）を表示します。"
+
+#: widget/archive_list.php:45 widget/category_list.php:86
+#: widget/google_search.php:51 widget/styled_post_list1.php:98
+msgid "Title:"
+msgstr "タイトル："
+
+#: widget/category_list.php:10
+msgid "Category list (tcd ver)"
+msgstr "カテゴリー一覧 （tcd バージョン）"
+
+#: widget/category_list.php:13
+msgid "Displays designed category list."
+msgstr "デザインされたカテゴリー一覧を表示します。"
+
+#: widget/category_list.php:38
+msgid "Select category"
+msgstr "カテゴリーを選択"
+
+#: widget/category_list.php:90
+msgid "Categories To Exclude:"
+msgstr "除外するカテゴリー："
+
+#: widget/category_list.php:92
+msgid ""
+"Enter a comma-seperated list of category ID numbers, example 2,4,10<br /"
+">(Don't enter comma for last number)."
+msgstr ""
+"除外したいカテゴリーのIDをカンマを入れて入力してください。例：2,4,10<br /"
+">（注意：最後の数字にはカンマを入力しないでください）"
+
+#: widget/google_search.php:10
+msgid "Google Custom Search (tcd ver)"
+msgstr "Googleカスタム検索（tcdバージョン）"
+
+#: widget/google_search.php:13
+msgid "Displays Google Custom Search form."
+msgstr "Google カスタム検索を利用する"
+
+#: widget/google_search.php:46
+msgid "Search"
+msgstr "検索"
+
+#: widget/google_search.php:49
+msgid ""
+"If you want to use google custom search for your WordPress, enter your "
+"google custom search ID.<br><a href=\"http://www.google.com/cse/\" target="
+"\"_blank\">Read more about Google custom search page.</a>"
+msgstr ""
+"もし、Googleカスタム検索をサイト内検索として利用したい場合は、Googleカスタム"
+"検索IDを入力してください。<a href=\"http://www.google.com/cse/\" target="
+"\"_blank\">Googleカスタム検索についてはこちらをご参照ください。</a>"
+
+#: widget/google_search.php:55
+msgid "Google custom search ID"
+msgstr "Googleカスタム検索ID"
+
+#: widget/styled_post_list1.php:10
+msgid "Styled post list (tcd ver)"
+msgstr "デザインされた記事一覧 （tcd バージョン）"
+
+#: widget/styled_post_list1.php:13
+msgid "Displays styled post list."
+msgstr "デザインされた記事一覧を表示します。"
+
+#: widget/styled_post_list1.php:83
+msgid "There is no registered post."
+msgstr "登録されている記事はございません。"
+
+#: widget/styled_post_list1.php:102
+msgid "Post type:"
+msgstr "記事のタイプ："
+
+#: widget/styled_post_list1.php:104
+msgid "Recent post"
+msgstr "最近の記事"
+
+#: widget/styled_post_list1.php:111
+msgid "Number of post:"
+msgstr "表示する記事の数："
+
+#: widget/styled_post_list1.php:121
+msgid "Post order:"
+msgstr "記事の表示順："
+
+#~ msgid "Page %s"
+#~ msgstr "ページ %s"
+
+#~ msgid "Select an Image"
+#~ msgstr "画像を選択する"
+
+#~ msgid "Use Image"
+#~ msgstr "この画像を利用する"
+
+#~ msgid "In singular page, featured image is displayed in page header."
+#~ msgstr "記事詳細ではアイキャッチ画像がヘッダーエリアに表示されます。"
+
+#~ msgid "Recommend image size. Width:1800px, Height:1400px"
+#~ msgstr "推奨画像サイズ：横幅1800px、縦幅1400px"
+
+#, fuzzy
+#~| msgid "Conversion rate"
+#~ msgid "Conversion Rate"
+#~ msgstr "コンバージョン率"
+
+#~ msgid "Use in random display"
+#~ msgstr "ランダム表示で使用する"
+
+#~ msgid "Reset CTA-%s values"
+#~ msgstr "CTA-%s をリセットする"
+
+#~ msgid "Content"
+#~ msgstr "コンテンツ"
+
+#~ msgid "Content1"
+#~ msgstr "コンテンツ1"
+
+#~ msgid "Content2"
+#~ msgstr "コンテンツ2"
+
+#~ msgid "Content3"
+#~ msgstr "コンテンツ3"
+
+#, fuzzy
+#~| msgid "Select Image"
+#~ msgid "Select image"
+#~ msgstr "画像を選択する"
+
+#, fuzzy
+#~| msgid "Remove Image"
+#~ msgid "Remove image"
+#~ msgstr "画像を削除する"
+
+#, fuzzy
+#~| msgid "Image"
+#~ msgid "image"
+#~ msgstr "画像"
+
+#, fuzzy
+#~| msgid "Image for mobile"
+#~ msgid "image for mobile"
+#~ msgstr "画像（スマホ用）"
+
+#~ msgid "Opacity of overlay (min: 0, max: 1.0)"
+#~ msgstr "画像の上に重ねる色の透過率（最小値: 0、最大値: 1.0）"
+
+#~ msgid "Icon"
+#~ msgstr "アイコン"
+
+#~ msgid "Column"
+#~ msgstr "カラム"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Title"
+#~ msgstr "タイトル："
+
+#, fuzzy
+#~| msgid "Number of column"
+#~ msgid "Number of comparison columns"
+#~ msgstr "カラムの数"
+
+#, fuzzy
+#~| msgid "Column"
+#~ msgid "column"
+#~ msgstr "カラム"
+
+#, fuzzy
+#~| msgid "Column"
+#~ msgid "Column name"
+#~ msgstr "カラム"
+
+#~ msgid "Check"
+#~ msgstr "チェック"
+
+#, fuzzy
+#~| msgid "Link button"
+#~ msgid "Link URL for button"
+#~ msgstr "リンクボタン"
+
+#~ msgid "Font size of catchphrase."
+#~ msgstr "キャッチフレーズのフォントサイズ"
+
+#~ msgid "Font size of description."
+#~ msgstr "説明文のフォントサイズ"
+
+#~ msgid "If you want enter 0, please leave the field blank."
+#~ msgstr "0pxにしたい場合は、入力欄を空欄にしてください。"
+
+#~ msgid "Edit"
+#~ msgstr "編集"
+
+#~ msgid "Gothic"
+#~ msgstr "ゴシック体"
+
+#~ msgid "Mincho"
+#~ msgstr "明朝体"
+
+#~ msgid " millisecond"
+#~ msgstr " ミリ秒"
+
+#~ msgid "Contact form"
+#~ msgstr "お問い合わせフォーム"
+
+#~ msgid "You can drag and drop to rearrange the order of contents."
+#~ msgstr "ドラッグ&ドロップでコンテンツの並び替えが可能です。"
+
+#~ msgid "4 second"
+#~ msgstr "4秒"
+
+#~ msgid "5 second"
+#~ msgstr "5秒"
+
+#~ msgid "6 second"
+#~ msgstr "6秒"
+
+#~ msgid "7 second"
+#~ msgstr "7秒"
+
+#~ msgid "8 second"
+#~ msgstr "8秒"
+
+#~ msgid "9 second"
+#~ msgstr "9秒"
+
+#~ msgid "10 second"
+#~ msgstr "10秒"
+
+#~ msgid "300 millisecond"
+#~ msgstr "300ミリ秒"
+
+#~ msgid "400 millisecond"
+#~ msgstr "400ミリ秒"
+
+#~ msgid "500 millisecond"
+#~ msgstr "500ミリ秒"
+
+#~ msgid "600 millisecond"
+#~ msgstr "600ミリ秒"
+
+#~ msgid "700 millisecond"
+#~ msgstr "700ミリ秒"
+
+#~ msgid "800 millisecond"
+#~ msgstr "800ミリ秒"
+
+#~ msgid "900 millisecond"
+#~ msgstr "900ミリ秒"
+
+#~ msgid "1000 millisecond"
+#~ msgstr "1000ミリ秒"
+
+#~ msgid "You uploaded %s but allowed file format is PNG, GIF and JPG."
+#~ msgstr ""
+#~ "あなたは%sをアップロードしました。<br />アップロードできるファイル形式は、"
+#~ "gif, jpg, png の３種類のみになります。"
+
+#~ msgid "Save Image"
+#~ msgstr "画像を保存"
+
+#~ msgid "Are you sure to delete this image?"
+#~ msgstr "登録した画像を削除してもよろしいでしょうか？"
+
+#~ msgid "Delete Image"
+#~ msgstr "画像を削除する"
+
+#~ msgid "Recommend image size. Width:665px, Height:520px"
+#~ msgstr "推奨サイズ画像：横幅665px、縦幅520px"
+
+#~ msgid "Recommend image size. Width:560px or more, Height:445px or more"
+#~ msgstr "推奨画像サイズ：横幅560px以上、縦幅445px以上"
+
+#~ msgid "Page header settings"
+#~ msgstr "ページヘッダーの設定"
+
+#~ msgid "Font size of headline"
+#~ msgstr "見出しのフォントサイズ"
+
+#~ msgid "Font color of headline"
+#~ msgstr "見出しのフォントの色"
+
+#~ msgid "Dropshadow of headline"
+#~ msgstr "見出しのドロップシャドウ"
+
+#~ msgid "Enter \"0\" if you don't want to use dropshadow."
+#~ msgstr ""
+#~ "ドロップシャドウ（影）を付けたくない場合は、「0」pxと入力してください。"
+
+#~ msgid "Sub title"
+#~ msgstr "サブタイトル"
+
+#~ msgid "Font size of sub title"
+#~ msgstr "サブタイトルのフォントサイズ"
+
+#~ msgid "Recommend image size. Width:1450px, Height:860px"
+#~ msgstr "推奨画像サイズ：横幅1450px、縦幅860px"
+
+#~ msgid "Recommend image size. Width:1450px, Height:360px"
+#~ msgstr "推奨画像サイズ：横幅1450px、縦幅360px"
+
+#~ msgid "Leave this field blank if you don't want to use link at image."
+#~ msgstr "画像にリンクを付けたくない場合は空欄にしてください。"
+
+#~ msgid "Show header button"
+#~ msgstr "ヘッダー円形ボタンを表示する"
+
+#~ msgid ""
+#~ "Display a circular button at the center of the header content area. Click "
+#~ "the button to scroll to the top of the main content."
+#~ msgstr ""
+#~ "ヘッダーコンテンツエリアの中央に円形ボタンを表示します。ボタンをクリックす"
+#~ "るとメインコンテンツの先頭位置にスクロール移動します。"
+
+#~ msgid "Image for header button"
+#~ msgstr "ヘッダー円形ボタンのタイトル画像"
+
+#~ msgid "Header button title"
+#~ msgstr "ヘッダー円形ボタンのタイトル"
+
+#~ msgid "Font size for header button title"
+#~ msgstr "ヘッダー円形ボタンタイトルのフォントサイズ"
+
+#~ msgid "Header button text"
+#~ msgstr "ヘッダー円形ボタンのテキスト"
+
+#~ msgid "Font size for header button text"
+#~ msgstr "ヘッダー円形ボタンテキストのフォントサイズ"
+
+#~ msgid "Diameter of header button"
+#~ msgstr "ヘッダー円形ボタンの直径"
+
+#~ msgid "Default value: "
+#~ msgstr "初期値："
+
+#~ msgid "Diameter of header button for mobile"
+#~ msgstr "ヘッダー円形ボタンの直径（スマホ）"
+
+#~ msgid "News archive"
+#~ msgstr "ニュース一覧"
+
+#~ msgid "Blog archive"
+#~ msgstr "ブログ一覧"
+
+#~ msgid "Slider image"
+#~ msgstr "スライダーの画像"
+
+#~ msgid "Global menu"
+#~ msgstr "グローバルメニュー"
+
+#~ msgid "News content"
+#~ msgstr "お知らせコンテンツ"
+
+#~ msgid "Number of news"
+#~ msgstr "ニュースの数"
+
+#~ msgid "Button for news archive page"
+#~ msgstr "ニュースアーカイブページボタン"
+
+#~ msgid "Display button for news archive page"
+#~ msgstr "ボタンを表示する"
+
+#~ msgid "Blog content"
+#~ msgstr "ブログコンテンツ"
+
+#~ msgid "Number of blog"
+#~ msgstr "ブログ記事の数"
+
+#~ msgid "Button for blog archive page"
+#~ msgstr "ブログアーカイブページボタン"
+
+#~ msgid "Display button for blog archive page"
+#~ msgstr "ボタンを表示する"
+
+#~ msgid "Content4"
+#~ msgstr "コンテンツ4"
+
+#~ msgid "Recommended image size. Width:725px, Height:420px"
+#~ msgstr "推奨画像サイズ：横幅725px、縦幅420px"
+
+#~ msgid "If it is blank, the button is not displayed."
+#~ msgstr "空欄の場合、ボタンは表示されません。"
+
+#~ msgid "Font size of sub title."
+#~ msgstr "説め"
+
+#~ msgid "Header catchphrase"
+#~ msgstr "ヘッダーのキャッチフレーズ"
+
+#~ msgid "Font size of post page"
+#~ msgstr "記事詳細ページのフォントサイズ"
+
+#~ msgid "Settings for front page, archive page and post page"
+#~ msgstr "トップページ・アーカイブページ・記事詳細ページ共通の設定"
+
+#~ msgid "Page navigation setting"
+#~ msgstr "次の記事、前の記事リンクの設定"
+
+#~ msgid "Please enter the label of pagenation."
+#~ msgstr ""
+#~ "ギャラリー詳細ページの次の記事、前の記事リンク（ページ送り）に表示する文字"
+#~ "を設定します。"
+
+#~ msgid "Next page link"
+#~ msgstr "次のページリンク"
+
+#~ msgid "Previous page link"
+#~ msgstr "前のページリンク"
+
+#~ msgid "Color of header"
+#~ msgstr "ヘッダーバーの色の設定"
+
+#~ msgid "Background color setting (Top page)"
+#~ msgstr "ヘッダーバーの色の設定（トップページ）"
+
+#~ msgid "Color of header (Top page when scrolling and sub page)"
+#~ msgstr "ヘッダーバーの色の設定（トップページスクロール後・下層ページ）"
+
+#~ msgid "Prev"
+#~ msgstr "前の記事"
+
+#~ msgid "Next"
+#~ msgstr "次の記事"
+
+#~ msgid "This banner will be displayed under post title."
+#~ msgstr "この広告は記事ページのタイトル下に表示されます。"
+
+#~ msgid "Top banner"
+#~ msgstr "上部"
+
+#~ msgid "Bottom banner"
+#~ msgstr "下部"
+
+#~ msgid "Trackback are closed"
+#~ msgstr "トラックバックは利用できません。"
+
+#~ msgid "Trackback from : "
+#~ msgstr "トラックバック："
+
+#~ msgid "Log out of this account"
+#~ msgstr "ログアウトする。"
+
+#~ msgid "Comments content"
+#~ msgstr "コメント内容"
+
+#~ msgid "Font size for catchphrase"
+#~ msgstr "キャッチフレーズのフォントサイズ"
+
+#~ msgid "Next Gallery"
+#~ msgstr "次のギャラリー一覧"
+
+#~ msgid "Recommended size: width:300px, height:300px"
+#~ msgstr "推奨画像サイズ：横幅300px、縦幅300px"
+
+#~ msgid "Fixed"
+#~ msgstr "固定"
+
+#~ msgid "Type of footer gallery"
+#~ msgstr "フッターギャラリーのタイプ"
+
+#~ msgid "Color of overlay at the time of post hover"
+#~ msgstr "画像をマウスホバーした時のオーバーレイの色"
+
+#~ msgid "Opacity of overlay at the time of post hover"
+#~ msgstr "画像をマウスホバーした時のオーバーレイの透過率"
+
+#~ msgid "Setting for footer gallery"
+#~ msgstr "フッターギャラリーの設定"
+
+#~ msgid "Setting for footer widget area"
+#~ msgstr "フッターウィジェットエリアの設定"
+
+#~ msgid "Display footer widget area"
+#~ msgstr "フッターウィジェットエリアを表示する"
+
+#~ msgid "Recommend image size. Width:1450px, Height:370px"
+#~ msgstr "推奨画像サイズ：横幅1450px、縦幅370px"
+
+#~ msgid "This header image will be displayed in Front page and post page."
+#~ msgstr ""
+#~ "以下で登録したヘッダー画像やキャッチフレーズは、トップページと記事ページで"
+#~ "表示されます。"
+
+#~ msgid "Archive catchphrase"
+#~ msgstr "アーカイブのキャッチフレーズ"
+
+#~ msgid "Settings for description under catchphrase"
+#~ msgstr "キャッチフレーズの下に表示する説明文を入力してください。"
+
+#~ msgid "Post list of the top and archive page"
+#~ msgstr "トップページとアーカイブページの記事一覧"
+
+#~ msgid "Post page"
+#~ msgstr "ブログ記事詳細ページ"
+
+#~ msgid "Gallery"
+#~ msgstr "ギャラリー"
+
+#~ msgid "Gallery category menu"
+#~ msgstr "ギャラリーカテゴリーメニュー"
+
+#~ msgid "Post page for mobile"
+#~ msgstr "ブログ記事詳細ページ（スマホ用）"
+
+#~ msgid "News single page"
+#~ msgstr "ニュース記事詳細ページ"
+
+#~ msgid "News single page for mobile"
+#~ msgstr "ニュース記事詳細ページ（スマホ用）"
+
+#~ msgid "Sidebar settings"
+#~ msgstr "サイドバーの設定"
+
+#~ msgid ""
+#~ "This theme will display the sidebar to right column, but put the check "
+#~ "bellow if you want to display to left."
+#~ msgstr ""
+#~ "このテーマはデフォルトではサイドバーを右カラムに表示します。<br>サイドバー"
+#~ "を左カラムに表示したい場合は下のチェックボックスにチェックを入れてくださ"
+#~ "い。"
+
+#~ msgid "Display the sidebar to left column"
+#~ msgstr "サイドバーを左カラムに表示する"
+
+#~ msgid "Custom CSS for this page"
+#~ msgstr "カスタムCSS（この固定ページのみに適用されます）"
+
+#~ msgid "Next page"
+#~ msgstr "次のページ"
+
+#~ msgid "Previous page"
+#~ msgstr "前のページ"
+
+#~ msgid "Settings for gallery slider"
+#~ msgstr "ギャラリースライダーの設定"
+
+#~ msgid "Show gallery slider"
+#~ msgstr "ギャラリースライダーを表示する"
+
+#~ msgid "Gallery Slider"
+#~ msgstr "ギャラリースライダー"
+
+#~ msgid "Recommended size: width:1030px, height:710px"
+#~ msgstr "推奨画像サイズ：横幅1030px、縦幅710px"
+
+#~ msgid "Settings for gallery page"
+#~ msgstr "ギャラリーページの設定"
+
+#~ msgid "Show content1"
+#~ msgstr "コンテンツ1を表示する"
+
+#~ msgid "Catchphrase for content1"
+#~ msgstr "コンテンツ1のキャッチフレーズ"
+
+#~ msgid "Description for content1"
+#~ msgstr "コンテンツ1の説明文"
+
+#~ msgid "Show content2"
+#~ msgstr "コンテンツ2を表示する"
+
+#~ msgid "Catchphrase for content2 left column"
+#~ msgstr "コンテンツ2左のキャッチフレーズ"
+
+#~ msgid "Description for content2 left column"
+#~ msgstr "コンテンツ2左の説明文"
+
+#~ msgid "Catchphrase for content2 right column"
+#~ msgstr "コンテンツ2右のキャッチフレーズ"
+
+#~ msgid "Table for content2 right column"
+#~ msgstr "コンテンツ2右の表"
+
+#~ msgid "Index footer slider setting"
+#~ msgstr "フッタースライダーの設定"
+
+#~ msgid ""
+#~ "Please check the checkbox if you want to show this gallery on footer "
+#~ "slider."
+#~ msgstr ""
+#~ "このギャラリーをフッタースライダーに表示したい場合は以下のチェックボックス"
+#~ "にチェックを入れてください。"
+
+#~ msgid "headline"
+#~ msgstr "見出し"
+
+#~ msgid "details"
+#~ msgstr "詳細"
+
+#~ msgid "Show"
+#~ msgstr "表示する"
+
+#~ msgid "Page template setting"
+#~ msgstr "テンプレートの設定"
+
+#~ msgid "Page template type"
+#~ msgstr "テンプレートのタイプ"
+
+#~ msgid "Normal template"
+#~ msgstr "普通のテンプレート"
+
+#~ msgid "No side content"
+#~ msgstr "サイドコンテンツ無し"
+
+#~ msgid "No side content (full width)"
+#~ msgstr "サイドコンテンツ無し（幅100%）"
+
+#~ msgid "Template2"
+#~ msgstr "テンプレート2"
+
+#~ msgid "Template3"
+#~ msgstr "テンプレート3"
+
+#~ msgid "Hide post title"
+#~ msgstr "タイトルを非表示にする"
+
+#~ msgid "View image"
+#~ msgstr "画像を見る"
+
+#~ msgid "Catchphrase for first row"
+#~ msgstr "1段目のキャッチフレーズ"
+
+#~ msgid "Enter the catchphrase for first row"
+#~ msgstr "1段目のキャッチフレーズを入力してください。"
+
+#~ msgid "Description for first row"
+#~ msgstr "1段目の説明文"
+
+#~ msgid "Enter the description for first row"
+#~ msgstr "1段目の説明文を入力してください。"
+
+#~ msgid "Benefit content"
+#~ msgstr "ベネフィットコンテンツ"
+
+#~ msgid "Catchphrase for third row"
+#~ msgstr "3段目のキャッチフレーズ"
+
+#~ msgid "Enter the catchphrase for third row"
+#~ msgstr "3段目のキャッチフレーズを入力してください。"
+
+#~ msgid "Description for third row left column"
+#~ msgstr "3段目左のキャッチフレーズ"
+
+#~ msgid "Enter the description for third row left column"
+#~ msgstr "3段目左のキャッチフレーズを入力してください。"
+
+#~ msgid "Catchphrase for third row right column"
+#~ msgstr "3段目右のキャッチフレーズ"
+
+#~ msgid "Enter the description for third row right column"
+#~ msgstr "3段目右のキャッチフレーズを入力してください。"
+
+#~ msgid "Image for fourth row"
+#~ msgstr "4段目の画像"
+
+#~ msgid "Register the image for fourth row."
+#~ msgstr "4段目の画像を登録してください。"
+
+#~ msgid "Recommended size: width:1150px, height:free"
+#~ msgstr "推奨画像サイズ：横幅1150px、縦幅自由"
+
+#~ msgid "Left image of second row"
+#~ msgstr "2段目左の画像"
+
+#~ msgid "Register left image of second row"
+#~ msgstr "2段目左の画像を登録してください。"
+
+#~ msgid "Recommended size: width:550px, height:360px"
+#~ msgstr "推奨画像サイズ：横幅550px、縦幅360px"
+
+#~ msgid "Catchphrase for second row left column"
+#~ msgstr "2段目左のキャッチフレーズ"
+
+#~ msgid "Enter the catchphrase for second row left column"
+#~ msgstr "2段目左のキャッチフレーズを入力してください。"
+
+#~ msgid "Description for second row left column"
+#~ msgstr "2段目左の説明文"
+
+#~ msgid "Enter the description for second row left column"
+#~ msgstr "2段目左の説明文を入力してください。"
+
+#~ msgid "Right image of second row"
+#~ msgstr "2段目右の画像"
+
+#~ msgid "Register right image of second row"
+#~ msgstr "2段目右の画像を登録してください。"
+
+#~ msgid "Catchphrase for second row right column"
+#~ msgstr "2段目右のキャッチフレーズ"
+
+#~ msgid "Enter the catchphrase for second row right column"
+#~ msgstr "2段目右のキャッチフレーズを入力してください。"
+
+#~ msgid "Description for second row right column"
+#~ msgstr "2段目右の説明文"
+
+#~ msgid "Enter the description for second row right column"
+#~ msgstr "2段目右の説明文を入力してください。"
+
+#~ msgid "Image of third row"
+#~ msgstr "3段目の画像"
+
+#~ msgid "Register the image of third row"
+#~ msgstr "3段目の画像を登録してください。"
+
+#~ msgid "Recommended size: width:1450px, height:free"
+#~ msgstr "推奨画像サイズ：横幅1450px、縦幅自由"
+
+#~ msgid "Imge of fourth row left column"
+#~ msgstr "4段目の画像"
+
+#~ msgid "register the image of fourth row left column"
+#~ msgstr "4段目の画像を登録してください。"
+
+#~ msgid "Catchphrase for fourth row left column"
+#~ msgstr "4段目左のキャッチフレーズ"
+
+#~ msgid "Enter catchphrase for fourth row left column"
+#~ msgstr "4段目左のキャッチフレーズを入力してください。"
+
+#~ msgid "Description for fourth row left column"
+#~ msgstr "4段目左の説明文"
+
+#~ msgid "Enter description for fourth row left column"
+#~ msgstr "4段目左の説明文を入力してください。"
+
+#~ msgid "Image for fourth right column"
+#~ msgstr "4段目右の画像"
+
+#~ msgid "Register the image for fourth right column"
+#~ msgstr "4段目右の画像を登録してください。"
+
+#~ msgid "Catchphrase for fourth row right column"
+#~ msgstr "4段目右のキャッチフレーズ"
+
+#~ msgid "Enter catchphrase for fourth row right column"
+#~ msgstr "4段目右のキャッチフレーズを登録してください。"
+
+#~ msgid "Description for fourth row right column"
+#~ msgstr "4段目右の説明文"
+
+#~ msgid "Enter description for fourth row right column"
+#~ msgstr "4段目右の説明文を入力してください。"
+
+#~ msgid "Left image of fifth row"
+#~ msgstr "5段目左の画像"
+
+#~ msgid "Register the left image of fifth row"
+#~ msgstr "5段目左の画像を登録してください。"
+
+#~ msgid "Recommended size: width:360px, height:220px"
+#~ msgstr "推奨画像サイズ：横幅360px、縦幅220px"
+
+#~ msgid "Catchphrase for fifth row left column"
+#~ msgstr "5段目左のキャッチフレーズ"
+
+#~ msgid "Enter the catchphrase for fifth row left column"
+#~ msgstr "5段目左のキャッチフレーズを入力してください。"
+
+#~ msgid "Description for fifth row left column"
+#~ msgstr "5段目左の説明文"
+
+#~ msgid "Enter the description for fifth row left column"
+#~ msgstr "5段目左の説明文を入力してください。"
+
+#~ msgid "Center image of fifth row"
+#~ msgstr "5段目中央の画像"
+
+#~ msgid "Register the image of fifth row center column"
+#~ msgstr "5段目中央の画像を登録してください。"
+
+#~ msgid "Catchphrase for fifth row center column"
+#~ msgstr "5段目中央のキャッチフレーズ"
+
+#~ msgid "Enter the catchphrase for fifth row center column"
+#~ msgstr "5段目中央のキャッチフレーズを入力してください。"
+
+#~ msgid "Description for fifth row center column"
+#~ msgstr "5段目中央の説明文"
+
+#~ msgid "Enter the description for fifth row center column"
+#~ msgstr "5段目中央のキャッチフレーズを入力してください。"
+
+#~ msgid "Right image of fifth row"
+#~ msgstr "5段目右の画像"
+
+#~ msgid "Register image of the fifth row right column"
+#~ msgstr "5段目右の画像を登録してください。"
+
+#~ msgid "Catchphrase for fifth row right column"
+#~ msgstr "5段目右のキャッチフレーズ"
+
+#~ msgid "Enter the catchphrase for fifth row right column"
+#~ msgstr "5段目右のキャッチフレーズを入力してください。"
+
+#~ msgid "Description for fifth row right column"
+#~ msgstr "5段目右の説明文"
+
+#~ msgid "Enter the description  fifth row right column"
+#~ msgstr "5段目右の説明文を入力してください。"
+
+#~ msgid "Catchphrase for sixth row"
+#~ msgstr "6段目のキャッチフレーズ"
+
+#~ msgid "Enter catchphrase for sixth row"
+#~ msgstr "6段目のキャッチフレーズを入力してください。"
+
+#~ msgid "Enter the address for Google Map"
+#~ msgstr "Google Mapに表示する住所を入力してください。"
+
+#~ msgid "Google Map API key"
+#~ msgstr "Google Map API キー"
+
+#~ msgid "Enter the Google Map API Key"
+#~ msgstr "Google Map API キーを入力してください。"
+
+#~ msgid "Left description under the Google Map"
+#~ msgstr "Google Map 下部に表示する説明文（左）"
+
+#~ msgid "Enter left description under the Google Map"
+#~ msgstr "Google Map 下部に表示する説明文（左）を入力してください。"
+
+#~ msgid "Right description under Google Map"
+#~ msgstr "Google Map 下部に表示する説明文（右）"
+
+#~ msgid "Enter right description under the Google Map"
+#~ msgstr "Google Map 下部に表示する説明文（右）を入力してください。"
+
+#~ msgid "Image for second row"
+#~ msgstr "２段目の画像"
+
+#~ msgid "Register the image of second row"
+#~ msgstr "2段目の画像を登録してください。"
+
+#~ msgid "Catchphrase for third row left column"
+#~ msgstr "3段目左のキャッチフレーズ"
+
+#~ msgid "Enter the catchphrase for third row left column"
+#~ msgstr "3段目左のキャッチフレーズを入力してください。"
+
+#~ msgid "Image for third right column"
+#~ msgstr "3段目右の画像"
+
+#~ msgid "Register the image for third row right column"
+#~ msgstr "3段目右の画像を登録してください。\t"
+
+#~ msgid "Register the image for fourth row"
+#~ msgstr "4段目の画像を登録してください。"
+
+#~ msgid "Image for fifth row left column"
+#~ msgstr "5段目左の画像"
+
+#~ msgid "Register the image for fifth row left column"
+#~ msgstr "5段目左の画像を登録してください。"
+
+#~ msgid "Enter the description for fifth row right column"
+#~ msgstr "5段目右の説明文を入力してください。"
+
+#~ msgid "Check if you wan't to show this post for recommend post."
+#~ msgstr ""
+#~ "この記事をおすすめ記事として表示したい場合は、下のチェックボックスにチェッ"
+#~ "クを入れてください。"
+
+#~ msgid "Archives"
+#~ msgstr "アーカイブ"
+
+#~ msgid "Display as dropdown"
+#~ msgstr "ドロップダウン表示"
+
+#~ msgid "Category list"
+#~ msgstr "カテゴリー"
+
+#~ msgid "Google Custom Search (tcd-w ver)"
+#~ msgstr "Googleカスタム検索（tcd バージョン）"
+
+#~ msgid ""
+#~ "If you wan't to use google custom search for your wordpress, enter your "
+#~ "google custom search ID.<br /><a href=\"http://www.google.com/cse/\" "
+#~ "target=\"_blank\">Read more about Google custom search page.</a>"
+#~ msgstr ""
+#~ "もし、Googleカスタム検索をサイト内検索として利用したい場合は、Googleカスタ"
+#~ "ム検索IDを入力してください。<br /><a href=\"http://www.google.com/cse/\" "
+#~ "target=\"_blank\">Googleカスタム検索についてはこちらをご参照ください。</a>"
+
+#~ msgid " Setting"
+#~ msgstr "の設定"
+
+#~ msgid "Show post title"
+#~ msgstr "タイトルを表示する"
+
+#~ msgid "Set of articles top buttons"
+#~ msgstr "記事上ソーシャルボタンの設定"
+
+#~ msgid "Set of articles bottom buttons"
+#~ msgstr "記事下ソーシャルボタンの設定"
+
+#~ msgid "Show at bottom"
+#~ msgstr "下に表示する"
+
+#~ msgid "Headline alignment"
+#~ msgstr "見出しの配置"
+
+#~ msgid "Center align headline"
+#~ msgstr "見出しを中央に配置する"
+
+#~ msgid "1 column layout"
+#~ msgstr "1カラムレイアウト"
+
+#~ msgid "2 column layout"
+#~ msgstr "2カラムレイアウト"
+
+#~ msgid "3 column layout"
+#~ msgstr "3カラムレイアウト"
+
+#~ msgid "4 column layout"
+#~ msgstr "4カラムレイアウト"
+
+#~ msgid "Image list"
+#~ msgstr "画像リスト"
+
+#~ msgid "Image1"
+#~ msgstr "画像1"
+
+#~ msgid "Image2"
+#~ msgstr "画像2"
+
+#~ msgid "Image3"
+#~ msgstr "画像3"
+
+#~ msgid "Image4"
+#~ msgstr "画像4"
+
+#~ msgid "Image5"
+#~ msgstr "画像5"
+
+#~ msgid "Image6"
+#~ msgstr "画像6"
+
+#~ msgid "TCD Google Maps plugin short code"
+#~ msgstr "TCD Google Mapsプラグインのショートコード"
+
+#~ msgid "Name of this tab"
+#~ msgstr "タブの名前"
+
+#~ msgid "Page builder setting"
+#~ msgstr "ページビルダーの設定"
+
+#~ msgid ""
+#~ "<p>You can use designed HTML content by using this Page Builder function."
+#~ "<br />STEP:1  Click the blue button below.<br />STEP2:  Enter data in "
+#~ "input field.<br />STEP3:  Copy and paste the short code to the post "
+#~ "content area.</p>"
+#~ msgstr ""
+#~ "<p>ページビルダー機能を使えば、本文中の任意の箇所にデザインされたHTMLの雛"
+#~ "形を表示する事ができます。</p><p>①下のボタン一覧から、表示したい雛形を選択"
+#~ "してください。</p><p>②入力欄が表示されますので、データを入力してください。"
+#~ "</p><p>③入力欄に表示されている「ショートコード」を本文内の任意の箇所にコ"
+#~ "ピーアンドペーストして完了です。</p><p>雛形を削除する場合は、入力欄に表示"
+#~ "されている「削除」ボタンをクリックし、本文内にペーストしたショートコードを"
+#~ "削除してください。</p>"
+
+#~ msgid "Copy and paste the short code below to the post content area."
+#~ msgstr ""
+#~ "以下のショートコードを記事本文の任意の箇所にコピーアンドペーストしてくださ"
+#~ "い"
+
+#~ msgid "Recommended size: width:1030px, height:711px"
+#~ msgstr "推奨画像サイズ：横幅1430px、縦幅711px"
+
+#~ msgid ""
+#~ "Register Twitter Cards from <a href=\"https://dev.twitter.com/docs/cards/"
+#~ "validation/validator\" target=\"_blank\">Twitter Developer page</a>.<br /"
+#~ "><a href=\"https://dev.twitter.com/docs/cards\" target=\"_blank"
+#~ "\">Information about Twitter Cards</a>."
+#~ msgstr ""
+#~ "Twitter Cardsは、<a href=\"https://dev.twitter.com/docs/cards/validation/"
+#~ "validator\" target=\"_blank\">Twitter Developerページ</a>よりご登録くださ"
+#~ "い。<br /><a href=\"https://dev.twitter.com/docs/cards\" target=\"_blank"
+#~ "\">Twitter Cardsとは</a>"
+
+#~ msgid "News page"
+#~ msgstr "お知らせページ"
+
+#~ msgid "This banner will be displayed at bottom of the page."
+#~ msgstr "この広告は記事ページの一番下に表示されます。"
+
+#~ msgid "Size of header button"
+#~ msgstr "ヘッダー円形ボタンのサイズ"
+
+#~ msgid "Size of header button for mobile"
+#~ msgstr "ヘッダー円形ボタンのサイズ（スマホ用）"
+
+#~ msgid "Setting for footer widget"
+#~ msgstr "フッターウィジェットの設定"
+
+#~ msgid "You can use icons below."
+#~ msgstr "ボタンに設定できるアイコンは以下の通りです。"
+
+#~ msgid "Loading post..."
+#~ msgstr "記事をロード中・・・"
+
+#~ msgid "Recommend image size. Width:770px, Height:1025px"
+#~ msgstr "推奨画像サイズ：横幅770px、縦幅1025px"
+
+#~ msgid ""
+#~ "Register the image of third row<br />Recommended size: width:1450px, "
+#~ "height:free"
+#~ msgstr ""
+#~ "3段目の画像を登録してください。<br>推奨画像サイズ：横幅1450px、縦幅自由"
+
+#~ msgid ""
+#~ "Register the image for fourth row. Recommended size: width:1150px, "
+#~ "height:320px"
+#~ msgstr ""
+#~ "4段目の画像を登録してください。推奨画像サイズ：横幅1150px、縦幅320px"
+
+#~ msgid "Header slider setting"
+#~ msgstr "ヘッダースライダーの設定"
+
+#~ msgid "Hover effect"
+#~ msgstr "ホバーエフェクト"
+
+#~ msgid "Sidebar"
+#~ msgstr "サイドバー"
+
+#~ msgid "Tab content"
+#~ msgstr "タブコンテンツ"
+
+#~ msgid "This short code can only set one to one article."
+#~ msgstr "このショートコードは1ページに1つのみ使用可能です。"
+
+#~ msgid "Slider name"
+#~ msgstr "スライダーの名前"
+
+#~ msgid "Url"
+#~ msgstr "URL"
+
+#~ msgid "Tab name"
+#~ msgstr "タブの名前"
+
+#~ msgid "Theme Options"
+#~ msgstr "テーマオプション"
+
+#~ msgid "Mail"
+#~ msgstr "メール"
+
+#~ msgid "Dropdown"
+#~ msgstr "ドロップダウン表示"
+
+#~ msgid "Catchphrase for third row right cokumn"
+#~ msgstr "3段目右のキャッチフレーズ"
+
+#~ msgid "Recommend image size. Width: 1450px, Height:360px"
+#~ msgstr "推奨画像サイズ：横幅1450px、縦幅360px"
+
+#~ msgid "Recommend image size. Width:1540px, Height:360px"
+#~ msgstr "推奨画像サイズ：横幅1540ox"
+
+#~ msgid "Please enter the label of pagenation"
+#~ msgstr ""
+#~ "ギャラリー詳細ページの次の記事、前の記事リンク（ページ送り）に表示する文字"
+#~ "を設定します。"
+
+#~ msgid "This title will be displayed instead if the image is not registered."
+#~ msgstr ""
+#~ "ヘッダーボタンのタイトル画像が登録されていない場合に代わりに表示されます。"
+
+#~ msgid "Home"
+#~ msgstr "ホーム"
+
+#~ msgid "Distinations"
+#~ msgstr "特別ページ"
+
+#~ msgid "Search Result"
+#~ msgstr "検索結果"
+
+#~ msgid "Post page (mobile)"
+#~ msgstr "ブログ記事ページ（スマホ用）"
+
+#~ msgid ""
+#~ "This widget will be replaced with normal widget when a user accesses the "
+#~ "site by smartphone."
+#~ msgstr ""
+#~ "このウィジェットは、ユーザーがスマートフォンを使ってサイトにアクセスした時"
+#~ "に、他のウィジェットと置き換わって表示されます。"
+
+#~ msgid "Pages"
+#~ msgstr "固定ページ"
+
+#~ msgid "Pages (mobile)"
+#~ msgstr "固定ページ（スマホ用）"
+
+#~ msgid "News page (mobile)"
+#~ msgstr "お知らせページ（スマホ用）"
+
+#~ msgid "Footer menu (first column)"
+#~ msgstr "フッターメニュー（1列目）"
+
+#~ msgid "Footer menu (second column)"
+#~ msgstr "フッターメニュー（2列目）"
+
+#~ msgid "Footer menu (third column)"
+#~ msgstr "フッターメニュー（3列目）"
+
+#~ msgid "Footer menu (fourth column)"
+#~ msgstr "フッターメニュー（4列目）"
+
+#~ msgid "Footer menu (fifth column)"
+#~ msgstr "フッターメニュー（5列目）"
+
+#~ msgid "Footer menu (sixth column)"
+#~ msgstr "フッターメニュー（6列目）"
+
+#~ msgid "Footer menu (bottom of the page)"
+#~ msgstr "フッターメニュー（ページ最下部）"
+
+#~ msgid "Add New"
+#~ msgstr "新しく追加"
+
+#~ msgid "Add New Item"
+#~ msgstr "新しく追加"
+
+#~ msgid "View Item"
+#~ msgstr "記事を見る"
+
+#~ msgid "Search Items"
+#~ msgstr "検索する"
+
+#~ msgid "Not Found"
+#~ msgstr "見つかりませんでした"
+
+#~ msgid "Not found in trash"
+#~ msgstr "ゴミ箱には見つかりませんでした"
+
+#~ msgid "Search results for - %s"
+#~ msgstr "%sの検索結果"
+
+#~ msgid "Archive for &#8216; %s &#8217;"
+#~ msgstr "%s "
+
+#~ msgid "Archive for the &#8216; %s &#8217;"
+#~ msgstr "%s"
+
+#~ msgid "RETURN HOME"
+#~ msgstr "トップページに戻る"
+
+#~ msgid "Related post"
+#~ msgstr "関連記事一覧"
+
+#~ msgid "Mail form"
+#~ msgstr "メールフォーム"
+
+#~ msgid "No overlay"
+#~ msgstr "オーバーレイを使わない（素材そのままの表示）"
+
+#~ msgid "Dark"
+#~ msgstr "暗くする"
+
+#~ msgid "Dot pattern"
+#~ msgstr "ドットパターンを表示する"
+
+#~ msgid "Index page logo"
+#~ msgstr "トップページヘッダーコンテンツのロゴ（大）"
+
+#~ msgid "Font size for site description"
+#~ msgstr "キャッチコピーのフォントサイズ"
+
+#~ msgid "Display site description"
+#~ msgstr "キャッチコピーを表示する"
+
+#~ msgid "Header content overlay"
+#~ msgstr "ヘッダーコンテンツのオーバーレイ"
+
+#~ msgid "Recommend image size. Width:1280px, Height:800px"
+#~ msgstr "推奨画像サイズ：横幅1280px、縦幅800px"
+
+#~ msgid "Recommend image size. Width:380px, Height:110px"
+#~ msgstr "推奨サイズ：横幅380px、縦幅110px"
+
+#~ msgid "Number of distinations"
+#~ msgstr "特別ページの数"
+
+#~ msgid "Distinations content slider"
+#~ msgstr "特別ページのスライダー"
+
+#~ msgid ""
+#~ "Please check the checkbox on distinations edit page to show on slider."
+#~ "<br />Distinations will be displayed in random at slider."
+#~ msgstr ""
+#~ "スライダーを表示する前に、各特別ページの編集画面よりスライダーの表示設定を"
+#~ "行ってください。<br />スライダー上では、特別ページはランダムに表示されま"
+#~ "す。"
+
+#~ msgid ""
+#~ "This header image will be displayed in Front page.<br />Also this header "
+#~ "image will be the fallback image for single page."
+#~ msgstr ""
+#~ "以下で登録したヘッダー画像やキャッチフレーズは、トップページで表示されま"
+#~ "す。<br />また、各詳細ページの編集画面より、固有のヘッダー画像やキャッチフ"
+#~ "レーズが登録されてない場合は、<br />以下で登録したヘッダー画像とキャッチフ"
+#~ "レーズが代わりに表示されます。"
+
+#~ msgid "Archive page setting"
+#~ msgstr "アーカイブページの設定"
+
+#~ msgid "Footer menu setting"
+#~ msgstr "フッターメニューの設定"
+
+#~ msgid "Please check the checkbox if you want to disable first menu link."
+#~ msgstr ""
+#~ "先頭のメニューのリンクを無効にしたい場合は、チェックボックスにチェックを入"
+#~ "れてください。"
+
+#~ msgid "Disable first menu link"
+#~ msgstr "先頭のメニューを無効にする"
+
+#~ msgid "Pages:"
+#~ msgstr "ページ %s"
+
+#~ msgid "Distinations setting"
+#~ msgstr "特別ページの設定"
+
+#~ msgid ""
+#~ "Please check the checkbox if you want to show this distinations on index "
+#~ "footer slider."
+#~ msgstr ""
+#~ "この特別ページをトップページのフッタースライダーに表示したい場合は以下の"
+#~ "チェックボックスにチェックを入れてください。"
+
+#~ msgid ""
+#~ "Cannot create upload directory. Please make sure <code>%s</code> is "
+#~ "writable."
+#~ msgstr ""
+#~ "画像を収納するディレクトリを新規作成できませんでした。<br />かならず、"
+#~ "「 <code>%s</code> 」を書き込み可能なパーミッションに変更してください。"
+
+#~ msgid ""
+#~ "Cannot save uploaded file. Please make sure <code>%s</code> is writable."
+#~ msgstr ""
+#~ "アップロードしたファイルを保存できませんでした。<br />からなず、「 <code>"
+#~ "%s</code> 」を書き込み可能なパーミッションに変更してください。"
+
+#~ msgid ""
+#~ "Uploaded file type is not allowed. Allowed file types are PNG, JPG and "
+#~ "GIF."
+#~ msgstr ""
+#~ "アップロードできるファイル形式は、gif, jpg, png の３種類のみになります。"
+
+#~ msgid "Cannot delete existing file <code>%s</code>"
+#~ msgstr "「 <code>%s</code> 」を削除する事ができませんでした。"
+
+#~ msgid "Sorry, but cannot save uploaded file."
+#~ msgstr "大変申し訳ございませんが、保存できませんでした。"
+
+#~ msgid "File was successfully uploaded."
+#~ msgstr "保存しました。"
+
+#~ msgid "Logo file not exists."
+#~ msgstr "ロゴファイルは登録されていません。"
+
+#~ msgid ""
+#~ "Failed to save resized logo. Please check permission of <code>%s</code>"
+#~ msgstr ""
+#~ "ロゴ画像のサイズを変更できませんでした。<br />「 <code>%s</code> 」を書き"
+#~ "込み可能なパーミッションに変更してください。"
+
+#~ msgid "Logo image is successfully resized."
+#~ msgstr "ロゴ画像のサイズを変更しました。"
+
+#~ msgid "Headline for first row"
+#~ msgstr "１段目の見出し"
+
+#~ msgid "Content for second row first column"
+#~ msgstr "２段目、１列目の説明文"
+
+#~ msgid "Content for second row second column"
+#~ msgstr "２段目の、２列目の説明文"
+
+#~ msgid "Headline for third row"
+#~ msgstr "３段目の見出し"
+
+#~ msgid "Content for fourth row"
+#~ msgstr "４段目の説明文"
+
+#~ msgid "Content for fifth row first column"
+#~ msgstr "５段目、１列目の説明文"
+
+#~ msgid "Content for fifth row second column"
+#~ msgstr "５段目、２列目の説明文"
+
+#~ msgid "Content for fifth row third column"
+#~ msgstr "５段目、３列目の説明文"
+
+#~ msgid "Content for second row"
+#~ msgstr "２段目の説明文"
+
+#~ msgid "Content for third row first column"
+#~ msgstr "３段目、１列目の説明文"
+
+#~ msgid "Content for third row second column"
+#~ msgstr "３段目、２列目の説明文"
+
+#~ msgid "Content for third row third column"
+#~ msgstr "３段目、３列目の説明文"
+
+#~ msgid "Headline for fourth row"
+#~ msgstr "４段目の見出し"
+
+#~ msgid "Content for third row"
+#~ msgstr "３段目の説明文"
+
+#~ msgid "Content for fifth row"
+#~ msgstr "５段目の説明文"
+
+#~ msgid "Content for sixth row"
+#~ msgstr "６段目の説明文"
+
+#~ msgid "Image for second row first column"
+#~ msgstr "２段目、１列目の説明文"
+
+#~ msgid "Recommend image size. Width:570px Height:330px"
+#~ msgstr "推奨画像サイズ：横幅570px、縦幅330px"
+
+#~ msgid "Image for second row second column"
+#~ msgstr "２段目、２列目の画像"
+
+#~ msgid "Recommend image size. Width:1200px Height:330px"
+#~ msgstr "推奨画像サイズ：横幅1200px、縦幅330px"
+
+#~ msgid "Image for fifth row first column"
+#~ msgstr "５段目、１列目の画像"
+
+#~ msgid "Image for fifth row second column"
+#~ msgstr "５段目、２列目の画像"
+
+#~ msgid "Image for fifth row third column"
+#~ msgstr "５段目、３列目の画像"
+
+#~ msgid "Image for third row first column"
+#~ msgstr "３段目、１列目の画像"
+
+#~ msgid "Image for third row second column"
+#~ msgstr "３段目、２列目の画像"
+
+#~ msgid "Image for third row third column"
+#~ msgstr "３段目、３列目の画像"
+
+#~ msgid "Image for third row"
+#~ msgstr "３段目の画像"
+
+#~ msgid "Image for fifth row"
+#~ msgstr "５段目の画像"
+
+#~ msgid "Image for sixth row"
+#~ msgstr "６段目の画像"
+
+#~ msgid "Page title setting"
+#~ msgstr "ページタイトルの設定"
+
+#~ msgid "Header video"
+#~ msgstr "ヘッダーの動画ファイル"
+
+#~ msgid "Display SNS button"
+#~ msgstr "SNSボタンを表示する"
+
+#~ msgid "Display pickup post"
+#~ msgstr "ピックアップ記事を表示する"
+
+#~ msgid "Header video image"
+#~ msgstr "動画の静止画"
+
+#~ msgid "Template4"
+#~ msgstr "テンプレート4"
+
+#~ msgid "Display side content"
+#~ msgstr "サイドコンテンツを表示する"
+
+#~ msgid "Hide side content"
+#~ msgstr "サイドコンテンツを隠す"
+
+#, fuzzy
+#~ msgid "Content for first row"
+#~ msgstr "１段目の画像"
+
+#, fuzzy
+#~ msgid "Enter content for first row."
+#~ msgstr "１段目の見出しを入力してください。"
+
+#, fuzzy
+#~ msgid "Enter content for third row."
+#~ msgstr "３段目の見出しを入力してください。"
+
+#, fuzzy
+#~ msgid "Enter content for fifth row."
+#~ msgstr "５段目の見出しを入力してください。"
+
+#, fuzzy
+#~ msgid "Enter content for second row."
+#~ msgstr "２段目の見出しを入力してください。"
+
+#, fuzzy
+#~ msgid "Enter content for fourth row."
+#~ msgstr "４段目の見出しを入力してください。"
+
+#, fuzzy
+#~ msgid "Enter content for sixth row."
+#~ msgstr "５段目の見出しを入力してください。"
+
+#, fuzzy
+#~ msgid "Twitter url"
+#~ msgstr "スライダーのリンク先URL"
+
+#, fuzzy
+#~ msgid "Facebook url"
+#~ msgstr "あなたのfacebook URL"
+
+#, fuzzy
+#~ msgid "Pinterest url"
+#~ msgstr "スライダーのリンク先URL"
+
+#, fuzzy
+#~ msgid "Flickr url"
+#~ msgstr "記事のURL"
+
+#, fuzzy
+#~ msgid "Content under profile data"
+#~ msgstr "スタッフ一覧の下に表示するコンテンツ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Register image for second row.<br />Recommend image size (Show side "
+#~ "content). Width:790px Height:Free size<br/>Recommend image size (Hide "
+#~ "side content). Width:900px Height:Free size"
+#~ msgstr ""
+#~ "２段目の画像を登録してください。<br />推奨サイズ　-　横幅568px、縦幅自由"
+
+#, fuzzy
+#~ msgid ""
+#~ "Register image for third row first column.<br />Recommend image size. "
+#~ "Width:500px Height:300px"
+#~ msgstr ""
+#~ "１段目、１列目の画像を登録してください。<br />推奨サイズ　-　横幅360px、縦"
+#~ "幅270px"
+
+#, fuzzy
+#~ msgid "Image for third row right column"
+#~ msgstr "１段目、３列目の画像"
+
+#, fuzzy
+#~ msgid ""
+#~ "Register image for third row second column.<br />Recommend image size. "
+#~ "Width:500px Height:300px"
+#~ msgstr ""
+#~ "１段目、２列目の画像を登録してください。<br />推奨サイズ　-　横幅360px、縦"
+#~ "幅270px"
+
+#, fuzzy
+#~ msgid ""
+#~ "Register image for fifth row first column.<br />Recommend image size. "
+#~ "Width:500px Height:300px"
+#~ msgstr ""
+#~ "５段目、１列目の画像を登録してください。<br />推奨サイズ　-　横幅360px、縦"
+#~ "幅270px"
+
+#~ msgid "Image for fifth row right column"
+#~ msgstr "５段目、３列目の画像"
+
+#, fuzzy
+#~ msgid ""
+#~ "Register image for fifth row second column.<br />Recommend image size. "
+#~ "Width:500px Height:300px"
+#~ msgstr ""
+#~ "５段目、２列目の画像を登録してください。<br />推奨サイズ　-　横幅360px、縦"
+#~ "幅270px"
+
+#, fuzzy
+#~ msgid ""
+#~ "Register image for second row first column.<br />Recommend image size. "
+#~ "Width:500px Height:300px"
+#~ msgstr ""
+#~ "２段目、１列目の画像を登録してください。<br />推奨サイズ　-　横幅360px、縦"
+#~ "幅270px"
+
+#~ msgid "Image for second row right column"
+#~ msgstr "２段目、３列目の画像"
+
+#, fuzzy
+#~ msgid ""
+#~ "Register image for second row second column.<br />Recommend image size. "
+#~ "Width:500px Height:300px"
+#~ msgstr ""
+#~ "２段目、２列目の画像を登録してください。<br />推奨画像サイズ 　-　横幅"
+#~ "360px、縦幅270px"
+
+#, fuzzy
+#~ msgid "User Image"
+#~ msgstr "この画像を利用する"
+
+#, fuzzy
+#~ msgid "Recommend image size. Width:200px Height:200px."
+#~ msgstr "推奨サイズ：横幅290px、縦幅260px"
+
+#, fuzzy
+#~ msgid "Page repeater - Slider"
+#~ msgstr "テンプレートのタイプ"
+
+#~ msgid "Pickup post"
+#~ msgstr "ピックアップ記事"
+
+#~ msgid "Featured post"
+#~ msgstr "注目記事"
+
+#~ msgid "Display excerpt"
+#~ msgstr "抜粋を表示する"
+
+#~ msgid "Blog Archives"
+#~ msgstr "過去の記事一覧"
+
+#~ msgid "Font size of single page and wp-page."
+#~ msgstr ""
+#~ "記事の詳細ページと固定ページのフォントサイズを半角数字で指定してください。"
+#~ "<br />数が大きくなるほどフォントサイズも大きくなります。"
+
+#~ msgid "Display Setup"
+#~ msgstr "各項目の表示設定"
+
+#~ msgid "Display thumbnail at single post page"
+#~ msgstr "サムネイルを記事の詳細ページに表示する"
+
+#~ msgid "Display trackbacks at single post page"
+#~ msgstr "トラックバックを記事の詳細ページに表示する"
+
+#~ msgid "Display related post at single post page"
+#~ msgstr "関連記事を記事の詳細ページに表示する"
+
+#~ msgid "Display next previous post link at single post page"
+#~ msgstr "次の記事、前の記事リンクを記事の詳細ページに表示する"
+
+#~ msgid "Slider image for mobile device"
+#~ msgstr "スライダーの画像（スマホ用）"
+
+#~ msgid "Recommend image size. Width:800px, Height:Free size"
+#~ msgstr "推奨サイズ：横幅800px、縦幅自由"
+
+#~ msgid ""
+#~ "If this image is not registered, images that were previously registered "
+#~ "will be displayed."
+#~ msgstr ""
+#~ "スマホ用の画像が登録されていない場合は、PC用の画像が代わりに表示されます。"
+
+#~ msgid "Image for mobile device"
+#~ msgstr "スマホ用の画像"
+
+#~ msgid "Header image for mobile device"
+#~ msgstr "ヘッダーの画像（スマホ用）"
+
+#~ msgid "Adsense for Blog post page"
+#~ msgstr "広告の設定"
+
+#~ msgid "Recommend image size. Width:300px, Height:Free size"
+#~ msgstr "推奨サイズ：横幅300px、縦幅自由"
+
+#~ msgid "Mobile device size adsense for Blog post page"
+#~ msgstr "モバイル用広告の設定"
+
+#~ msgid "This Adsense will be displayed before post contents."
+#~ msgstr "この広告は記事本文の前に表示されます。"
+
+#~ msgid "Distinations header image"
+#~ msgstr "特別ページのヘッダー画像"
+
+#~ msgid "Header logo for Index page"
+#~ msgstr "ヘッダーのロゴ（トップページ用）"
+
+#~ msgid "Header logo image for Index page"
+#~ msgstr "ヘッダーのロゴ画像（トップページ用）"
+
+#~ msgid "Header logo image for mobile"
+#~ msgstr "ヘッダーのロゴ画像（スマホ用）"
+
+#~ msgid "Footer address"
+#~ msgstr "フッターに表示する住所"
+
+#~ msgid "Blog Page"
+#~ msgstr "ブログページ"
+
+#~ msgid "All staff"
+#~ msgstr "スタッフ一覧"
+
+#~ msgid "Staff Page"
+#~ msgstr "スタッフページ"
+
+#~ msgid "Image for Staff archive page"
+#~ msgstr "スタッフページ用のメイン画像"
+
+#~ msgid "Image for Staff archive page (for mobile device)"
+#~ msgstr "スタッフページ用のメイン画像（スマホ用）"
+
+#~ msgid "Headline for Staff archive page"
+#~ msgstr "スタッフアーカイブページの見出し"
+
+#~ msgid "Description for Staff archive page"
+#~ msgstr "スタッフアーカイブページに表示する説明文"
+
+#~ msgid "Headline for Staff single page"
+#~ msgstr "スタッフ詳細ページに表示するスタッフ一覧の見出し"
+
+#~ msgid "Image for Blog page"
+#~ msgstr "ブログページ用のメイン画像"
+
+#~ msgid "Recommend image size. Width:1160px, Height:300px"
+#~ msgstr "推奨サイズ：横幅1160px、縦幅300px"
+
+#~ msgid "Image for Blog page (for mobile)"
+#~ msgstr "ブログページ用のメイン画像（スマホ用）"
+
+#~ msgid "Image for News page"
+#~ msgstr "お知らせページ用のメイン画像"
+
+#~ msgid "Image for News page (for mobile)"
+#~ msgstr "お知らせページ用のメイン画像（スマホ用）"
+
+#~ msgid "Step 1 : Upload image to use for logo."
+#~ msgstr "ステップ１：ロゴとして利用する画像のアップロード"
+
+#~ msgid ""
+#~ "Upload image to use for logo from your computer.<br />You can resize your "
+#~ "logo image in step 2."
+#~ msgstr ""
+#~ "自分のコンピュータから登録したいロゴ画像を選択してください。<br />ロゴ画像"
+#~ "を選択した後にアップロードボタンをクリックしてロゴ画像を登録します。<br />"
+#~ "登録したロゴ画像はステップ２よりリサイズ・切り抜きを行う事ができます。"
+
+#~ msgid "Select image to use for logo from your computer."
+#~ msgstr "自分のコンピュータから画像を選択: "
+
+#~ msgid "Upload"
+#~ msgstr "アップロードする"
+
+#~ msgid "Original image size : width %1$dpx, height %2$dpx"
+#~ msgstr "オリジナルの画像サイズ: 横幅 %1$dpx, 縦幅 %2$dpx"
+
+#~ msgid ""
+#~ "The image has not been uploaded yet.<br />A normal text will be used for "
+#~ "a site logo."
+#~ msgstr ""
+#~ "画像が登録されていません。画像が登録されていない場合は、通常のテキストがサ"
+#~ "イトのロゴとして表示されます。"
+
+#~ msgid "Step 2 : Resize uploaded image."
+#~ msgstr "ステップ２：アップロードした画像のリサイズ"
+
+#~ msgid "You can resize uploaded image."
+#~ msgstr ""
+#~ "アップロードされた画像はリサイズ・切り抜きすることができます。<br />画像の"
+#~ "上で切り抜く範囲を選択して、青色の「リサイズ」ボタンをクリックしてくださ"
+#~ "い。"
+
+#~ msgid "Please drag the range to cut off."
+#~ msgstr "切り取る範囲をドラッグしてください。"
+
+#~ msgid "Ratio"
+#~ msgstr "比率"
+
+#~ msgid "Width"
+#~ msgstr "横幅"
+
+#~ msgid "Height"
+#~ msgstr "縦幅"
+
+#~ msgid "Resize"
+#~ msgstr "リサイズ"
+
+#~ msgid "Resized image : width %1$dpx, height %2$dpx"
+#~ msgstr "リサイズされた画像サイズ: 横幅 %1$dpx, 縦幅 %2$dpx"
+
+#~ msgid "Step 3 : Adjust position of logo."
+#~ msgstr "ステップ３：位置の調整"
+
+#~ msgid "Drag the logo image and adjust the position."
+#~ msgstr ""
+#~ "ロゴ画像をドラッグして位置を調整してください。<br />位置の調整が完了しまし"
+#~ "たら下にある「ロゴの位置を決定する」ボタンをクリックして作業を完了してくだ"
+#~ "さい。"
+
+#~ msgid "Logo size is too big. Please resize your logo image."
+#~ msgstr "登録された画像が大き過ぎます。リサイズして小さくしてください。"
+
+#~ msgid "Top"
+#~ msgstr "上"
+
+#~ msgid "Left"
+#~ msgstr "2カラム1"
+
+#~ msgid "Save the position"
+#~ msgstr "ロゴの位置を決定する"
+
+#~ msgid "Delete logo image."
+#~ msgstr "画像を削除する"
+
+#~ msgid ""
+#~ "If you delete the logo image, normal text will be used for a site logo."
+#~ msgstr ""
+#~ "登録したロゴ画像を削除した場合、ロゴの代わりに通常のテキストが表示されま"
+#~ "す。"
+
+#~ msgid "Telephone number"
+#~ msgstr "電話番号"
+
+#~ msgid "Display telephone number at header"
+#~ msgstr "ヘッダーに電話番号を表示する"
+
+#~ msgid "Label for telephone number"
+#~ msgstr "電話番号の見出し"
+
+#~ msgid "Contact page button"
+#~ msgstr "お問い合わせページへのボタン"
+
+#~ msgid "Display contact page button at header"
+#~ msgstr "ヘッダーにお問い合わせページへのボタンを表示する"
+
+#~ msgid "News Archives"
+#~ msgstr "お知らせ一覧"
+
+#~ msgid "Archive for the &#8216; %s &#8217; Category"
+#~ msgstr "%s"
+
+#~ msgid "Posts Tagged &#8216; %s &#8217;"
+#~ msgstr "%s"
+
+#~ msgid "Archive of %s"
+#~ msgstr "%sの記事一覧"
+
+#~ msgid "Load more post"
+#~ msgstr "さらに記事を表示する"
+
+#~ msgid "Archive side widget"
+#~ msgstr "アーカイブページ"
+
+#~ msgid "Single side widget"
+#~ msgstr "詳細ページ"
+
+#~ msgid "Page side widget"
+#~ msgstr "固定ページ"
+
+#~ msgid "Archive widget (mobile)"
+#~ msgstr "アーカイブページ（スマホ用）"
+
+#~ msgid "Single page widget (mobile)"
+#~ msgstr "記事ページ（スマホ用）"
+
+#~ msgid "Page side widget (mobile)"
+#~ msgstr "固定ページ（スマホ用）"
+
+#~ msgid "Staff"
+#~ msgstr "スタッフ"
+
+#~ msgid "Staff List"
+#~ msgstr "スタッフ一覧"
+
+#~ msgid "Temple"
+#~ msgstr "神殿"
+
+#~ msgid "Pen"
+#~ msgstr "ペン"
+
+#~ msgid "People"
+#~ msgstr "人（複数）"
+
+#~ msgid "Building"
+#~ msgstr "ビル"
+
+#~ msgid "Man"
+#~ msgstr "人"
+
+#~ msgid "Show icon and image"
+#~ msgstr "アイコンと画像を表示する"
+
+#~ msgid "Show only icon"
+#~ msgstr "アイコンのみ表示する"
+
+#~ msgid "Show only image"
+#~ msgstr "画像のみ表示する"
+
+#~ msgid "Display slider at top page"
+#~ msgstr "スライダーをトップページに表示する"
+
+#~ msgid "Content under header slider"
+#~ msgstr "スライダーの下に表示するコンテンツ"
+
+#~ msgid "Icon and image type"
+#~ msgstr "アイコンと画像の設定"
+
+#~ msgid "Headline of News list"
+#~ msgstr "お知らせ一覧の見出し"
+
+#~ msgid "Number of post to show at News list"
+#~ msgstr "お知らせ一覧に表示する記事の数"
+
+#~ msgid "Number of staff to show on staff list"
+#~ msgstr "スタッフ一覧に表示するスタッフの数"
+
+#~ msgid "Button for staff archive page"
+#~ msgstr "スタッフアーカイブページボタン"
+
+#~ msgid "Display button for staff archive page"
+#~ msgstr "ボタンを表示する"
+
+#~ msgid "Display this button"
+#~ msgstr "このボタンを表示する"
+
+#~ msgid "Main image"
+#~ msgstr "ヘッダー画像"
+
+#~ msgid "Main image for mobile device"
+#~ msgstr "ヘッダー画像（スマホ用）"
+
+#~ msgid ""
+#~ "If this image is not registered, images that were previously registered "
+#~ "will be displayed.<br />Recommend image size. Width:800px Height:Free size"
+#~ msgstr ""
+#~ "スマホ用の画像が登録されていない場合は、PC用の画像が代わりに表示されます。"
+#~ "<br />推奨サイズ　-　横幅800px、縦幅自由"
+
+#~ msgid "Enter description for first row."
+#~ msgstr "１段目の説明文を入力してください。"
+
+#~ msgid "Headline for second row left column"
+#~ msgstr "２段目、１列目の見出し"
+
+#~ msgid "Enter headline for second row left column."
+#~ msgstr "２段目、１列目の見出しを入力してください。"
+
+#~ msgid "Enter description for second row left column."
+#~ msgstr "２段目、１列目の説明文を入力してください。"
+
+#~ msgid "Headline for second row center column"
+#~ msgstr "２段目、２列目の見出し"
+
+#~ msgid "Enter headline for second row center column."
+#~ msgstr "２段目、２列目の見出しを入力してください。"
+
+#~ msgid "Description for second row center column"
+#~ msgstr "２段目、２列目の説明文"
+
+#~ msgid "Enter description for second row center column."
+#~ msgstr "２段目、２列目の説明文を入力してください。"
+
+#~ msgid "Headline for second row right column"
+#~ msgstr "２段目、３列目の見出し"
+
+#~ msgid "Enter headline for second row right column."
+#~ msgstr "２段目、３列目の見出しを入力してください。"
+
+#~ msgid "Enter description for second row right column."
+#~ msgstr "２段目、３列目の説明文を入力してください。"
+
+#~ msgid "Description for fourth row"
+#~ msgstr "４段目の説明文"
+
+#~ msgid "Enter description for fourth row."
+#~ msgstr "４段目の説明文を入力してください。"
+
+#~ msgid "Description for fifth row"
+#~ msgstr "５段目の説明文"
+
+#~ msgid "Enter description for fifth row."
+#~ msgstr "５段目の説明文を入力してください。"
+
+#~ msgid "Headline for first row left column"
+#~ msgstr "１段目、１列目の見出し"
+
+#~ msgid "Enter headline for first row left column."
+#~ msgstr "１段目、１列目の見出しを入力してください。"
+
+#~ msgid "Description for first row left column"
+#~ msgstr "１段目、１列目の説明文"
+
+#~ msgid "Enter description for first row left column."
+#~ msgstr "１段目、１列目の見出しを入力してください。"
+
+#~ msgid "Headline for first row center column"
+#~ msgstr "１段目、２列目の見出し"
+
+#~ msgid "Enter headline for first row center column."
+#~ msgstr "１段目、２列目の見出しを入力してください。"
+
+#~ msgid "Description for first row center column"
+#~ msgstr "１段目、２列目の説明文"
+
+#~ msgid "Enter description for first row center column."
+#~ msgstr "１段目、２列目の見出しを入力してください。"
+
+#~ msgid "Headline for first row right column"
+#~ msgstr "１段目、３列目の見出し"
+
+#~ msgid "Enter headline for first row right column."
+#~ msgstr "１段目、３列目の見出しを入力してください。"
+
+#~ msgid "Description for first row right column"
+#~ msgstr "１段目、３列目の説明文"
+
+#~ msgid "Enter description for first row right column."
+#~ msgstr "１段目、３列目の説明文を入力してください。"
+
+#~ msgid "Headline for second row"
+#~ msgstr "２段目の見出し"
+
+#~ msgid "Description for second row"
+#~ msgstr "２段目の説明文"
+
+#~ msgid "Enter description for second row."
+#~ msgstr "２段目の説明文を入力してください。"
+
+#~ msgid "Description for third row"
+#~ msgstr "３段目の説明文"
+
+#~ msgid "Enter description for third row."
+#~ msgstr "３段目の説明文を入力してください。"
+
+#~ msgid "Headline for fifth row left column"
+#~ msgstr "５段目、１列目の見出し"
+
+#~ msgid "Enter headline for fifth row left column."
+#~ msgstr "５段目、１列目の見出しを入力してください。"
+
+#~ msgid "Enter description for fifth row left column."
+#~ msgstr "５段目、１列目の説明文を入力してください。"
+
+#~ msgid "Headline for fifth row center column"
+#~ msgstr "５段目、２列目の見出し"
+
+#~ msgid "Enter headline for fifth row center column."
+#~ msgstr "５段目、２列目の見出しを入力してください。"
+
+#~ msgid "Enter description for fifth row center column."
+#~ msgstr "５段目、２列目の説明文を入力してください。"
+
+#~ msgid "Headline for fifth row right column"
+#~ msgstr "５段目、３列目の見出し"
+
+#~ msgid "Enter headline for fifth row right column."
+#~ msgstr "５段目、３列目の見出しを入力してください。"
+
+#~ msgid "Enter description for fifth row right column."
+#~ msgstr "５段目、３列目の説明文を入力してください。"
+
+#~ msgid "Google map"
+#~ msgstr "Googleマップ"
+
+#~ msgid "Enter address. Google map will automatically build."
+#~ msgstr ""
+#~ "Googleマップに表示する住所を入力してください。Googleマップは住所を元に自動"
+#~ "的に表示されます。"
+
+#~ msgid ""
+#~ "Register image for page header.<br />Recommend image size. Width:1450 "
+#~ "Height:400px"
+#~ msgstr ""
+#~ "ヘッダー画像を登録してください。<br />推奨サイズ　-　横幅1450px、縦幅400px"
+
+#~ msgid ""
+#~ "Register image for second row right column.<br />Recommend image size. "
+#~ "Width:360px Height:270px"
+#~ msgstr ""
+#~ "２段目、３列目の画像を登録してください。<br />推奨サイズ　-　横幅360px、縦"
+#~ "幅270px"
+
+#~ msgid ""
+#~ "Register image for third row.<br />Recommend image size. Width:1200px "
+#~ "Height:Free size"
+#~ msgstr ""
+#~ "３段目の画像を登録してください。<br />推奨サイズ　-　横幅1200px、縦幅自由"
+
+#~ msgid ""
+#~ "Register image for fourth row.<br />Recommend image size. Width:568px "
+#~ "Height:Free size"
+#~ msgstr ""
+#~ "４段目の画像を登録してください。<br />推奨サイズ　-　横幅568px、縦幅自由"
+
+#~ msgid ""
+#~ "Register image for fifth row.<br />Recommend image size. Width:568px "
+#~ "Height:Free size"
+#~ msgstr ""
+#~ "５段目の画像を登録してください。<br />推奨サイズ　-　横幅568px、縦幅自由"
+
+#~ msgid "Image for first row center column"
+#~ msgstr "１段目、２列目の画像"
+
+#~ msgid ""
+#~ "Register image for first row right column.<br />Recommend image size. "
+#~ "Width:360px Height:270px"
+#~ msgstr ""
+#~ "１段目、３列目の画像を登録してください。<br />推奨サイズ　-　横幅360px、縦"
+#~ "幅270px"
+
+#~ msgid ""
+#~ "Register image for third row.<br />Recommend image size. Width:568px "
+#~ "Height:Free size"
+#~ msgstr ""
+#~ "３段目の画像を登録してください。<br />推奨サイズ　-　横幅568px、縦幅自由"
+
+#~ msgid ""
+#~ "Register image for first row.<br />Recommend image size. Width:568px "
+#~ "Height:Free size"
+#~ msgstr ""
+#~ "１段目の画像を登録してください。<br />推奨サイズ　-　横幅568px、縦幅自由"
+
+#~ msgid ""
+#~ "Register image for fifth row right column.<br />Recommend image size. "
+#~ "Width:360px Height:270px"
+#~ msgstr ""
+#~ "５段目、３列目の画像を登録してください。<br />推奨サイズ　-　横幅360px、縦"
+#~ "幅270px"
+
+#~ msgid "<p>Recommend image size. Width:250px Height:Free size</p>"
+#~ msgstr "<p>推奨サイズ：横幅250px、縦幅自由</p>"
+
+#~ msgid "Additinonal staff information"
+#~ msgstr "スタッフの情報"
+
+#~ msgid "Enter sub title for this staff."
+#~ msgstr "サブタイトルは詳細ページの名前の横に表示されます。"
+
+#~ msgid "Enter short description for staff list."
+#~ msgstr "この説明文はスタッフ一覧に表示されます。"
+
+#~ msgid "Displays Category list."
+#~ msgstr "カテゴリー一覧を表示します。"
+
+#~ msgid "SEARCH"
+#~ msgstr "検索"
+
+#~ msgid "Display recommend post list at single post page"
+#~ msgstr "おすすめ記事を記事の詳細ページに表示する"
+
+#~ msgid "Staff page"
+#~ msgstr "スタッフページ"
+
+#~ msgid "Type4"
+#~ msgstr "タイプ4"
+
+#~ msgid "Type5"
+#~ msgstr "タイプ5"
+
+#~ msgid "Menu list"
+#~ msgstr "メニュー一覧"
+
+#~ msgid "Displays Product category list."
+#~ msgstr "商品カテゴリー一覧を表示します。"
+
+#~ msgid "Product category list (tcd ver)"
+#~ msgstr "商品カテゴリー一覧 （tcd バージョン）"
+
+#~ msgid "Menu categories to exclude:"
+#~ msgstr "除外するメニューカテゴリー："
+
+#~ msgid "<p>Recommend image size. Width:830px Height:500px</p>"
+#~ msgstr "<p>推奨サイズ：横幅830px、縦幅500px</p>"
+
+#~ msgid ""
+#~ "If this feild is blank, Featured image will be displayed at single page."
+#~ msgstr ""
+#~ "スライダー用の画像が登録されていない場合は、スライダーは表示せずにアイ"
+#~ "キャッチ画像を代わりに表示します。"
+
+#~ msgid ""
+#~ "Register image for slider.<br />Recommend image size. Width:830px "
+#~ "Height:500px"
+#~ msgstr ""
+#~ "スライダー用の画像を登録してください。<br />推奨サイズ：横幅830px、縦幅"
+#~ "500px"
+
+#~ msgid "Enter catchphrase for first row."
+#~ msgstr "１段目のキャッチフレーズを入力してください。"
+
+#~ msgid "Catchphrase for fourth row"
+#~ msgstr "４段目のキャッチフレーズ"
+
+#~ msgid "Enter catchphrase for fourth row."
+#~ msgstr "４段目のキャッチフレーズを入力してください。"
+
+#~ msgid ""
+#~ "Register image for second row.<br />Recommend image size. Width:1160px "
+#~ "Height:300px"
+#~ msgstr ""
+#~ "２段目の画像を登録してください。<br />推奨サイズ　-　横幅1160px、縦幅300px"
+
+#~ msgid "Headline of Blog list"
+#~ msgstr "ブログ一覧の見出し"
+
+#~ msgid "Number of post to show at Blog list"
+#~ msgstr "ブログ一覧に表示する記事の数"
+
+#~ msgid "Product list setting"
+#~ msgstr "商品一覧の設定"
+
+#~ msgid "Display Product list at footer"
+#~ msgstr "商品一覧をフッターに表示する"
+
+#~ msgid "Number of item to show on Product list"
+#~ msgstr "商品一覧に表示する商品の数"
+
+#~ msgid "Exclude prdocut"
+#~ msgstr "除外する商品"
+
+#~ msgid ""
+#~ "Enter a comma-seperated list of Product ID numbers, example 2,4,10<br /"
+#~ ">(Don't enter comma for last number)."
+#~ msgstr ""
+#~ "除外したい商品のIDをカンマを入れて入力してください。例：2,4,10<br />（注"
+#~ "意：最後の数字にはカンマを入力しないでください）"
+
+#~ msgid "Catchphrase for second row"
+#~ msgstr "２段目のキャッチフレーズ"
+
+#~ msgid "Description for first row."
+#~ msgstr "１段目の説明文"
+
+#~ msgid "Menu page"
+#~ msgstr "メニューページ"
+
+#~ msgid "Menu Page"
+#~ msgstr "メニューページ"
+
+#~ msgid "Gallery Page"
+#~ msgstr "ギャラリーページ"
+
+#~ msgid "Catchphrase of Product archive page"
+#~ msgstr "商品アーカイブページに表示するキャッチフレーズ"
+
+#~ msgid "Button for Product archive page"
+#~ msgstr "商品アーカイブページへのボタン"
+
+#~ msgid "Image for Gallery page"
+#~ msgstr "ギャラリーページ用のメイン画像"
+
+#~ msgid "Image for Gallery page (for mobile)"
+#~ msgstr "ギャラリーページ用のメイン画像（スマホ用）"
+
+#~ msgid "Catchphrase of Gallery archive page"
+#~ msgstr "ギャラリーアーカイブページに表示するキャッチフレーズ"
+
+#~ msgid "Description of Gallery archive page"
+#~ msgstr "ギャラリーアーカイブページに表示する説明文"
+
+#~ msgid "Display News and Blog list at top page"
+#~ msgstr "お知らせとブログ一覧コンテンツをトップページに表示する"
+
+#~ msgid ""
+#~ "It is not the required fields. This image will not be shown at mobile "
+#~ "device."
+#~ msgstr "この画像はスマホ時には表示されません。"
+
+#~ msgid "Display staff list at top page"
+#~ msgstr "スタッフ一覧をトップページに表示する"
+
+#~ msgid "Store information"
+#~ msgstr "お店の情報コンテンツ"
+
+#~ msgid "This image will be displayed at left column."
+#~ msgstr "この画像は１列目に表示されます。"
+
+#~ msgid "This image will be displayed at center column."
+#~ msgstr "この画像は２列目に表示されます。"
+
+#~ msgid "Information archive"
+#~ msgstr "Information一覧"
+
+#~ msgid "Leave this field blank if you don't want to show link button."
+#~ msgstr "リンクボタンを表示したくない場合は空欄にしてください。"
+
+#~ msgid "ALL"
+#~ msgstr "全て"
+
+#~ msgid "Number of item to show on product list"
+#~ msgstr "商品一覧に表示する商品の数"
+
+#~ msgid "Button for product archive page"
+#~ msgstr "商品アーカイブページボタン"
+
+#~ msgid "Display button for product archive page"
+#~ msgstr "商品アーカイブページへのボタンを表示する"
+
+#~ msgid "Product"
+#~ msgstr "商品"
+
+#~ msgid "Product Category"
+#~ msgstr "商品カテゴリー"
+
+#~ msgid "Search Category"
+#~ msgstr "カテゴリーの検索"
+
+#~ msgid "Popular Category"
+#~ msgstr "人気のカテゴリー"
+
+#~ msgid "All Category"
+#~ msgstr "全てのカテゴリー"
+
+#~ msgid "Parent Category"
+#~ msgstr "親カテゴリー"
+
+#~ msgid "Edit Category"
+#~ msgstr "カテゴリーを編集する"
+
+#~ msgid "Update Category"
+#~ msgstr "カテゴリーを更新する"
+
+#~ msgid "Add New Category"
+#~ msgstr "新しいカテゴリーを追加する"
+
+#~ msgid "Name Of New Category"
+#~ msgstr "カテゴリーの名前"
+
+#~ msgid "All category"
+#~ msgstr "全てのカテゴリー"
+
+#~ msgid "Sub title for Product list"
+#~ msgstr "商品カテゴリーのサブタイトル"
+
+#~ msgid "Catchphrase for Product category page"
+#~ msgstr "商品カテゴリーページに表示するキャッチフレーズ"
+
+#~ msgid "Sub title for menu page"
+#~ msgstr "メニューリストで表示する英語のサブタイトル"
+
+#~ msgid "Display footer menu at footer"
+#~ msgstr "フッターにメニューリストを表示する"
+
+#~ msgid "Display button for menu page"
+#~ msgstr "メニューアーカイブページのボタンを表示する"
+
+#~ msgid "Image for Menu page"
+#~ msgstr "メニューページ用のメイン画像"
+
+#~ msgid "Button for menu page"
+#~ msgstr "メニューアーカイブページボタン"
+
+#~ msgid "Display menu at top page"
+#~ msgstr "メニューをトップページに表示する"
+
+#~ msgid "Menu"
+#~ msgstr "メニュー"
+
+#~ msgid "All Menu Category"
+#~ msgstr "全てのメニューカテゴリー"
+
+#~ msgid "Galllery page"
+#~ msgstr "ギャラリーページ"
+
+#~ msgid "Display gallery at top page"
+#~ msgstr "ギャラリーコンテンツをトップページに表示する"
+
+#~ msgid "Number of item to show on gallery list"
+#~ msgstr "ギャラリーリストに表示する画像の数"
+
+#~ msgid "Button for gallery page"
+#~ msgstr "ギャラリーアーカイブページボタン"
+
+#~ msgid "Additional image"
+#~ msgstr "追加画像"
+
+#~ msgid ""
+#~ "Register additional image.<br />Recommend image size. Width:260px "
+#~ "Height:155px"
+#~ msgstr ""
+#~ "追加画像を登録してください。<br />推奨サイズ　-　横幅260px、縦幅155px"
+
+#~ msgid ""
+#~ "Register main image for menu page.<br />Recommend image size. Width:830 "
+#~ "Height:500px"
+#~ msgstr ""
+#~ "詳細ページに表示するメイン画像を登録してください。<br />推奨サイズ　-　横"
+#~ "幅830px、縦幅500px"
+
+#~ msgid "Menu for mobile device"
+#~ msgstr "スマホ用メニュー"
+
+#~ msgid ""
+#~ "Image<br /><small style='font-weight:normal;'>(Recommend size Width:60px "
+#~ "Height:60px)</small>"
+#~ msgstr "画像"
+
+#~ msgid "Add Image"
+#~ msgstr "画像を追加する"
+
+#~ msgid "Sub title for Menu Category Page"
+#~ msgstr "メニューカテゴリーページで表示する英語名"
+
+#~ msgid "Normal post"
+#~ msgstr "通常記事"
+
+#~ msgid "Recommend post1"
+#~ msgstr "おすすめ記事1"
+
+#~ msgid ""
+#~ "If you want to show this post in index page contents or widgets, please "
+#~ "check the checkbox below."
+#~ msgstr ""
+#~ "この記事をトップページのコンテンツやウィジェットで表示したい場合は、以下の"
+#~ "チェックボックスにチェックを入れてください。"
+
+#~ msgid "Show this post for Index header slider."
+#~ msgstr "トップページのヘッダースライダーに表示する"
+
+#~ msgid "Show this post for Index popular post."
+#~ msgstr "トップページのタブ記事一覧２に表示する"
+
+#~ msgid "Show this post for Index featured post."
+#~ msgstr "トップページのタブ記事一覧３に表示する"
+
+#~ msgid "Show this post for Index pickup post."
+#~ msgstr "トップページのピックアップ記事一覧に表示する"
+
+#~ msgid "Show this post for Index featured post slider."
+#~ msgstr "トップページの特集記事スライダーに表示する"
+
+#~ msgid "Show this post for Index featured post2."
+#~ msgstr "トップページの特集記事2に表示する"
+
+#~ msgid "Show this post for recommend post1."
+#~ msgstr "おすすめ記事1に設定（ウィジェットで使用）"
+
+#~ msgid "Index header slider<br />"
+#~ msgstr "ヘッダースライダー<br />"
+
+#~ msgid "Index popular post<br />"
+#~ msgstr "タブ記事一覧２<br />"
+
+#~ msgid "Index featured post<br />"
+#~ msgstr "タブ記事一覧３<br />"
+
+#~ msgid "Index pickup post<br />"
+#~ msgstr "ピックアップ記事一覧<br />"
+
+#~ msgid "Index featured slider<br />"
+#~ msgstr "特集記事スライダー<br />"
+
+#~ msgid "Index featured post2<br />"
+#~ msgstr "特集記事2<br />"
+
+#~ msgid "Recommend post2<br />"
+#~ msgstr "おすすめ記事2ウィジェット<br />"
+
+#~ msgid "Recommend post3<br />"
+#~ msgstr "おすすめ記事3ウィジェット<br />"
+
+#~ msgid ""
+#~ "Upload image to use for logo from your computer.<br />You can resize your "
+#~ "logo image in step 2 and adjust position in step 3."
+#~ msgstr ""
+#~ "自分のコンピュータから登録したいロゴ画像を選択してください。<br />ロゴ画像"
+#~ "を選択した後にアップロードボタンをクリックしてロゴ画像を登録します。<br />"
+#~ "登録したロゴ画像はステップ２よりリサイズ・切り抜きを行う事ができ、ステップ"
+#~ "３より表示位置を調整する事ができます。"
+
+#~ msgid ""
+#~ "You can resize uploaded image.<br />If you don't need to resize, go to "
+#~ "step 3."
+#~ msgstr ""
+#~ "アップロードされた画像はリサイズ・切り抜きすることができます。<br />画像の"
+#~ "上で切り抜く範囲を選択して、青色の「リサイズ」ボタンをクリックしてくださ"
+#~ "い。<br />リサイズが不要の場合は、ステップ２は飛ばしてステップ３へお進みく"
+#~ "ださい。"
+
+#~ msgid "Latest post"
+#~ msgstr "新着記事"
+
+#~ msgid "Popular post"
+#~ msgstr "人気記事"
+
+#~ msgid "Order by Date"
+#~ msgstr "日付順に表示する"
+
+#~ msgid "Order by Random"
+#~ msgstr "ランダムに表示する"
+
+#~ msgid "Order by Date (use slider)"
+#~ msgstr "日付順に表示する（スライドあり）"
+
+#~ msgid "Order by Date (no slider)"
+#~ msgstr "日付順に表示する（スライドなし）"
+
+#~ msgid "Order by Random (use slider)"
+#~ msgstr "ランダムに表示する（スライドあり）"
+
+#~ msgid "Order by Random (no slider)"
+#~ msgstr "ランダムに表示する（スライドなし）"
+
+#~ msgid "Header Banner"
+#~ msgstr "ヘッダーの広告"
+
+#~ msgid "Header slider setup"
+#~ msgstr "ヘッダースライダーの設定"
+
+#~ msgid ""
+#~ "Before using this function, please check the checkbox <strong>\"Header "
+#~ "Slider\"</strong> in post edit page.<br />Maximum number of post shown in "
+#~ "slider is 15."
+#~ msgstr ""
+#~ "この機能を利用する前に、必ず表示したい記事の編集画面にある<strong>\"ヘッ"
+#~ "ダースライダー\"</strong>チェックボックスのチェックを入れてください。<br /"
+#~ ">ヘッダースライダーに表示できる記事の数は最大で15件です。"
+
+#~ msgid "Check if you want to show slider"
+#~ msgstr "スライダーを表示したい場合はチェックを入れて下さい"
+
+#~ msgid ""
+#~ "You can set the order of recommend post slider.<br />If you choose No "
+#~ "Slider, non animated post list will be shown.<br />To use slider "
+#~ "function, you need to set at least 6 or more recommmend posts<br />The "
+#~ "maximum slider page is 3 pages."
+#~ msgstr ""
+#~ "ここではヘッダースライダーの表示パターンを設定できます。<br />「記事の並び"
+#~ "順」×「スライドのあり/なし」の組み合わせ（4パターン）から選択して下さい。"
+#~ "<br /><br />（参考）表示仕様について<br />●記事の並び順<br />・日付順：対"
+#~ "象となる記事を新しいものから順に表示します。<br />・ランダム：対象となる記"
+#~ "事をランダムに表示します。<br />●スライド有無<br />・スライドあり：表示対"
+#~ "象の記事数により最大3枚までスライドします。<br />・スライドなし：表示対象"
+#~ "の記事数にかかわらず、スライド1枚(5記事分)のみ表示します。<br />"
+
+#~ msgid "Tab post list1 setup"
+#~ msgstr "タブ記事一覧１の設定"
+
+#~ msgid "Latest post will be shown for post list1."
+#~ msgstr "タブ記事一覧１には、自動的に新着記事が表示されます。"
+
+#~ msgid "Check if you want to show tab post list1"
+#~ msgstr "タブ記事一覧１を表示したい場合はチェックを入れて下さい"
+
+#~ msgid "Display tab post list1"
+#~ msgstr "タブ記事一覧１を表示する"
+
+#~ msgid "Tab post list2 setup"
+#~ msgstr "タブ記事一覧２の設定"
+
+#~ msgid ""
+#~ "Before using this function, please check the checkbox <strong>\"Popular "
+#~ "Post\"</strong> in post edit page."
+#~ msgstr ""
+#~ "記事編集画面で「記事の表示設定」：”トップページのタブ記事一覧２に表示す"
+#~ "る”にチェックを入れた記事が表示されます。"
+
+#~ msgid "Check if you want to show tab post list2"
+#~ msgstr "タブ記事一覧２を表示したい場合はチェックを入れて下さい"
+
+#~ msgid "Display tab post list2"
+#~ msgstr "タブ記事一覧２を表示する"
+
+#~ msgid "Order of post"
+#~ msgstr "記事の並び順"
+
+#~ msgid "Tab post list3 setup"
+#~ msgstr "タブ記事一覧３の設定"
+
+#~ msgid ""
+#~ "Before using this function, please check the checkbox <strong>\"Featured "
+#~ "Post\"</strong> in post edit page."
+#~ msgstr ""
+#~ "記事編集画面で「記事の表示設定」：”トップページのタブ記事一覧３に表示す"
+#~ "る”にチェックを入れた記事が表示されます。"
+
+#~ msgid "Check if you want to show tab post list3"
+#~ msgstr "タブ記事一覧３を表示したい場合はチェックを入れて下さい"
+
+#~ msgid "Display tab post list3"
+#~ msgstr "タブ記事一覧３を表示する"
+
+#~ msgid "Pickup post list setup"
+#~ msgstr "ピックアップ記事一覧の設定"
+
+#~ msgid ""
+#~ "Before using this function, please check the checkbox <strong>\"Pickup "
+#~ "Post\"</strong> in post edit page."
+#~ msgstr ""
+#~ "記事編集画面で「記事の表示設定」：”トップページのピックアップ記事一覧に表"
+#~ "示する”にチェックを入れた記事が表示されます。"
+
+#~ msgid "Check if you want to show Pickup post list"
+#~ msgstr "ピックアップ記事一覧を表示したい場合はチェックを入れて下さい"
+
+#~ msgid "Name of Pickup post list"
+#~ msgstr "ピックアップ記事一覧の名前"
+
+#~ msgid "Featured post slider setup"
+#~ msgstr "特集記事スライダーの設定"
+
+#~ msgid ""
+#~ "Before using this function, please check the checkbox <strong>\"Featured "
+#~ "Post Slider\"</strong> in post edit page."
+#~ msgstr ""
+#~ "記事編集画面で「記事の表示設定」：”トップページの特集記事スライダーに表示"
+#~ "する”にチェックを入れた記事が表示されます。"
+
+#~ msgid "Check if you want to show featured post slider"
+#~ msgstr "特集記事スライダーを表示したい場合はチェックを入れて下さい"
+
+#~ msgid "Name of the Featured post slider"
+#~ msgstr "特集記事スライダーの名前"
+
+#~ msgid "If you want to show all post, enter <strong>-1</strong>"
+#~ msgstr ""
+#~ "スライダーに表示する記事の数を設定します。<br />すべての記事を表示したい場"
+#~ "合は「-1」を入力してください。"
+
+#~ msgid "Featured post list2 setup"
+#~ msgstr "特集記事2の設定"
+
+#~ msgid ""
+#~ "Before using this function, please check the checkbox <strong>\"Featured "
+#~ "Post2\"</strong> in post edit page."
+#~ msgstr ""
+#~ "記事編集画面で「記事の表示設定」：”トップページの特集記事２に表示する”に"
+#~ "チェックを入れた記事が表示されます。"
+
+#~ msgid "Check if you want to show Featured post list2"
+#~ msgstr "特集記事2を表示したい場合はチェックを入れて下さい"
+
+#~ msgid "Name of Featured post list2"
+#~ msgstr "特集記事2の名前"
+
+#~ msgid "Color of Featured post list2 headline"
+#~ msgstr "見出しの色"
+
+#~ msgid "Header banner setup"
+#~ msgstr "ヘッダーの広告設定"
+
+#~ msgid "Footer logo image setup"
+#~ msgstr "フッターロゴの設定"
+
+#~ msgid "Free input area under footer logo"
+#~ msgstr "フッターロゴの下に表示する文章"
+
+#~ msgid "Index side widget (left)"
+#~ msgstr "トップページ（左）"
+
+#~ msgid "Index side widget (right)"
+#~ msgstr "トップページ（右）"
+
+#~ msgid "Archive side widget (right)"
+#~ msgstr "アーカイブページ（右）"
+
+#~ msgid "Single side widget (right)"
+#~ msgstr "記事ページ（右）"
+
+#~ msgid "Page side widget (right)"
+#~ msgstr "固定ページ（右）"
+
+#~ msgid "Index widget (mobile)"
+#~ msgstr "トップページ（スマホ専用）"
+
+#~ msgid "Show authors profile"
+#~ msgstr "投稿者プロフィールを表示する"
+
+#~ msgid "Profile for Single post"
+#~ msgstr "記事ページに表示するプロフィール"
+
+#~ msgid "Your Twitter URL"
+#~ msgstr "あなたのtwitter URL"
+
+#~ msgid "Global menu (Maximum number of first level menu is 8)"
+#~ msgstr "ヘッダーメニュー（第1階層は8個までしか表示されません）"
+
+#~ msgid "Author List"
+#~ msgstr "投稿者一覧"
+
+#, fuzzy
+#~ msgid "Authors"
+#~ msgstr "投稿者"
+
+#~ msgid "Remove"
+#~ msgstr "削除する"
+
+#~ msgid "Posts by %s"
+#~ msgstr "%sによる記事一覧"
+
+#~ msgid "Background color1"
+#~ msgstr "背景の色１"
+
+#~ msgid "Cancel"
+#~ msgstr "キャンセル"
+
+#~ msgid "Displays chosen category posts."
+#~ msgstr "選択されたカテゴリーの記事一覧を表示します。"
+
+#~ msgid "Category post"
+#~ msgstr "カテゴリー記事一覧"
+
+#~ msgid "All"
+#~ msgstr "全て"
+
+#~ msgid "Displays post list with ranking."
+#~ msgstr "ランキング一覧を表示します。"
+
+#~ msgid "Ranking list (tcd ver)"
+#~ msgstr "ランキング一覧 （tcd バージョン）"
+
+#~ msgid "Ranking"
+#~ msgstr "ランキング"
+
+#~ msgid "Rank1 Title"
+#~ msgstr "ランキング１位のタイトル"
+
+#~ msgid "Rank2 Title"
+#~ msgstr "ランキング２位のタイトル"
+
+#~ msgid "Rank2 URL"
+#~ msgstr "ランキング2位のURL"
+
+#~ msgid "Rank3 Title"
+#~ msgstr "ランキング３位のタイトル"
+
+#~ msgid "Rank3 URL"
+#~ msgstr "ランキング３位のURL"
+
+#~ msgid "Rank4 Title"
+#~ msgstr "ランキング４位のタイトル"
+
+#~ msgid "Rank4 URL"
+#~ msgstr "ランキング４位のURL"
+
+#~ msgid "Rank5 Title"
+#~ msgstr "ランキング５位のタイトル"
+
+#~ msgid "Rank5 URL"
+#~ msgstr "ランキング５位のURL"
+
+#~ msgid "Styled post list2 (tcd ver)"
+#~ msgstr "デザインされた記事一覧２ （tcd バージョン）"
+
+#~ msgid "Styled post list3 (tcd ver)"
+#~ msgstr "デザインされた記事一覧 3（tcd バージョン）"
+
+#~ msgid "Displays post list by thumbnail image."
+#~ msgstr "記事一覧を画像のみで表示します。"
+
+#~ msgid ""
+#~ "You need to register thumbnail image in each post to use this widget."
+#~ msgstr ""
+#~ "このウィジェットを利用する前に、各記事にアイキャッチ画像（サムネイル画像）"
+#~ "を登録してください。"
+
+#~ msgid "Checked recommend post"
+#~ msgstr "記事の表示設定"
+
+#~ msgid "Footer widget (Right)"
+#~ msgstr "フッター（右）"
+
+#~ msgid "read more"
+#~ msgstr "さらに記事を表示する"
+
+#~ msgid "Recommend post4"
+#~ msgstr "おすすめ記事4"
+
+#~ msgid "Recommend post5"
+#~ msgstr "おすすめ記事5"
+
+#~ msgid "Save Color"
+#~ msgstr "色を保存"
+
+#~ msgid "You can set the order of recommend post."
+#~ msgstr "ここではおすすめ記事の並び順を設定できます。"
+
+#~ msgid "twitter and facebook setup"
+#~ msgstr "twitterとfacebookの設定"
+
+#~ msgid ""
+#~ "When it is blank, twitter and facebook icon will not displayed on a site."
+#~ msgstr "空欄の場合は、twitterとfacebookアイコンはフッターに表示されません。"
+
+#~ msgid "Slider setup"
+#~ msgstr "ヘッダースライダーの設定"
+
+#~ msgid "Maximum number of post shown in slider is 18."
+#~ msgstr "スライダーに表示される記事は最大で18件までです。"
+
+#~ msgid "Recommend Post List setup"
+#~ msgstr "記事一覧のタブメニュー設定"
+
+#~ msgid "Name of Tab"
+#~ msgstr "タブの名前"
+
+#~ msgid ""
+#~ "Please check the recommend post checkbox in post edit page before you use "
+#~ "this function.<br />When it is blank, tab and the post list will not be "
+#~ "display in front page."
+#~ msgstr ""
+#~ "タブ１には「おすすめ記事１」、タブ２には「おすすめ記事２」といったように表"
+#~ "示されます。<br />あらかじめ記事投稿画面で表示したいおすすめ記事(タブ)の"
+#~ "チェックボックスにチェックを入れてください。"
+
+#~ msgid "Name of Tab1"
+#~ msgstr "タブ１の名前"
+
+#~ msgid "Name of Tab2"
+#~ msgstr "タブ２の名前"
+
+#~ msgid "Name of Ta3"
+#~ msgstr "タブ３の名前"
+
+#~ msgid "Name of Ta4"
+#~ msgstr "タブ４の名前"
+
+#~ msgid "Name of Ta5"
+#~ msgstr "タブ５の名前"
+
+#~ msgid "Number of Recommend Post List"
+#~ msgstr "各タブの記事一覧で表示する記事の数"
+
+#~ msgid ""
+#~ "If you want to show all post in recommend post list, enter <strong>-1</"
+#~ "strong>"
+#~ msgstr ""
+#~ "各タブで表示する記事の数を設定します。<br />すべての記事を表示したい場合は"
+#~ "「-1」を入力してください。"
+
+#~ msgid "Number of Recommend Post List1"
+#~ msgstr "タブ1で表示する記事の数"
+
+#~ msgid "Number of Recommend Post List2"
+#~ msgstr "タブ2で表示する記事の数"
+
+#~ msgid "Number of Recommend Post List3"
+#~ msgstr "タブ3で表示する記事の数"
+
+#~ msgid "Number of Recommend Post List4"
+#~ msgstr "タブ4で表示する記事の数"
+
+#~ msgid "Number of Recommend Post List5"
+#~ msgstr "タブ5で表示する記事の数"
+
+#~ msgid "Order of Recommend Post List"
+#~ msgstr "各タブで表示する記事の並び順"
+
+#~ msgid "Order of Recommend Post List1"
+#~ msgstr "タブ1の並び順"
+
+#~ msgid "Order of Recommend Post List2"
+#~ msgstr "タブ2の並び順"
+
+#~ msgid "Order of Recommend Post List3"
+#~ msgstr "タブ3の並び順"
+
+#~ msgid "Order of Recommend Post List4"
+#~ msgstr "タブ4の並び順"
+
+#~ msgid "Order of Recommend Post List5"
+#~ msgstr "タブ5の並び順"
+
+#~ msgid "Post list Top area banner setup"
+#~ msgstr "記事一覧上部の広告設定"
+
+#~ msgid "Show this post for recommend post4."
+#~ msgstr "おすすめ記事4（タブ4に表示）に設定"
+
+#~ msgid "Show this post for recommend post5."
+#~ msgstr "おすすめ記事5（タブ5に表示）に設定"
+
+#~ msgid "Single Post Page Banner"
+#~ msgstr "記事ページの広告"
+
+#~ msgid ""
+#~ "Please check the recommend post checkbox in post edit page before you use "
+#~ "this function.<br />When it is blank, Footer Slider will not be display."
+#~ msgstr ""
+#~ "おすすめ記事を表示するためには、あらかじめ記事編集画面にあるカスタムメタ"
+#~ "ボックスより<br />「おすすめ記事」のチェックボックスにチェックを入れてくだ"
+#~ "さい。"
+
+#~ msgid "Side Fixed Banner"
+#~ msgstr "サイドカラムの固定広告"
+
+#~ msgid ""
+#~ "The position of Adsense will be fixed at left top when user scroll the "
+#~ "page."
+#~ msgstr ""
+#~ "ユーザーが画面をスクロールすると、広告が画面左上へ固定されます。<br />登録"
+#~ "されている3つの広告の中からランダムで1つ表示します。"
+
+#~ msgid ""
+#~ "Please read about Adsense terms of use before you use this option and "
+#~ "check the checkbox."
+#~ msgstr ""
+#~ "※あらかじめ各アフィリエイトASPの規約にて「広告の固定表示」の可否をご確認頂"
+#~ "いた上で<br />以下のチェックボックスにチェックを入れてください。"
+
+#~ msgid "Use Fixed Adsense"
+#~ msgstr "固定広告を表示する"
+
+#~ msgid "Adsense banner setup"
+#~ msgstr "広告バナーの設定"
+
+#~ msgid "Name of the Tab"
+#~ msgstr "タブの名前"
+
+#~ msgid "Order of the Recommend Post List"
+#~ msgstr "おすすめ記事の並び順"
+
+#~ msgid "Return Top"
+#~ msgstr "ページ上部へ戻る"
+
+#~ msgid "Misc"
+#~ msgstr "その他"
+
+#~ msgid "Red"
+#~ msgstr "赤"
+
+#~ msgid "Blue"
+#~ msgstr "青"
+
+#~ msgid "Black"
+#~ msgstr "黒"
+
+#~ msgid "Orange"
+#~ msgstr "オレンジ"
+
+#~ msgid "Green"
+#~ msgstr "緑"
+
+#~ msgid "Display none"
+#~ msgstr "何も表示しない"
+
+#~ msgid "Layout1"
+#~ msgstr "レイアウト１"
+
+#~ msgid "Layout2"
+#~ msgstr "レイアウト２"
+
+#~ msgid "Layout3"
+#~ msgstr "レイアウト３"
+
+#~ msgid "Fixed Header"
+#~ msgstr "画面上部へ固定する"
+
+#~ msgid "Recommend Post2"
+#~ msgstr "おすすめ記事2"
+
+#~ msgid "Random Post"
+#~ msgstr "ランダム記事"
+
+#~ msgid "Bell"
+#~ msgstr "ベル"
+
+#~ msgid "Clip"
+#~ msgstr "クリップ"
+
+#~ msgid "Heart"
+#~ msgstr "ハート"
+
+#~ msgid "Ribbon"
+#~ msgstr "リボン"
+
+#~ msgid "Star"
+#~ msgstr "星"
+
+#~ msgid "Footer Banner"
+#~ msgstr "フッターの広告"
+
+#~ msgid "Color type"
+#~ msgstr "色のタイプ"
+
+#~ msgid "Set primary color."
+#~ msgstr "メインカラー"
+
+#~ msgid "Set secondary color."
+#~ msgstr "サブカラー"
+
+#~ msgid "Header Button setting"
+#~ msgstr "ヘッダーのボタン設定"
+
+#~ msgid ""
+#~ "When it is blank, header button and content will not displayed on a site."
+#~ msgstr "空欄の場合は、ヘッダーのボタンは表示されません。"
+
+#~ msgid "Name of misc button"
+#~ msgstr "その他のボタンの名前"
+
+#~ msgid "Header Button Icon Setting"
+#~ msgstr "ヘッダーのボタンに表示するアイコンの設定"
+
+#~ msgid "Icon for category list button"
+#~ msgstr "カテゴリー一覧ボタンのアイコン"
+
+#~ msgid "Icon for recommend list button"
+#~ msgstr "おすすめ記事一覧ボタンのアイコン"
+
+#~ msgid "Icon for misc button"
+#~ msgstr "その他のボタンのアイコン"
+
+#~ msgid "Misc Setting"
+#~ msgstr "その他の設定"
+
+#~ msgid "Top area"
+#~ msgstr "上部"
+
+#~ msgid "Middle area"
+#~ msgstr "中部"
+
+#~ msgid "Bottom area"
+#~ msgstr "下部"
+
+#~ msgid "Post list Middle area banner setup"
+#~ msgstr "記事一覧中部の広告設定"
+
+#~ msgid "Post list Bottom area banner setup"
+#~ msgstr "記事一覧下部の広告設定"
+
+#~ msgid "Bottom of the Logo"
+#~ msgstr "ロゴの下"
+
+#~ msgid "Single page Bottom area banner setup"
+#~ msgstr "記事ページ下部の広告設定"
+
+#~ msgid "Register banner image"
+#~ msgstr "画像を登録する"
+
+#~ msgid "Check if you wan't to show this post for recommend post2."
+#~ msgstr ""
+#~ "この記事をおすすめ記事2として表示したい場合は、下のチェックボックスに"
+#~ "チェックを入れてください。"
+
+#~ msgid "Tags"
+#~ msgstr "タグ"
+
+#~ msgid "Date"
+#~ msgstr "日付"
+
+#~ msgid "Site Author Information (tcd ver)"
+#~ msgstr "自己紹介 (tcd-w バージョン)"
+
+#~ msgid "Author:"
+#~ msgstr "対象とする投稿者："
+
+#~ msgid "Show Author Avatar:"
+#~ msgstr "アバターを表示する："
+
+#~ msgid "Smartphone Banner"
+#~ msgstr "スマホ用の広告"
+
+#~ msgid "Single post page banner setup1.(Show on top of the post.)"
+#~ msgstr "詳細記事ページ上部に表示する広告"
+
+#~ msgid "Single post page banner setup2.(Show on bottom of the post.)"
+#~ msgstr "詳細記事ページ下部に表示する広告"
+
+#~ msgid ""
+#~ "This Adsense is displayed only on the user who accessed the site with the "
+#~ "smartphone."
+#~ msgstr ""
+#~ "この広告は、ユーザーがスマートフォンを使ってサイトにアクセスした時のみ表示"
+#~ "されます。<br />パソコンでアクセスした場合には表示されませんので、確認の際"
+#~ "はご注意ください。"
+
+#~ msgid "Smartphone banner setup1. (Display on the top of a page)"
+#~ msgstr "スマホ用広告の設定１（この広告はページ上部に表示されます）"
+
+#~ msgid "Smartphone banner setup2. (Display on the bottom of a page)"
+#~ msgstr "スマホ用広告の設定２（この広告はページ下部に表示されます）"
+
+#~ msgid "Recommend"
+#~ msgstr "おすすめ記事"
+
+#~ msgid "Pink"
+#~ msgstr "ピンク"
+
+#~ msgid "Press Release Archive"
+#~ msgstr "プレスリリースのアーカイブ"
+
+#~ msgid "Comment are closed."
+#~ msgstr "コメントは利用できません。"
+
+#~ msgid "Press Release"
+#~ msgstr "プレスリリース"
+
+#~ msgid "Recent news"
+#~ msgstr "最近のお知らせ"
+
+#~ msgid "Recent Press Release"
+#~ msgstr "最新のプレスリリース"
+
+#~ msgid "Write comment"
+#~ msgstr "コメントを書く"
+
+#~ msgid "1 comment"
+#~ msgstr "コメント：1件"
+
+#~ msgid "% comments"
+#~ msgstr "コメント：%件"
+
+#~ msgid "Author recent post"
+#~ msgstr "この著者の最新の記事"
+
+#~ msgid "Width 300px, Height 250px"
+#~ msgstr "横幅300px、縦幅250pxサイズの広告バナーを2つ表示"
+
+#~ msgid "Width 300px, Height 60px"
+#~ msgstr "横幅300px、縦幅60pxサイズの広告バナーを4つ表示"
+
+#~ msgid "Number of PR list at Index page"
+#~ msgstr "トップページに表示するPRの数"
+
+#~ msgid "PR list headline"
+#~ msgstr "PR一覧の見出し"
+
+#~ msgid "PR title"
+#~ msgstr "PRタイトル"
+
+#~ msgid "PR url"
+#~ msgstr "PRのURL"
+
+#~ msgid "Show Ranking list at Index page"
+#~ msgstr "トップページにランキング一覧を表示する"
+
+#~ msgid "Number of Ranking list at Index page"
+#~ msgstr "トップページに表示するランキングの数"
+
+#~ msgid "Ranking list headline"
+#~ msgstr "ランキング一覧の見出し"
+
+#~ msgid "Ranking url"
+#~ msgstr "ランキングURL"
+
+#~ msgid "Number of News to show on News archive page"
+#~ msgstr "お知らせのアーカイブページに表示する記事の数"
+
+#~ msgid "Number of Press Release to show on Press Release archive page"
+#~ msgstr "プレスリリースのアーカイブページに表示する記事の数"
+
+#~ msgid "Select post type to use in Slider"
+#~ msgstr "スライダーに表示する記事タイプを選択してください。"
+
+#~ msgid "Featured category post1 setting"
+#~ msgstr "おすすめカテゴリー記事１の設定"
+
+#~ msgid ""
+#~ "Select category to use for featured category post1.<br />Leave this field "
+#~ "blank if you don't want to use featured category post1."
+#~ msgstr ""
+#~ "おすすめカテゴリー記事１に利用するカテゴリーを選択してください。<br />記事"
+#~ "一覧を表示したくない場合は、セレクトボックスを空欄に設定してください。"
+
+#~ msgid "Featured category post2 setting"
+#~ msgstr "おすすめカテゴリー記事２の設定"
+
+#~ msgid ""
+#~ "Select category to use for featured category post2.<br />Leave this field "
+#~ "blank if you don't want to use featured category post2."
+#~ msgstr ""
+#~ "おすすめカテゴリー記事２に利用するカテゴリーを選択してください。<br />記事"
+#~ "一覧を表示したくない場合は、セレクトボックスを空欄に設定してください。"
+
+#~ msgid "Featured category post3 setting"
+#~ msgstr "おすすめカテゴリー記事３の設定"
+
+#~ msgid ""
+#~ "Select category to use for featured category post3.<br />Leave this field "
+#~ "blank if you don't want to use featured category post3."
+#~ msgstr ""
+#~ "おすすめカテゴリー記事３に利用するカテゴリーを選択してください。<br />記事"
+#~ "一覧を表示したくない場合は、セレクトボックスを空欄に設定してください。"
+
+#~ msgid "Select the type of Adsense banner."
+#~ msgstr "ページ下部に表示する広告バナーの種類を選択してください。"
+
+#~ msgid "Register banner image (width:300px height:250px)"
+#~ msgstr "画像を登録する　（横幅300px、縦幅250px）"
+
+#~ msgid "Register banner image (width:300px height:60px)"
+#~ msgstr "画像を登録する　（横幅300px、縦幅60px）"
+
+#~ msgid "Check if you wan't to show this post for pickup post."
+#~ msgstr ""
+#~ "この記事をピックアップ記事として表示したい場合は、下のチェックボックスに"
+#~ "チェックを入れてください。"
+
+#~ msgid "Check if you wan't to show this post for recommend post3."
+#~ msgstr ""
+#~ "この記事をおすすめ記事３として表示したい場合は、下のチェックボックスに"
+#~ "チェックを入れてください。"
+
+#~ msgid "There is no registered news."
+#~ msgstr "登録されているお知らせはございません。"
+
+#~ msgid "Displays Press Release list."
+#~ msgstr "プレスリリース一覧を表示します。"
+
+#~ msgid "Press Release list (tcd ver)"
+#~ msgstr "プレスリリース一覧 （tcd バージョン）"
+
+#~ msgid "There is no registered press."
+#~ msgstr "登録されているプレスリリースはございません。"
+
+#~ msgid "Number of press:"
+#~ msgstr "表示するプレスリリースの数："
+
+#~ msgid "Displays your PR list."
+#~ msgstr "PR一覧を表示します。"
+
+#~ msgid "PR list (tcd ver)"
+#~ msgstr "PR一覧 （tcd バージョン）"
+
+#~ msgid "Link URL of PR post"
+#~ msgstr "PRのURL"
+
+#~ msgid "Displays your Ranking list."
+#~ msgstr "ランキング一覧を表示します。"
+
+#~ msgid "Please set Ranking in Theme option page first."
+#~ msgstr ""
+#~ "利用する前に、テーマオプション画面よりランキングの設定を行ってください。"
+
+#~ msgid "Name of Ranking post"
+#~ msgstr "ランキングの名前"
+
+#~ msgid "Link URL of Ranking post"
+#~ msgstr "ランキングのURL"
+
+#~ msgid "Archive"
+#~ msgstr "アーカイブ"
+
+#~ msgid "Please set PR in Theme option page first."
+#~ msgstr "利用するために、テーマオプション画面よりPRの設定を行ってください。"
+
+#~ msgid "Displays your recommend posts."
+#~ msgstr "おすすめ記事を表示します。"
+
+#~ msgid "Recommend (tcd-w ver)"
+#~ msgstr "おすすめ記事 (tcd-w バージョン)"
+
+#~ msgid "Displays your recommend posts2."
+#~ msgstr "おすすめ記事2を表示します。"
+
+#~ msgid "Recommend2 (tcd-w ver)"
+#~ msgstr "おすすめ記事2 (tcd-w バージョン)"
+
+#~ msgid "Please select recommend post from post edit page."
+#~ msgstr "記事の編集ページから「おすすめ記事」を複数選択してください。"
+
+#~ msgid "Please select pickup post from post edit page."
+#~ msgstr "記事の編集ページから「ピックアップ記事」を選択してください。"
+
+#~ msgid "About author"
+#~ msgstr "この記事の著者"
+
+#~ msgid "Adsense Banner Widget Setup"
+#~ msgstr "広告バナーウィジェット"
+
+#~ msgid "Adsense Banner Widget2 Setup"
+#~ msgstr "広告バナーウィジェット2"
+
+#~ msgid "Topics title"
+#~ msgstr "記事のタイトル"
+
+#~ msgid "Side category headline"
+#~ msgstr "カテゴリー一覧の見出し"
+
+#~ msgid "Check if you want to show category list at sidebar."
+#~ msgstr "カテゴリー一覧を表示したい場合はチェックを入れて下さい。"
+
+#~ msgid "Side archive headline"
+#~ msgstr "過去の記事一覧の見出し"
+
+#~ msgid "Display archive at sidebar"
+#~ msgstr "過去の記事一覧を右サイドに表示する"
+
+#~ msgid "Index gallery animation setting"
+#~ msgstr "トップページのギャラリーのアニメーション設定"
+
+#~ msgid "You can check animation here"
+#~ msgstr "アニメーションの動きはコチラのサイトでご確認いただけます。"
+
+#~ msgid "Footer AdSense area headline"
+#~ msgstr "広告エリアの見出し"
+
+#~ msgid "Register banner image (maximum width 225px)"
+#~ msgstr "画像を登録する（最大横幅225px）"
+
+#~ msgid ""
+#~ "Adsense will be displayed at random in front page.<br />Don't forget to "
+#~ "set the Adsense banner Widget from widget page."
+#~ msgstr ""
+#~ "複数の広告バナーが登録されている場合は、登録されたバナーからランダムに１つ"
+#~ "表示されます。<br />広告バナーウィジェットを利用する為には、ウィジェット"
+#~ "ページより「広告バナー」を選択してください。"
+
+#~ msgid ""
+#~ "Adsense will be displayed at random in front page.<br />Don't forget to "
+#~ "set the Adsense banner Widget2 from widget page."
+#~ msgstr ""
+#~ "複数の広告バナーが登録されている場合は、登録されたバナーからランダムに１つ"
+#~ "表示されます。<br />広告バナーウィジェットを利用する為には、ウィジェット"
+#~ "ページより「広告バナー2」を選択してください。"
+
+#~ msgid "Pickup"
+#~ msgstr "ピックアップ記事"
+
+#~ msgid "Side widget"
+#~ msgstr "サイド"
+
+#~ msgid "Side widget2"
+#~ msgstr "サイド2"
+
+#~ msgid "Smartphone widget"
+#~ msgstr "スマホ専用"
+
+#~ msgid "Cannot delete existing resized logo."
+#~ msgstr "削除する事ができませんでした。"
+
+#~ msgid "Mobile Banner Setup"
+#~ msgstr "スマホ用の広告"
+
+#~ msgid "Adsense1"
+#~ msgstr "広告バナー"
+
+#~ msgid "Pickup "
+#~ msgstr "ピックアップ記事"
+
+#~ msgid "Display thumbnail at single post page."
+#~ msgstr "サムネイルを記事の詳細ページに表示する"
+
+#~ msgid "Fix position of adsense"
+#~ msgstr "スクロールしても広告をサイドに固定する"
+
+#~ msgid "Adsense2"
+#~ msgstr "広告バナー2"
+
+#~ msgid "Please input the twitter name which begins from @ mark."
+#~ msgstr ""
+#~ "先頭が＠マークからはじまる、twitterで利用している名前を入力してください。"
+#~ "<br />例：@test-twitter"
+
+#~ msgid "Email"
+#~ msgstr "メールアドレス"
+
+#~ msgid "Website"
+#~ msgstr "ウェブサイト"
+
+#~ msgid "Right"
+#~ msgstr "2カラム2"
+
+#~ msgid "Three column1"
+#~ msgstr "3カラム1"
+
+#~ msgid "Three column2"
+#~ msgstr "3カラム2"
+
+#~ msgid "Only use in three column layout"
+#~ msgstr "3カラムレイアウト時のみ使用します"
+
+#~ msgid "Footer right area widget"
+#~ msgstr "フッター右側"
+
+#~ msgid "Calendar"
+#~ msgstr "カレンダー"
+
+#~ msgid "m/d. Y"
+#~ msgstr "Y年 F d日"
+
+#~ msgid "Center bottom widget"
+#~ msgstr "中央下部"
+
+#~ msgid "Registration is possible to three."
+#~ msgstr "登録できるウィジェットは３つまでです。"
+
+#~ msgid "Registration is possible to one."
+#~ msgstr "登録できるウィジェットは1つまでです。"
+
+#~ msgid "Recent Article"
+#~ msgstr "最新の記事一覧"
+
+#~ msgid "Older Entries"
+#~ msgstr "過去の記事一覧を見る"
+
+#~ msgid "We use this color for link hover effect."
+#~ msgstr "この色は、リンクにオンマウスした時等に使用します。"
+
+#~ msgid "Display social bookmarks"
+#~ msgstr "ソーシャルブックマークを表示する"
+
+#~ msgid "Your contact page URL."
+#~ msgstr "お問い合わせページのURL"
+
+#~ msgid "Enter full pass of your contact page URL"
+#~ msgstr "URLは、http://から始まるフルパスで入力してください。"
+
+#~ msgid "Top page center widget"
+#~ msgstr "トップページ中央下"
+
+#~ msgid "Top page left widget"
+#~ msgstr "トップページ左"
+
+#~ msgid "Top page right widget"
+#~ msgstr "トップページ右下"
+
+#~ msgid "PR"
+#~ msgstr "おすすめ"
+
+#~ msgid "Register thumbnai image"
+#~ msgstr "スライダーのサムネイル画像の登録　（横幅：206px　縦幅：54px）"
+
+#~ msgid "We use this color for image hover effect."
+#~ msgstr "この色は、スライダーの画像にオンマウスした時に使用します。"
+
+#~ msgid "Recommend banner headline"
+#~ msgstr "バナーエリアの見出し"
+
+#~ msgid "Enter your twitter URL."
+#~ msgstr "あなたのtwitter URLを入力してください。"
+
+#~ msgid "Blog post"
+#~ msgstr "記事の詳細"
+
+#~ msgid "SEARCH KEYWORD"
+#~ msgstr "キーワード"
+
+#~ msgid "Banner"
+#~ msgstr "バナーの設定"
+
+#~ msgid "Log out"
+#~ msgstr "ログアウト"
+
+#~ msgid " hit"
+#~ msgstr "件"
+
+#~ msgid "Sample Color"
+#~ msgstr "色のサンプル"
+
+#~ msgid "Purple"
+#~ msgstr "紫"

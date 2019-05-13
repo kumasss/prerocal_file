@@ -1,0 +1,2 @@
+ <?php
+ require_once(dirname(__FILE__).'/../../common/config.ini'); require_once(dirname(__FILE__).'/../../common/logs.php'); $logsObj = new logs(); $max_cnt = LOG_MAX_REC; $del_cnt = LOG_DEL_CNT; if($logsObj->cnt_extra_mail_log( $max_cnt )) { $logsObj->db_delete_extra_log_cnt($del_cnt); } ?>

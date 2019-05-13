@@ -1,0 +1,644 @@
+<?php
+ define('FNAME_ORG_INI','../common/config_org.ini'); define('FNAME_INI','../common/config.ini'); define('FNAME_ORG_PHP_INI','../common/php_org.ini'); define('FNAME_PHP_INI_V','../common/js/tiny_mce/plugins/quickuploadvideo/php.ini'); define('FNAME_PHP_INI_F','../common/js/tiny_mce/plugins/quickuploadfile/php.ini'); define('FNAME_PHP_INI_A','../common/js/tiny_mce/plugins/quickuploadaudio/php.ini'); define('REQUIRED_FILE1','index.php'); define('REQUIRED_FILE2','../common/'); define('PHP_VER','5.6'); function get_data( $data, &$aryData ) { $aryData = array(); foreach($data as $key=>$value) { $$key = isset($value) ? htmlspecialchars($value, ENT_QUOTES) : NULL ; $reqData[$key] = $$key; $aryData = $reqData; } } function make_ini_file( $form_data ){ $url=$form_data['url']; $str = @file_get_contents(FNAME_ORG_INI); $dbname=$form_data['dbname']; $dbuser=$form_data['dbuser']; $dbpassword=$form_data['dbpassword']; $mysql=$form_data['mysql']; $rstr = substr(str_shuffle('1234567890abcdefghijklmnopqrstuvwxyz'), 0, 8); $user_id = $rstr.'_USER_ID'; $password = $rstr.'_PASSWORD'; $group_id = $rstr.'_GROUP_ID'; $reg_date = $rstr.'_REG_DATE'; $str = str_replace('DBNAME', $dbname, $str); $str = str_replace('DBUSER', $dbuser, $str); $str = str_replace('DBPASSWORD', $dbpassword, $str); $str = str_replace('MYSQL', $mysql, $str); $str = str_replace('YOURURL', $url, $str); $str = str_replace('SEUSERID', $user_id, $str); $str = str_replace('SEPASSWORD', $password, $str); $str = str_replace('SEREGDATE', $reg_date, $str); $str = str_replace('SEGROUPID', $group_id, $str); file_put_contents(FNAME_INI, $str); $htaccess = @file_get_contents('../.htaccess'); $is_str = strpos($htaccess, '# BEGIN Cyfons'); if ($is_str === false) { (!empty($htaccess))?$str="\n":$str=''; $str .= "# BEGIN Cyfons\n"; $str .= 'RewriteEngine on'; $str .= "\n"; $str .= 'RewriteRule cf/(.*) '.$url.'/su_cf.php?code=$1 [R,L]'; $str .= "\n"; $str .= 'RewriteRule pg/(.*) '.$url.'/page.php?url=$1 [R,L]'; $str .= "\n"; $str .= "# END Cyfons\n"; file_put_contents('../.htaccess', $str, FILE_APPEND); } $str = @file_get_contents(FNAME_ORG_PHP_INI); file_put_contents(FNAME_PHP_INI_V, $str); file_put_contents(FNAME_PHP_INI_F, $str); file_put_contents(FNAME_PHP_INI_A, $str); } if( $_SERVER['REQUEST_METHOD'] == 'POST' || $_SERVER['REQUEST_METHOD'] == 'GET' ) { get_data($_REQUEST, $form_data); } $configini=''; if(isset($form_data['over_wtite'])){ if($form_data['over_wtite']){$configini='over_wtite';}else{$configini="";} }elseif(isset($form_data['no_over_wtite'])){ if($form_data['no_over_wtite']){$configini='no_over_wtite';}else{$configini="";} }else{$configini='';} echo <<< EOD
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Cyfonsインストール</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" style="margin-bottom:50px;">
+EOD;
+if(empty($form_data['status'])): $form_data['status']=''; $phpver=phpversion(); $req_php_ver=PHP_VER; if($phpver>=PHP_VER){ $html = <<< EOD
+<div class="panel panel-primary">
+<div class="panel-heading">PHPのバージョンチェック</div>
+<div class="panel-body">
+<p style="margin-bottom:20px;"><span style="color:green;font-weight:bold;">【OK】</span>ご利用のPHPのバージョンは<span style="color:green;font-weight:bold;">{$phpver}</span>です。<p/>
+<button class="btn btn-primary" id="btn-confirm1"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" id="loading"></span>　インストールを続行する　</button>
+</div>
+EOD;
+} else{ $html = <<< EOD
+<div class="panel panel-danger">
+<div class="panel-heading">【注意】PHPのバージョン</div>
+<div class="panel-body">
+<p>CyfonsではPHPのバージョンを<span style="color:red;font-weight:bold;">{$req_php_ver}以上</span>を標準としております。</p>
+<p>現在インストールされようとしている環境はPHP<span style="color:red;font-weight:bold;">{$phpver}</span>かと思われますため、一部の機能が使えない可能性もございます。</p>
+<p>そのことをご了承いただいたうえで、サーバーのPHPバージョンを<span style="color:red;font-weight:bold;">{$req_php_ver}以上</span>に設定を変更頂くか、このままインストールを続ける場合には一部機能が使えない可能性があることをご了承の上でお願い致します。</p>
+<button class="btn btn-primary" id="btn-confirm1"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" id="loading"></span>　上記を理解したうえで、インストールを続行する　</button>
+</div>
+EOD;
+} echo '<h2>PHPバージョンチェック</h2>'; echo $html; echo <<< EOD
+<form method="POST" id="form-confirm1">
+<input type="hidden" name="status" value="confirm0">
+</form>
+<script>
+$(document).ready( function() {
+	$("#loading").hide();
+	$('#btn-confirm1').click( function(e) {
+		e.preventDefault();
+		$("#loading").show();
+		$('#btn-confirm1').attr('disabled', true);
+		$('#form-confirm1').submit();
+	});
+});
+</script>
+EOD;
+endif; if($form_data['status']=='confirm0'): $form_data['url']=''; $url=(empty($_SERVER["HTTPS"])?"http://":"https://").$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; $url = preg_replace('!/[^/]*$!', '/', $url); $url = rtrim($url, '/'); $url = preg_replace('!/[^/]*$!', '/', $url); $url = rtrim($url, '/'); echo <<< EOD
+<h1>Cyfonsインストール(1/3)</h1>
+<p>アプリケーションを設置するアドレスはこちらであっていますか？</p>
+<p style="">　<span style="background-color:yellow;color:#000000;font-size:1.2em;padding:3px;">設置するアドレス：{$url}</span></p>
+<p>もし違う場合、上手く自動取得できていない場合は<br>
+こちらのフォームに正しく入力して下さい。</p>
+<form method="post">
+<div class="form-group">
+<input type="text" name="url" value="{$url}" style="width:300px;" class="form-control">
+<input type="hidden" name="status" value="confirm1">
+<span style="color:red;" class="help-block small">※入力例　http://exsample.com<br>
+　最後にスラッシュはつけないでください。</span>
+</div>
+
+<div class="form-group">
+<label>シリアル番号を入力して下さい。</label>
+<input type="text" name="serialnumber" value="" size="48" style="width:300px;" class="form-control">
+</div>
+<input type="submit" value="次に進む" class="btn btn-primary">
+</form>
+EOD;
+endif; if($form_data['status']=='confirm1'): if ($form_data['serialnumber'] == ''){ echo <<< EOD
+<h1>Cyfonsインストール(1/3)</h1>
+<p>アプリケーションを設置するアドレスはこちらであっていますか？</p>
+<p style="">　<span style="background-color:yellow;color:#000000;font-size:1.2em;padding:3px;">設置するアドレス：{$form_data['url']}</span></p>
+<p>もし違う場合、上手く自動取得できていない場合は<br>
+こちらのフォームに正しく入力して下さい。</p>
+<form method="post">
+<div class="form-group">
+<input type="text" name="url" value="{$form_data['url']}" style="width:300px;" class="form-control">
+<input type="hidden" name="status" value="confirm1">
+<span style="color:red;" class="help-block small">※入力例　http://exsample.com<br>
+　最後にスラッシュはつけないでください。</span>
+</div>
+
+<div class="form-group">
+<label>シリアル番号を入力して下さい。</label>
+<input type="text" name="serialnumber" value="" size="48" style="width:300px;" class="form-control">
+<span style="color:red;font-size:0.78em;">シリアル番号が入力されていません。</span>
+</div>
+<input type="submit" value="次に進む" class="btn btn-primary">
+</form>
+EOD;
+return; } define('API_URL', 'https://cyfons.net/callapi/'); $domain = $_SERVER['HTTP_HOST']; $form_data['serialnumber'] = trim($form_data['serialnumber']); $receive = @file_get_contents(API_URL."setDomain?sn=".$form_data['serialnumber']."&u=".urlencode($domain)); $arr_error = @explode("<errcode>", $receive); if (isset($arr_error[1])){ echo <<< EOD
+<h1>Cyfonsインストール(1/3)</h1>
+<p>アプリケーションを設置するアドレスはこちらであっていますか？</p>
+<p>　設置するアドレス：{$form_data['url']}</p>
+<p>もし違う場合、上手く自動取得できていない場合は<br>
+こちらのフォームに正しく入力して下さい。</p>
+<form method="post">
+<input type="textarea" name="url" value="{$form_data['url']}" style="width:250px;">
+<input type="hidden" name="status" value="confirm1">
+<input type="submit" value="次に進む" class="btn btn-primary"><br>
+<span style="color:red;font-size:0.78em;">※入力例　http://exsample.com<br>
+　最後にスラッシュはつけないでください。</span>
+
+<br><br>
+<span>シリアル番号</span><br>
+<input type="text" name="serialnumber" value="{$form_data['serialnumber']}" size="48"><br>
+<span style="color:red;font-size:0.78em;">{$arr_error[1]}</span>
+</form>
+EOD;
+return; } if (file_exists(REQUIRED_FILE1) & file_exists(REQUIRED_FILE2)) { $mess = ''; } else { $tmp=@file_get_contents('https://miyako:wk1234@cyfons.net/update/update.zip'); if ( $tmp === false ){ die("アップデートファイルがダウンロードできませんでした。しばらくしてから再度実行してください。"); } $fp = fopen( dirname(__FILE__).'/../update.zip', 'w'); fwrite($fp, $tmp); fclose($fp); $mess = '<p style="color:green;font-weight:bold;">Cyfons システムのダウンロード'; if (PHP_OS == "WIN32" || PHP_OS == "WINNT") { $mess.='完了。<br><span style="color:red">Windows環境のためZIP展開できませんでした。手動で展開してください。</span></p>'; }else{ $str = exec( 'unzip -o -d ' . dirname(__FILE__).'/../ ' . dirname(__FILE__).'/../update.zip' ); $rstr = substr(str_shuffle('1234567890abcdefghijklmnopqrstuvwxyz'), 0, 12); rename('../update.zip', '../'.$rstr.'.cyfons'); $mess.='完了、展開完了。</p>'; } } eval($receive); $url=$form_data['url']; $configini=""; if(isset($form_data['over_wtite'])){$configini='over_wtite'; }elseif(isset($form_data['no_over_wtite'])){$configini='no_over_wtite'; }else{$configini='';} if( (file_exists(FNAME_INI)) && ($configini=='') ){ echo <<< EOD
+<h1>Cyfonsインストール(1/3)</h1>
+<p>config.iniが存在しています。上書きしますか？</p>
+<form method="post">
+<input type="hidden" name="status" value="reset_config">
+<input type="hidden" name="sql_user" value="{$sql_user}">
+<input type="hidden" name="insert_user" value="{$insert_user}">
+<input type="hidden" name="sql_kuni" value="{$sql_kuni}">
+<input type="hidden" name="serialnumber" value="{$form_data['serialnumber']}">
+<input type="hidden" name="url" value="{$form_data['url']}">
+<input type="hidden" name="mess" value="{$mess}">
+<input type="submit" name="over_wtite" value="上書きする" class="btn btn-danger">
+<input type="submit" name="no_over_wtite" value="上書きしない" class="btn btn-primary">
+</form>
+EOD;
+exit; }else{ $form_data['status']="reset_config"; $form_data['sql_user']="{$sql_user}"; $form_data['insert_user']="{$insert_user}"; $form_data['sql_kuni']="{$sql_kuni}"; $form_data['serialnumber']="{$form_data['serialnumber']}"; $form_data['url']="{$form_data['url']}"; $form_data['mess']="{$mess}"; } endif; if($form_data['status']=='reset_config'): if( !(file_exists(FNAME_INI)) || $configini=='over_wtite'){ echo <<< EOD
+<h1>Cyfonsインストール(2/3)</h1>
+{$form_data['mess']}
+<p>データベースの設定をします。[01]</p>
+<form method="post">
+<div class="form-group">
+<label>データベース名</label>
+<input type="textarea" name="dbname" style="width:300px;" class="form-control">
+</div>
+<div class="form-group">
+<label>ログインユーザー名</label>
+<input type="textarea" name="dbuser" style="width:300px;" class="form-control">
+</div>
+<div class="form-group">
+<label>ログインパスワード</label>
+<input type="textarea" name="dbpassword" style="width:300px;" class="form-control">
+</div>
+<div class="form-group">
+<label>mysql名</label>
+<input type="textarea" name="mysql" style="width:300px;" class="form-control">
+</div>
+<input type="hidden" name="status" value="confirm2">
+<input type="hidden" name="sql_user" value="{$form_data['sql_user']}">
+<input type="hidden" name="insert_user" value="{$form_data['insert_user']}">
+<input type="hidden" name="sql_kuni" value="{$form_data['sql_kuni']}">
+<input type="hidden" name="serialnumber" value="{$form_data['serialnumber']}">
+<input type="hidden" name="url" value="{$form_data['url']}">
+<input type="hidden" name="over_wtite" value="上書きする">
+<input type="submit" value="次に進む" class="btn btn-primary">
+</form>
+EOD;
+exit; }else{ $form_data['status']="sql"; $form_data['sql_user']="{$form_data['sql_user']}"; $form_data['insert_user']="{$form_data['insert_user']}"; $form_data['sql_kuni']="{$form_data['sql_kuni']}"; $form_data['serialnumber']="{$form_data['serialnumber']}"; $form_data['url']="{$form_data['url']}"; } endif; if($form_data['status']=='confirm2'): if( !(file_exists(FNAME_INI)) || $configini=='over_wtite' ){ make_ini_file( $form_data ); } $form_data['status']='sql'; endif; if($form_data['status']=='sql'): echo '<h1>Cyfonsインストール(3/3)</h1>'; require_once( '../common/main_install.php' ); $Obj = new main_install($form_data['sql_user'], $form_data['insert_user'], $form_data['sql_kuni'], $form_data['serialnumber'], $form_data['url'] ); $var_TableName="users"; $result=$Obj->get_exist_TB($var_TableName); if($result){ echo "入力したデータベースは既に存在します。同じデータベースを使用しますか？<br><br>"; echo <<< EOD
+<form method="post">
+<input type="hidden" name="status" value="set_db1">
+<input type="hidden" name="sql_user" value="{$form_data['sql_user']}">
+<input type="hidden" name="insert_user" value="{$form_data['insert_user']}">
+<input type="hidden" name="sql_kuni" value="{$form_data['sql_kuni']}">
+<input type="hidden" name="serialnumber" value="{$form_data['serialnumber']}">
+<input type="hidden" name="url" value="{$form_data['url']}">
+<input type="submit" name="no_reset_db" value="使用する" class="btn btn-danger">
+<input type="submit" name="reset_db" value="データベースの設定に戻る" class="btn btn-primary">
+</form>
+EOD;
+}else{ $form_data['status']='create_db'; } endif; if($form_data['status']=="set_db1"): if(isset($form_data['reset_db'])){ if($form_data['reset_db']){ echo <<< EOD
+<h1>Cyfonsインストール(2/3)</h1>
+<p>データベースの設定をします。[02]</p>
+<form method="post">
+<div class="form-group">
+<label>データベース名</label>
+<input type="textarea" name="dbname" style="width:300px;" class="form-control">
+</div>
+<div class="form-group">
+<label>ログインユーザー名</label>
+<input type="textarea" name="dbuser" style="width:300px;" class="form-control">
+</div>
+<div class="form-group">
+<label>ログインパスワード</label>
+<input type="textarea" name="dbpassword" style="width:300px;" class="form-control">
+</div>
+<div class="form-group">
+<label>mysql名</label>
+<input type="textarea" name="mysql" style="width:300px;" class="form-control">
+</div>
+<input type="hidden" name="status" value="set_db2">
+<input type="hidden" name="sql_user" value="{$form_data['sql_user']}">
+<input type="hidden" name="insert_user" value="{$form_data['insert_user']}">
+<input type="hidden" name="sql_kuni" value="{$form_data['sql_kuni']}">
+<input type="hidden" name="serialnumber" value="{$form_data['serialnumber']}">
+<input type="hidden" name="url" value="{$form_data['url']}">
+<input type="submit" value="次に進む" class="btn btn-primary">
+</form>
+EOD;
+} }else{ $form_data['status']='create_db'; } endif; if($form_data['status']=="set_db2"): make_ini_file( $form_data ); $form_data['status']='create_db'; endif; if($form_data['status']=="create_db"): echo '<h1>Cyfonsインストール(...データベース作成中)</h1>'; require_once( '../common/main.php' ); require_once( '../common/main_install.php' ); $Obj = new main_install($form_data['sql_user'], $form_data['insert_user'], $form_data['sql_kuni'], $form_data['serialnumber'], $form_data['url'] ); $sql = "CREATE TABLE IF NOT EXISTS `bodys` (
+  `id` int(11) NOT NULL auto_increment,
+  `title` text,
+  `body` text,
+  `type` int(11) default NULL,
+  `created` datetime default NULL,
+  `modified` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `bodys`<br>"; $sql = "INSERT INTO `bodys` (`id`, `title`, `body`, `type`, `created`, `modified`) VALUES
+(1, '登録ありがとうございます。', '%name1%様\r\n\r\n登録ありがとうございます。\r\nすぐに会員サイトをお使いいただくことができます。\r\n\r\n--------------------------------------------------------\r\nURL：%url%\r\nID：%email%\r\nパスワード：%password%\r\n--------------------------------------------------------\r\n\r\n会員名：%name1%%name2%\r\n注文ID：%order_no%\r\n\r\n\r\n配信解除はこちらのフォームからお願いします。\r\n%form_stop%\r\n', 0,  NOW(), NULL),
+(2, '登録解除されました。', '解除が完了しました。\nこれまでのお付き合いありがとうございました。\nまた機会がありましたらどうぞよろしくお願いします。', 1, NOW(), NULL)"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `bodys`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `extra_mails` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `scenario_id` int(11) DEFAULT NULL,
+  `title` varchar(200) DEFAULT NULL,
+  `header_id` int(11) DEFAULT NULL,
+  `contents` text,
+  `footer_id` int(11) DEFAULT NULL,
+  `group_id` varchar(1000) DEFAULT NULL,
+  `send_time` datetime DEFAULT NULL,
+  `send_done` datetime DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `scenario_id` (`scenario_id`),
+  KEY `header_id` (`header_id`),
+  KEY `footer_id` (`footer_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `extra_mails`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `extra_mail_logs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` char(14) DEFAULT NULL,
+  `extra_mail_id` int(11) DEFAULT NULL,
+  `title` varchar(200) NOT NULL,
+  `contents` text NOT NULL,
+  `send_date` datetime DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `send_flg` int(11) DEFAULT '0',
+  `deleted` datetime DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY  (`id`),
+  KEY `extra_mail_id` (`extra_mail_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `extra_mail_logs`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `footers` (
+  `id` int(11) NOT NULL auto_increment,
+  `footer` text,
+  `created` datetime default NULL,
+  `modified` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `footers`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `groups` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_name` varchar(100) NOT NULL,
+  `group_code` varchar(10) NOT NULL,
+  `del_flg` int(11) NOT NULL DEFAULT '0',
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `groups`<br>"; $sql = "INSERT INTO `groups` (`id`, `group_name`, `group_code`, `del_flg`, `created`, `modified`) VALUES (1, '共通', '', 0, NOW(), NULL);"; $Obj->db_sql( $sql ); echo "テーブルテーブルにデータを設定しました。 `groups`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `stories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` int(11) NOT NULL DEFAULT '1',
+  `step_mail_id` int(11) DEFAULT NULL,
+  `story_no` int(11) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `group_id` (`group_id`),
+  KEY `step_mail_id` (`step_mail_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `stories`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `headers` (
+  `id` int(11) NOT NULL auto_increment,
+  `header` text,
+  `created` datetime default NULL,
+  `modified` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `headers`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `scenarios` (
+  `id` int(11) NOT NULL auto_increment,
+  `scenario` varchar(200) default NULL,
+  `created` datetime default NULL,
+  `modified` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `scenarios`<br>"; $sql = "INSERT INTO `scenarios` (`id`, `scenario`, `created`, `modified`) VALUES
+(1, 'シナリオ１', NOW(), NULL)"; $Obj->db_sql( $sql ); echo "テーブルテーブルにデータを設定しました。 `scenarios`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `settings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` int(11) DEFAULT NULL,
+  `admin_id` varchar(200) DEFAULT NULL,
+  `user_password` varchar(40) DEFAULT NULL,
+  `form_password` varchar(40) DEFAULT NULL,
+  `from_email` varchar(100) DEFAULT NULL,
+  `name_email` varchar(100) DEFAULT NULL,
+  `reply_email` varchar(100) DEFAULT NULL,
+  `send_err_num` int(11) DEFAULT '3',
+  `send_err` int(11) DEFAULT '0',
+  `send_stop` int(11) DEFAULT '0',
+  `send_num` int(11) DEFAULT '1',
+  `send_interval` int(11) DEFAULT '6',
+  `send_now` int(11) DEFAULT '0',
+  `send_stepmail` int(11) NOT NULL DEFAULT '0',
+  `send_extramail` int(11) NOT NULL DEFAULT '0',
+  `automail_add_admin` int(11) DEFAULT '0',
+  `automail_stop_admin` int(11) DEFAULT '0',
+  `automail_edit_admin` int(11) DEFAULT '0',
+  `automail_add_user` int(11) DEFAULT '0',
+  `automail_stop_user` int(11) DEFAULT '0',
+  `automail_edit_user` int(11) DEFAULT '0',
+  `form_email` int(11) DEFAULT '1',
+  `form_email2` int(11) DEFAULT '1',
+  `form_password2` int(11) DEFAULT '1',
+  `form_firstname` int(11) DEFAULT '0',
+  `form_lastname` int(11) DEFAULT '0',
+  `form_order_no` int(11) DEFAULT '0',
+  `form_is_email` int(11) DEFAULT '1',
+  `form_is_firstname` int(11) DEFAULT '0',
+  `form_is_lastname` int(11) DEFAULT '0',
+  `form_is_order_no` int(11) DEFAULT '0',
+  `form_is_password` int(11) NOT NULL DEFAULT '1',
+  `form_is_password2` int(11) NOT NULL DEFAULT '1',
+  `form_add_done_message` text NOT NULL,
+  `form_stop_done_message` text NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `group_id` (`group_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `settings`<br>"; $sql = "INSERT INTO `settings` (`id`, `group_id`, `admin_id`, `user_password`, `form_password`, `from_email`, `name_email`, `reply_email`, `send_err_num`, `send_err`, `send_stop`, `send_num`, `send_interval`, `send_now`, `send_stepmail`, `send_extramail`, `automail_add_admin`, `automail_stop_admin`, `automail_edit_admin`, `automail_add_user`, `automail_stop_user`, `automail_edit_user`, `form_email`, `form_email2`, `form_password2`, `form_firstname`, `form_lastname`, `form_order_no`, `form_is_email`, `form_is_firstname`, `form_is_lastname`, `form_is_order_no`, `form_is_password`, `form_is_password2`, `form_add_done_message`, `form_stop_done_message`, `created`, `modified`) VALUES
+(1, 1, NULL, 'k8g4t3ng1', '123456', NULL, NULL, NULL, 3, 0, 0, 1, 6, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, '&lt;p&gt;会員登録が完了しました。&lt;br&gt;\r\nこの度はお申し込みをありがとうございました。&lt;/p&gt;\r\n&lt;p&gt;今後退会される時は、配信されるメール内の配信解除用リンクをクリックするか&lt;br&gt;\r\n解除フォームからメールアドレスを送信すると退会することができます。&lt;/p&gt;\r\n', '&lt;p&gt;会員の解除が完了しました。&lt;br&gt;\r\nこれまでのお付き合いをありがとうございました。&lt;/p&gt;\r\n', NOW(), NULL);"; $Obj->db_sql( $sql ); echo "テーブルテーブルにデータを設定しました。 `settings`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `step_mails` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `scenario_id` int(11) DEFAULT NULL,
+  `title` varchar(200) DEFAULT NULL,
+  `header_id` int(11) DEFAULT NULL,
+  `contents` text,
+  `footer_id` int(11) DEFAULT NULL,
+  `story_no` int(11) DEFAULT NULL,
+  `send_flg` int(11) DEFAULT '0',
+  `group_id` varchar(1000) NOT NULL,
+  `send_date` int(11) DEFAULT '0',
+  `send_time` time DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY  (`id`),
+  KEY `header_id` (`header_id`),
+  KEY `footer_id` (`footer_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `step_mails`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `step_mail_logs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` char(14) DEFAULT NULL,
+  `step_mail_id` int(11) DEFAULT NULL,
+  `title` varchar(200) NOT NULL,
+  `contents` text NOT NULL,
+  `story_no` int(11) NOT NULL,
+  `send_date` datetime DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `send_flg` int(11) DEFAULT '0',
+  `deleted` datetime DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY  (`id`),
+  KEY `step_mail_id` (`step_mail_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `step_mail_logs`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `tp_contents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `description` varchar(400) DEFAULT NULL,
+  `keyword` varchar(400) DEFAULT NULL,
+  `title` varchar(200) DEFAULT NULL,
+  `position_c` int(11) NOT NULL,
+  `contents` text,
+  `eye_image_id` int(11) DEFAULT NULL,
+  `add_br` int(11) DEFAULT '1',
+  `url` varchar(200) DEFAULT NULL,
+  `public_date` int(11) DEFAULT NULL,
+  `no_public_date` int(11) DEFAULT NULL,
+  `public` int(11) DEFAULT NULL,
+  `password` varchar(64) DEFAULT NULL,
+  `group_id` varchar(1000) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `eye_image_id` (`eye_image_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `tp_contents`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `tp_img_uploaders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(200) DEFAULT NULL,
+  `org_file` varchar(200) DEFAULT NULL,
+  `store_file` varchar(200) DEFAULT NULL,
+  `store_folder` varchar(200) DEFAULT NULL,
+  `thumbnail` varchar(200) DEFAULT NULL,
+  `position` varchar(32) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `tp_img_uploaders`<br>"; $sql = "INSERT INTO `tp_img_uploaders` (`id`, `title`, `org_file`, `store_file`, `store_folder`, `thumbnail`, `position`, `created`, `modified`) VALUES
+(1, 'target', 'target.png', '1400787830898288.png', 'images/default', 'thum-1400787830898288.png', '', NOW(), NULL),
+(2, 'prize_winner', 'prize_winner.png', '1400787824853391.png', 'images/default', 'thum-1400787824853391.png', '', NOW(), NULL),
+(3, 'light_bulb', 'light_bulb.png', '1400787817763463.png', 'images/default', 'thum-1400787817763463.png', '', NOW(), NULL),
+(4, 'clip', 'clip.png', '1400787811725922.png', 'images/default', 'thum-1400787811725922.png', '', NOW(), NULL),
+(5, 'warning', 'warning.png', '1400787799169904.png', 'images/default', 'thum-1400787799169904.png', '', NOW(), NULL),
+(6, 'search', 'search.png', '1400787794060809.png', 'images/default', 'thum-1400787794060809.png', '', NOW(), NULL),
+(7, 'note_accept', 'note_accept.png', '1400787787459790.png', 'images/default', 'thum-1400787787459790.png', '', NOW(), NULL),
+(8, 'edit', 'edit.png', '1400787781539281.png', 'images/default', 'thum-1400787781539281.png', '', NOW(), NULL),
+(9, 'chalk_board', 'chalk_board.png', '1400787776251915.png', 'images/default', 'thum-1400787776251915.png', '', NOW(), NULL),
+(10, 'tools', 'tools.png', '1400787837137831.png', 'images/default', 'thum-1400787837137831.png', '', NOW(), NULL);"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `tp_img_uploaders`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `tp_inquirys` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(200) NOT NULL,
+  `contents` text NOT NULL,
+  `info` text NOT NULL,
+  `formtitle` varchar(200) NOT NULL,
+  `dtstart` datetime DEFAULT NULL,
+  `dtend` datetime DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=2"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `tp_inquirys`<br>"; $sql = "INSERT INTO `tp_inquirys` (`id`, `title`, `contents`, `info`, `formtitle`, `dtstart`, `dtend`, `created`, `modified`) VALUES
+(1, 'お問い合わせありがとうございました。', 'お問い合わせありがとうございました。\r\n早急にご返信致しますので今しばらくお待ちください。\r\n\r\n送信内容は以下になります。', 'こちらのフォームからお問い合せください。', 'お問い合わせ', NULL, NULL, NOW(), NULL)"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `tp_inquirys`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `tp_settings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `site_name` varchar(200) DEFAULT NULL,
+  `head` text,
+  `head_script_add` text,
+  `body_script_add` text,
+  `css` varchar(400) DEFAULT NULL,
+  `top_template` varchar(400) DEFAULT NULL,
+  `contents_template` varchar(400) DEFAULT NULL,
+  `is_edit` smallint(2) NOT NULL DEFAULT '1',
+  `disp_contact` tinyint(1) NOT NULL DEFAULT '1',
+  `disp_member` tinyint(1) NOT NULL DEFAULT '1',
+  `disp_logout` tinyint(1) NOT NULL DEFAULT '1',
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `tp_settings`<br>"; $sql = "INSERT INTO `tp_settings` (`id`, `site_name`, `head`, `css`, `top_template`, `contents_template`, `is_edit`, `disp_contact`, `disp_member`, `disp_logout`,`created`, `modified`) VALUES
+(1, 'メンバー会員', '&lt;meta name=&quot;author&quot; content=&quot;AUTHOR&quot;&gt;', 'default/add.css', 'default/main.php', 'default/page.php', 1, 1, 1, 1, NOW(), NULL)"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `tp_settings`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `tp_sidebars` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `contents_id` int(11) DEFAULT NULL,
+  `side_title_id` int(11) DEFAULT NULL,
+  `position` int(11) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `contents_id` (`contents_id`),
+  KEY `side_title_id` (`side_title_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `tp_sidebars`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `tp_side_freeareas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `contents` text,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `tp_side_freeareas`<br>"; $sql = "INSERT INTO `tp_side_freeareas` (`id`, `contents`, `created`, `modified`) VALUES
+(1, '', NOW(), NULL),
+(2, '', NOW(), NULL),
+(3, 'メニュー', NOW(), NULL),
+(4, 'その他', NOW(), NULL),
+(5, '', NOW(), NULL)"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `tp_side_freeareas`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `tp_side_titles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(200) DEFAULT NULL,
+  `position_m` int(11) NOT NULL,
+  `toggle_flg` int(11) NOT NULL DEFAULT '1',
+  `public` int(11) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `tp_side_titles`<br>"; $sql = "INSERT INTO `tp_side_titles` (`id`, `title`, `position_m`, `toggle_flg`, `public`, `created`, `modified`) VALUES
+(1, 'no caption', 1, 1, NULL, NOW(), NULL);"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `tp_side_titles`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `tp_tops` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `description` varchar(400) DEFAULT NULL,
+  `keyword` varchar(400) DEFAULT NULL,
+  `title` varchar(200) DEFAULT NULL,
+  `contents` text,
+  `add_br` int(11) DEFAULT '1',
+  `url` varchar(200) DEFAULT NULL,
+  `public` int(11) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `tp_tops`<br>"; $sql = "INSERT INTO `tp_tops` (`id`, `description`, `keyword`, `title`, `contents`, `add_br`, `url`, `public`, `created`, `modified`) VALUES
+(1, 'トップページディスクリプション', 'トップページキーワード', 'トップページタイトル', 'トップページの記事です。', 1, 'index', 1, NOW(), NULL)"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `tp_tops`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `su_short_url` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `short_code` varchar(12) NOT NULL,
+  `short_url` varchar(2000) NOT NULL,
+  `long_url` varchar(2000) NOT NULL,
+  `title` varchar(200) NOT NULL,
+  `group_code` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `end_url` varchar(2000) DEFAULT NULL,
+  `end_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `short_code` (`short_code`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `su_short_url`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `su_click_log` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`short_code` varchar(12) CHARACTER SET utf8 NOT NULL,
+	`short_url` varchar(2000) CHARACTER SET utf8 NOT NULL,
+	`referrer` varchar(2000) CHARACTER SET utf8 DEFAULT NULL,
+	`user_agent` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+	`ip_address` varchar(41) CHARACTER SET utf8 DEFAULT NULL,
+	`datetime` datetime NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `su_click_log`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `su_api_access_log` (
+  `mode` varchar(20) NOT NULL,
+  `shortcode` varchar(12) NOT NULL,
+  `traffic` int(11) DEFAULT '0',
+  `mail_mode` varchar(20) DEFAULT NULL,
+  `mail_id` int(11) DEFAULT '0',
+  `datetime` datetime NOT NULL,
+  KEY `shortcode` (`shortcode`),
+  KEY `datetime` (`datetime`),
+  KEY `mode` (`mode`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `su_api_access_log`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `su_api_sync` (
+  `id` int(11) NOT NULL,
+  `last_update` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `su_api_sync`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `su_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `row` int(11) NOT NULL DEFAULT '0',
+  `name` varchar(10) NOT NULL,
+  `description` varchar(50) DEFAULT NULL,
+  `created` datetime NOT NULL,
+  `updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `su_category`<br>"; $sql = "INSERT INTO `su_category` (`id`, `row`, `name`, `description`, `created`, `updated`) VALUES
+(1, 0, 'カテゴリなし', NULL, '0000-00-00 00:00:00', NULL);"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `su_category`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `ac_site_logs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `short_code` varchar(12) NOT NULL,
+  `short_url` varchar(200) NOT NULL,
+  `site_url` varchar(200) NOT NULL,
+  `referer` varchar(200) DEFAULT NULL,
+  `user_agent` varchar(255) DEFAULT NULL,
+  `ip_address` varchar(41) DEFAULT NULL,
+  `host` varchar(200) DEFAULT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `ac_site_logs`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `ac_mail_logs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `short_code` varchar(12) NOT NULL,
+  `short_url` varchar(200) NOT NULL,
+  `mail_id` int(11) NOT NULL,
+  `mail_mode` varchar(200) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `ac_mail_logs`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `pm_contract` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`product_id` varchar(16) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+`status` varchar(20) DEFAULT NULL,
+`user_id` int(11) DEFAULT NULL,
+`bank_txn_id` varchar(20) DEFAULT NULL,
+`txn_id` varchar(20) DEFAULT NULL,
+`txn_type` varchar(20) DEFAULT NULL,
+`payment_type` varchar(20) DEFAULT NULL,
+`order_time` datetime NOT NULL,
+`amt` varchar(20) DEFAULT NULL,
+`fee_amt` varchar(20) DEFAULT NULL,
+`tax_amt` varchar(20) DEFAULT NULL,
+`currency_code` varchar(20) DEFAULT NULL,
+`pending_reason` varchar(20) DEFAULT NULL,
+`reason_code` varchar(20) DEFAULT NULL,
+`error_code` varchar(20) DEFAULT NULL,
+`mail_transfer` varchar(30) DEFAULT NULL,
+`mail_complete` varchar(30) DEFAULT NULL,
+`mail_refund` varchar(30) DEFAULT NULL,
+`created` datetime NOT NULL,
+`updated` datetime DEFAULT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `pm_contract`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `pm_payment_bank` (
+`bank_txn_id` varchar(20) NOT NULL,
+`bank_buyer_name` varchar(40) DEFAULT NULL,
+`bank_buyer_email` varchar(200) DEFAULT NULL,
+`bank_buyer_transfer_date` DATETIME NULL,
+`bank_account_name` varchar(40) DEFAULT NULL,
+`bank_payment_amount` int(11) DEFAULT NULL,
+`bank_payment_status` varchar(20) DEFAULT NULL,
+`created` datetime DEFAULT NULL,
+`updated` datetime DEFAULT NULL,
+PRIMARY KEY (`bank_txn_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `pm_payment_bank`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `pm_payment_paypal` (
+  `payer_id` varchar(20) DEFAULT NULL,
+  `tax` int(11) DEFAULT  '0',
+  `payment_date` datetime DEFAULT NULL,
+  `payment_status` varchar(20) DEFAULT NULL,
+  `first_name` varchar(100) DEFAULT NULL,
+  `mc_fee` int(11) DEFAULT '0',
+  `notify_version` varchar(10) DEFAULT NULL,
+  `payer_status` varchar(20) DEFAULT NULL,
+  `num_cart_items` int(11) DEFAULT '0',
+  `payer_email` varchar(200) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `txn_id` varchar(20) NOT NULL,
+  `payment_type` varchar(20) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `receiver_email` varchar(200) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `payment_fee` int(11) DEFAULT '0',
+  `receiver_id` varchar(20) DEFAULT NULL,
+  `txn_type` varchar(20) DEFAULT NULL,
+  `mc_gross` int(11) DEFAULT '0',
+  `mc_currency` varchar(10) DEFAULT NULL,
+  `test_ipn` int(1) DEFAULT NULL,
+  `transaction_subject` varchar(200) DEFAULT NULL,
+  `payment_gross` int(11) DEFAULT '0',
+  `ipn_track_id` varchar(20) DEFAULT NULL,
+  `log` text,
+  `created` datetime DEFAULT NULL,
+  `updated` datetime DEFAULT NULL,
+PRIMARY KEY (`txn_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `pm_payment_paypal`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `pm_product` (
+  `id` varchar(16) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `unit_id` varchar(16) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `description` varchar(500) NOT NULL,
+  `price` int(11) NOT NULL DEFAULT '0',
+  `bank_flag` int(11) NOT NULL DEFAULT '0',
+  `bank_tr_deadline` smallint(6) DEFAULT '7',
+  `bank_app_mail_title` varchar(100) DEFAULT NULL,
+  `bank_app_mail_body` varchar(6000) DEFAULT NULL,
+  `sales_option` tinyint(4) NOT NULL DEFAULT '0',
+  `image_flag` int(11) DEFAULT '0',
+  `group_info` varchar(100) DEFAULT NULL,
+  `mail_title` varchar(100) DEFAULT NULL,
+  `mail_body` varchar(6000) DEFAULT NULL,
+  `after_url` varchar(1000) DEFAULT NULL,
+  `register_url` varchar(1000) DEFAULT NULL,
+  `version` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `pm_product_IX1` (`id`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `pm_product`<br>"; $sql = "CREATE TABLE IF NOT EXISTS `pm_seller_setting` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `bank_req_title` varchar(100) DEFAULT NULL,
+  `bank_req_body` varchar(6000) DEFAULT NULL,
+  `sender_name` varchar(200) DEFAULT NULL,
+  `sender_email` varchar(200) DEFAULT NULL,
+  `mail_title` varchar(100) NOT NULL,
+  `mail_body` varchar(6000) NOT NULL,
+  `payback_mail_title` varchar(100) NOT NULL,
+  `payback_mail_body` varchar(6000) NOT NULL,
+  `bank_name` varchar(40) NOT NULL,
+  `bank_branch_name` varchar(40) NOT NULL,
+  `bank_type` int(11) DEFAULT '0',
+  `bank_account_number` varchar(40) NOT NULL,
+  `bank_account` varchar(40) NOT NULL,
+  `api_username` varchar(200) DEFAULT NULL,
+  `api_password` varchar(20) DEFAULT NULL,
+  `api_signature` varchar(80) DEFAULT NULL,
+  `api_sandbox_mode` tinyint(1) DEFAULT '1',
+  `api_sand_username` varchar(200) DEFAULT NULL,
+  `api_sand_password` varchar(20) DEFAULT NULL,
+  `api_sand_signature` varchar(80) DEFAULT NULL,
+  `created` datetime NOT NULL,
+  `updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;"; $Obj->db_sql( $sql ); echo "テーブルを作成しました `pm_seller_setting`<br>"; $sql = "INSERT INTO `pm_seller_setting` (`id`, `bank_req_title`, `bank_req_body`, `sender_name`, `sender_email`, `mail_title`, `mail_body`, `payback_mail_title`, `payback_mail_body`, `bank_name`, `bank_branch_name`, `bank_type`, `bank_account_number`, `bank_account`, `api_username`, `api_password`, `api_signature`, `api_sandbox_mode`, `api_sand_username`, `api_sand_password`, `api_sand_signature`, `created`, `updated`) VALUES
+(1, '「%title%」銀行振込お申込みの確認', '%bank_account_name%様\r\n\r\n\r\nこのたびは、「%title%」をお申し込み頂き、\r\n誠にありがとうございます。\r\n\r\nこのメールには\r\nお申し込み内容とお振込先口座番号が明記されておりますので、\r\n大切に保管していただきますようお願いいたします。\r\n\r\n\r\n-------------------------------------------\r\n　お振込先口座番号\r\n-------------------------------------------\r\n\r\n【振込先口座】\r\n%bank_seller_account%\r\n振り込み金額：%price% 円\r\n\r\n\r\nお振込予定日：%bank_buyer_transfer_date%\r\n（お振込み期限は %deadline_date% となっておりますのでご注意ください）\r\n\r\n\r\n備考：\r\n・お振り込み手数料はご負担くださいますようお願い申し上げます。\r\n・銀行からのお振込み控えをもって領収書にかえさせていただきます。\r\n\r\n\r\nご入金が確認できましたら弊社からその旨メールにてお知らせいたします。\r\n\r\n\r\n\r\n-------------------------------------------\r\n　商品情報\r\n-------------------------------------------\r\n\r\n注文ID：%bank_txn_id%\r\n商品名：%title%\r\n価　格：%price% 円\r\n注文日：%order_time%', '', '', '「%title%」決済完了のお知らせ', '%x_account%様\r\n\r\nこのたびは、「%title%」をお申し込み頂き、\r\n誠にありがとうございます。\r\n\r\n決済の確認ができました。\r\n\r\n\r\n引き続きこちらのページよりご登録をお願い致します。\r\n\r\n%item_url%\r\n\r\n\r\n■お申込み内容確認\r\n\r\n-------------------------------------------\r\n　商品情報\r\n-------------------------------------------\r\n\r\n注文ID：%x_txn_id%\r\n商品名：%title%\r\n価　格：%price% 円\r\n注文日：%order_time%', '「%title%」返金のお知らせ', '%x_account%様\r\n\r\n「%title%」の返金手続きを行いましたので、\r\nお知らせいたします。\r\n\r\n\r\n-------------------------------------------\r\n　商品情報\r\n-------------------------------------------\r\n\r\n注文ID：%bank_txn_id%\r\n商品名：%title%\r\n価　格：%price% 円\r\n注文日：%order_time%\r\n\r\n\r\n\r\nクレジット決済にてお申し込み頂いた方へ\r\n　Paypalを通じて、ご登録のクレジットカードに返金となります。\r\n　その場合、いったん決済された後に、遅れて返金される流れとなるかと思います。\r\n　（お使いのカードによっては決済日から１、２ヵ月後となる場合がございます）\r\n\r\n銀行振込にてお申し込み頂いた方へ\r\n　確認させて頂きました銀行口座へ返金させて頂いておりますのでご確認ください。', '', '', 0, '', '', '', '', '', 1, '', '', '', '2014-12-22 00:00:00', '2014-12-22 00:00:00');"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました `pm_seller_setting`<br>"; $sql = htmlspecialchars_decode($form_data['sql_user'], ENT_QUOTES); $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `users`<br>"; $sql = htmlspecialchars_decode($form_data['insert_user'], ENT_QUOTES); $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `users`<br>"; $sql = htmlspecialchars_decode($form_data['sql_kuni'], ENT_QUOTES); $Obj->db_sql( $sql ); echo "テーブルを作成しました。 `serial`<br>"; $sql = "TRUNCATE TABLE `serial`;"; $Obj->db_sql( $sql ); echo "テーブルのデータを削除しました。 `serial`<br>"; $sql = "INSERT INTO `serial` (`serialnumber`) VALUES ('{$form_data['serialnumber']}');"; $Obj->db_sql( $sql ); echo "テーブルにデータを設定しました。 `serial`<br>"; $form_data['status']='reset_config'; endif; if($form_data['status']=='reset_config'): echo <<< EOD
+<p>新規テーブルの追加が完了しました。</p>
+<p>残りの更新作業を行います。</p>
+<form method="post" action="./update_start.php">
+<input type="submit" value="次に進む" class="btn btn-primary">
+</form>
+EOD;
+endif; echo '</div><!-- /.container -->'; echo '</body>'; echo '</html>';

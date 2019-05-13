@@ -1,0 +1,486 @@
+
+2018-09-03 11:22:45 434 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-03 11:22:45 434 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-03 11:22:45 434 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-03 11:22:45 434 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-03 11:22:45 434 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-03 11:22:45 434 [Note] InnoDB: Memory barrier is not used
+2018-09-03 11:22:45 434 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-03 11:22:45 434 [Note] InnoDB: Using Linux native AIO
+2018-09-03 11:22:45 434 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-03 11:22:45 434 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-09-03 11:22:45 434 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-03 11:22:45 434 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-03 11:22:45 434 [Note] InnoDB: The log sequence numbers 1595675 and 1595675 in ibdata files do not match the log sequence number 1595916 in the ib_logfiles!
+2018-09-03 11:22:45 434 [Note] InnoDB: Database was not shutdown normally!
+2018-09-03 11:22:45 434 [Note] InnoDB: Starting crash recovery.
+2018-09-03 11:22:45 434 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-03 11:22:45 434 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-03 11:22:45 434 [Note] InnoDB: from the doublewrite buffer...
+2018-09-03 11:22:46 434 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-03 11:22:46 434 [Note] InnoDB: Creating tablespace and datafile system tables.
+2018-09-03 11:22:46 434 [Note] InnoDB: Tablespace and datafile system tables created.
+2018-09-03 11:22:46 434 [Note] InnoDB: Waiting for purge to start
+2018-09-03 11:22:46 434 [Note] InnoDB: 5.6.34 started; log sequence number 1595916
+2018-09-03 11:22:46 434 [ERROR] mysqld: Table './mysql/user' is marked as crashed and should be repaired
+2018-09-03 11:22:46 434 [Warning] Checking table:   './mysql/user'
+2018-09-03 11:22:46 434 [ERROR] 1 client is using or hasn't closed the table properly
+2018-09-03 11:22:46 434 [Note] Binlog end
+2018-09-03 11:22:46 434 [Note] InnoDB: FTS optimize thread exiting.
+2018-09-03 11:22:46 434 [Note] InnoDB: Starting shutdown...
+2018-09-03 11:22:48 434 [Note] InnoDB: Shutdown completed; log sequence number 1600309
+180903 11:22:49 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-03 11:22:49 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-03 11:22:49 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-03 11:22:49 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 877 ...
+2018-09-03 11:22:49 877 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-03 11:22:49 877 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-03 11:22:49 877 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-03 11:22:49 877 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-03 11:22:49 877 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-03 11:22:49 877 [Note] InnoDB: Memory barrier is not used
+2018-09-03 11:22:49 877 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-03 11:22:49 877 [Note] InnoDB: Using Linux native AIO
+2018-09-03 11:22:49 877 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-03 11:22:49 877 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2018-09-03 11:22:49 877 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-03 11:22:49 877 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-03 11:22:49 877 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-03 11:22:49 877 [Note] InnoDB: Waiting for purge to start
+2018-09-03 11:22:49 877 [Note] InnoDB: 5.6.34 started; log sequence number 1600309
+2018-09-03 11:22:49 877 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: b0bc58f9-af6b-11e8-9569-0242ac110002.
+2018-09-03 11:22:49 877 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-03 11:22:49 877 [Note] IPv6 is available.
+2018-09-03 11:22:49 877 [Note]   - '::' resolves to '::';
+2018-09-03 11:22:49 877 [Note] Server socket created on IP: '::'.
+2018-09-03 11:22:49 877 [ERROR] Column count of mysql.events_waits_current is wrong. Expected 19, found 16. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-03 11:22:49 877 [ERROR] Column count of mysql.events_waits_history is wrong. Expected 19, found 16. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-03 11:22:49 877 [ERROR] Column count of mysql.events_waits_history_long is wrong. Expected 19, found 16. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_host_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Incorrect definition of table performance_schema.events_waits_summary_by_thread_by_event_name: expected column 'THREAD_ID' at position 0 to have type bigint(20), found type int(11).
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_user_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_waits_summary_by_account_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Column count of mysql.file_summary_by_event_name is wrong. Expected 23, found 5. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-03 11:22:49 877 [ERROR] Column count of mysql.file_summary_by_instance is wrong. Expected 25, found 6. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'host_cache' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Incorrect definition of table performance_schema.mutex_instances: expected column 'LOCKED_BY_THREAD_ID' at position 2 to have type bigint(20), found type int(11).
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'objects_summary_global_by_type' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Incorrect definition of table performance_schema.rwlock_instances: expected column 'WRITE_LOCKED_BY_THREAD_ID' at position 2 to have type bigint(20), found type int(11).
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'setup_actors' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'setup_objects' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'table_io_waits_summary_by_index_usage' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'table_io_waits_summary_by_table' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'table_lock_waits_summary_by_table' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Column count of mysql.threads is wrong. Expected 14, found 3. Created with MySQL 50560, now running 50634. Please use mysql_upgrade to fix this error.
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_stages_current' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_stages_history' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_stages_history_long' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_thread_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_account_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_user_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_by_host_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_stages_summary_global_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_statements_current' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_statements_history' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_statements_history_long' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_thread_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_account_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_user_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_host_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_global_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'events_statements_summary_by_digest' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'users' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'accounts' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'hosts' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'socket_instances' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'socket_summary_by_instance' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'socket_summary_by_event_name' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'session_connect_attrs' has the wrong structure
+2018-09-03 11:22:49 877 [ERROR] Native table 'performance_schema'.'session_account_connect_attrs' has the wrong structure
+2018-09-03 11:22:49 877 [Note] Event Scheduler: Loaded 0 events
+2018-09-03 11:22:49 877 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180903 12:02:12 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-03 12:02:12 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-03 12:02:12 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-03 12:02:12 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 570 ...
+2018-09-03 12:02:12 570 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-03 12:02:12 570 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-03 12:02:12 570 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-03 12:02:12 570 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-03 12:02:12 570 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-03 12:02:12 570 [Note] InnoDB: Memory barrier is not used
+2018-09-03 12:02:12 570 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-03 12:02:12 570 [Note] InnoDB: Using Linux native AIO
+2018-09-03 12:02:12 570 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-03 12:02:12 570 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-03 12:02:12 570 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-03 12:02:12 570 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-03 12:02:12 570 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 2935893 in the ib_logfiles!
+2018-09-03 12:02:12 570 [Note] InnoDB: Database was not shutdown normally!
+2018-09-03 12:02:12 570 [Note] InnoDB: Starting crash recovery.
+2018-09-03 12:02:12 570 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-03 12:02:12 570 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-03 12:02:12 570 [Note] InnoDB: from the doublewrite buffer...
+2018-09-03 12:02:12 570 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-03 12:02:12 570 [Note] InnoDB: Waiting for purge to start
+2018-09-03 12:02:12 570 [Note] InnoDB: 5.6.34 started; log sequence number 2935893
+2018-09-03 12:02:12 570 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-03 12:02:12 570 [Note] IPv6 is available.
+2018-09-03 12:02:12 570 [Note]   - '::' resolves to '::';
+2018-09-03 12:02:12 570 [Note] Server socket created on IP: '::'.
+2018-09-03 12:02:12 570 [Note] Event Scheduler: Loaded 0 events
+2018-09-03 12:02:12 570 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180903 13:34:45 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-03 13:34:45 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-03 13:34:45 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-03 13:34:45 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 553 ...
+2018-09-03 13:34:45 553 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-03 13:34:45 553 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-03 13:34:45 553 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-03 13:34:45 553 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-03 13:34:45 553 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-03 13:34:45 553 [Note] InnoDB: Memory barrier is not used
+2018-09-03 13:34:45 553 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-03 13:34:45 553 [Note] InnoDB: Using Linux native AIO
+2018-09-03 13:34:45 553 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-03 13:34:45 553 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-03 13:34:45 553 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-03 13:34:45 553 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-03 13:34:45 553 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 2941090 in the ib_logfiles!
+2018-09-03 13:34:45 553 [Note] InnoDB: Database was not shutdown normally!
+2018-09-03 13:34:45 553 [Note] InnoDB: Starting crash recovery.
+2018-09-03 13:34:45 553 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-03 13:34:45 553 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-03 13:34:45 553 [Note] InnoDB: from the doublewrite buffer...
+2018-09-03 13:34:45 553 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-03 13:34:45 553 [Note] InnoDB: Waiting for purge to start
+2018-09-03 13:34:45 553 [Note] InnoDB: 5.6.34 started; log sequence number 2941090
+2018-09-03 13:34:45 553 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-03 13:34:45 553 [Note] IPv6 is available.
+2018-09-03 13:34:45 553 [Note]   - '::' resolves to '::';
+2018-09-03 13:34:45 553 [Note] Server socket created on IP: '::'.
+2018-09-03 13:34:45 553 [Note] Event Scheduler: Loaded 0 events
+2018-09-03 13:34:45 553 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180903 23:42:11 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-03 23:42:11 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-03 23:42:11 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-03 23:42:11 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 543 ...
+2018-09-03 23:42:11 543 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-03 23:42:11 543 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-03 23:42:11 543 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-03 23:42:11 543 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-03 23:42:11 543 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-03 23:42:11 543 [Note] InnoDB: Memory barrier is not used
+2018-09-03 23:42:11 543 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-03 23:42:11 543 [Note] InnoDB: Using Linux native AIO
+2018-09-03 23:42:11 543 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-03 23:42:11 543 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-03 23:42:11 543 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-03 23:42:11 543 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-03 23:42:11 543 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 2946826 in the ib_logfiles!
+2018-09-03 23:42:11 543 [Note] InnoDB: Database was not shutdown normally!
+2018-09-03 23:42:11 543 [Note] InnoDB: Starting crash recovery.
+2018-09-03 23:42:11 543 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-03 23:42:11 543 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-03 23:42:11 543 [Note] InnoDB: from the doublewrite buffer...
+2018-09-03 23:42:11 543 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-03 23:42:11 543 [Note] InnoDB: Waiting for purge to start
+2018-09-03 23:42:11 543 [Note] InnoDB: 5.6.34 started; log sequence number 2946826
+2018-09-03 23:42:11 543 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-03 23:42:11 543 [Note] IPv6 is available.
+2018-09-03 23:42:11 543 [Note]   - '::' resolves to '::';
+2018-09-03 23:42:11 543 [Note] Server socket created on IP: '::'.
+2018-09-03 23:42:11 543 [Note] Event Scheduler: Loaded 0 events
+2018-09-03 23:42:11 543 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180904 01:13:51 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-04 01:13:51 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 01:13:51 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-04 01:13:51 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 553 ...
+2018-09-04 01:13:51 553 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 01:13:51 553 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-04 01:13:51 553 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-04 01:13:51 553 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-04 01:13:51 553 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-04 01:13:51 553 [Note] InnoDB: Memory barrier is not used
+2018-09-04 01:13:51 553 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-04 01:13:51 553 [Note] InnoDB: Using Linux native AIO
+2018-09-04 01:13:51 553 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-04 01:13:51 553 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-04 01:13:51 553 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-04 01:13:51 553 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-04 01:13:51 553 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 2946836 in the ib_logfiles!
+2018-09-04 01:13:51 553 [Note] InnoDB: Database was not shutdown normally!
+2018-09-04 01:13:51 553 [Note] InnoDB: Starting crash recovery.
+2018-09-04 01:13:51 553 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-04 01:13:51 553 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-04 01:13:51 553 [Note] InnoDB: from the doublewrite buffer...
+2018-09-04 01:13:52 553 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-04 01:13:52 553 [Note] InnoDB: Waiting for purge to start
+2018-09-04 01:13:52 553 [Note] InnoDB: 5.6.34 started; log sequence number 2946836
+2018-09-04 01:13:52 553 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-04 01:13:52 553 [Note] IPv6 is available.
+2018-09-04 01:13:52 553 [Note]   - '::' resolves to '::';
+2018-09-04 01:13:52 553 [Note] Server socket created on IP: '::'.
+2018-09-04 01:13:52 553 [Note] Event Scheduler: Loaded 0 events
+2018-09-04 01:13:52 553 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180904 04:51:26 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-04 04:51:26 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 04:51:26 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-04 04:51:26 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 553 ...
+2018-09-04 04:51:26 553 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 04:51:26 553 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-04 04:51:26 553 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-04 04:51:26 553 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-04 04:51:26 553 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-04 04:51:26 553 [Note] InnoDB: Memory barrier is not used
+2018-09-04 04:51:26 553 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-04 04:51:26 553 [Note] InnoDB: Using Linux native AIO
+2018-09-04 04:51:26 553 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-04 04:51:26 553 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-04 04:51:26 553 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-04 04:51:26 553 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-04 04:51:26 553 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 2946846 in the ib_logfiles!
+2018-09-04 04:51:26 553 [Note] InnoDB: Database was not shutdown normally!
+2018-09-04 04:51:26 553 [Note] InnoDB: Starting crash recovery.
+2018-09-04 04:51:26 553 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-04 04:51:26 553 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-04 04:51:26 553 [Note] InnoDB: from the doublewrite buffer...
+2018-09-04 04:51:26 553 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-04 04:51:26 553 [Note] InnoDB: Waiting for purge to start
+2018-09-04 04:51:26 553 [Note] InnoDB: 5.6.34 started; log sequence number 2946846
+2018-09-04 04:51:26 553 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-04 04:51:26 553 [Note] IPv6 is available.
+2018-09-04 04:51:26 553 [Note]   - '::' resolves to '::';
+2018-09-04 04:51:26 553 [Note] Server socket created on IP: '::'.
+2018-09-04 04:51:26 553 [Note] Event Scheduler: Loaded 0 events
+2018-09-04 04:51:26 553 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180904 05:49:15 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-04 05:49:15 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 05:49:15 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-04 05:49:15 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 553 ...
+2018-09-04 05:49:15 553 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 05:49:15 553 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-04 05:49:15 553 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-04 05:49:15 553 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-04 05:49:15 553 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-04 05:49:15 553 [Note] InnoDB: Memory barrier is not used
+2018-09-04 05:49:15 553 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-04 05:49:15 553 [Note] InnoDB: Using Linux native AIO
+2018-09-04 05:49:15 553 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-04 05:49:15 553 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-04 05:49:15 553 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-04 05:49:15 553 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-04 05:49:15 553 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 7060704 in the ib_logfiles!
+2018-09-04 05:49:15 553 [Note] InnoDB: Database was not shutdown normally!
+2018-09-04 05:49:15 553 [Note] InnoDB: Starting crash recovery.
+2018-09-04 05:49:15 553 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-04 05:49:15 553 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-04 05:49:15 553 [Note] InnoDB: from the doublewrite buffer...
+2018-09-04 05:49:15 553 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-04 05:49:15 553 [Note] InnoDB: Waiting for purge to start
+2018-09-04 05:49:15 553 [Note] InnoDB: 5.6.34 started; log sequence number 7060704
+2018-09-04 05:49:15 553 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-04 05:49:15 553 [Note] IPv6 is available.
+2018-09-04 05:49:15 553 [Note]   - '::' resolves to '::';
+2018-09-04 05:49:15 553 [Note] Server socket created on IP: '::'.
+2018-09-04 05:49:15 553 [Note] Event Scheduler: Loaded 0 events
+2018-09-04 05:49:15 553 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180904 06:20:26 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-04 06:20:26 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 06:20:26 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-04 06:20:26 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 554 ...
+2018-09-04 06:20:26 554 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 06:20:26 554 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-04 06:20:26 554 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-04 06:20:26 554 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-04 06:20:26 554 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-04 06:20:26 554 [Note] InnoDB: Memory barrier is not used
+2018-09-04 06:20:26 554 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-04 06:20:26 554 [Note] InnoDB: Using Linux native AIO
+2018-09-04 06:20:26 554 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-04 06:20:26 554 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-04 06:20:26 554 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-04 06:20:26 554 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-04 06:20:26 554 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 7060714 in the ib_logfiles!
+2018-09-04 06:20:26 554 [Note] InnoDB: Database was not shutdown normally!
+2018-09-04 06:20:26 554 [Note] InnoDB: Starting crash recovery.
+2018-09-04 06:20:26 554 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-04 06:20:26 554 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-04 06:20:26 554 [Note] InnoDB: from the doublewrite buffer...
+2018-09-04 06:20:26 554 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-04 06:20:26 554 [Note] InnoDB: Waiting for purge to start
+2018-09-04 06:20:26 554 [Note] InnoDB: 5.6.34 started; log sequence number 7060714
+2018-09-04 06:20:26 554 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-04 06:20:26 554 [Note] IPv6 is available.
+2018-09-04 06:20:26 554 [Note]   - '::' resolves to '::';
+2018-09-04 06:20:26 554 [Note] Server socket created on IP: '::'.
+2018-09-04 06:20:26 554 [Note] Event Scheduler: Loaded 0 events
+2018-09-04 06:20:26 554 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180904 06:25:30 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-04 06:25:30 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 06:25:30 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-04 06:25:30 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 554 ...
+2018-09-04 06:25:30 554 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 06:25:30 554 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-04 06:25:30 554 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-04 06:25:30 554 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-04 06:25:30 554 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-04 06:25:30 554 [Note] InnoDB: Memory barrier is not used
+2018-09-04 06:25:30 554 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-04 06:25:30 554 [Note] InnoDB: Using Linux native AIO
+2018-09-04 06:25:30 554 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-04 06:25:30 554 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-04 06:25:30 554 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-04 06:25:30 554 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-04 06:25:30 554 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 7060724 in the ib_logfiles!
+2018-09-04 06:25:30 554 [Note] InnoDB: Database was not shutdown normally!
+2018-09-04 06:25:30 554 [Note] InnoDB: Starting crash recovery.
+2018-09-04 06:25:30 554 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-04 06:25:30 554 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-04 06:25:30 554 [Note] InnoDB: from the doublewrite buffer...
+2018-09-04 06:25:30 554 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-04 06:25:30 554 [Note] InnoDB: Waiting for purge to start
+2018-09-04 06:25:30 554 [Note] InnoDB: 5.6.34 started; log sequence number 7060724
+2018-09-04 06:25:30 554 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-04 06:25:30 554 [Note] IPv6 is available.
+2018-09-04 06:25:30 554 [Note]   - '::' resolves to '::';
+2018-09-04 06:25:30 554 [Note] Server socket created on IP: '::'.
+2018-09-04 06:25:30 554 [Note] Event Scheduler: Loaded 0 events
+2018-09-04 06:25:30 554 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180904 10:38:37 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-04 10:38:37 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 10:38:37 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-04 10:38:37 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 543 ...
+2018-09-04 10:38:37 543 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-04 10:38:37 543 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-04 10:38:37 543 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-04 10:38:37 543 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-04 10:38:37 543 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-04 10:38:37 543 [Note] InnoDB: Memory barrier is not used
+2018-09-04 10:38:37 543 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-04 10:38:37 543 [Note] InnoDB: Using Linux native AIO
+2018-09-04 10:38:37 543 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-04 10:38:37 543 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-04 10:38:37 543 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-04 10:38:37 543 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-04 10:38:37 543 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 7060734 in the ib_logfiles!
+2018-09-04 10:38:37 543 [Note] InnoDB: Database was not shutdown normally!
+2018-09-04 10:38:37 543 [Note] InnoDB: Starting crash recovery.
+2018-09-04 10:38:37 543 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-04 10:38:37 543 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-04 10:38:37 543 [Note] InnoDB: from the doublewrite buffer...
+2018-09-04 10:38:38 543 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-04 10:38:38 543 [Note] InnoDB: Waiting for purge to start
+2018-09-04 10:38:38 543 [Note] InnoDB: 5.6.34 started; log sequence number 7060734
+2018-09-04 10:38:38 543 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-04 10:38:38 543 [Note] IPv6 is available.
+2018-09-04 10:38:38 543 [Note]   - '::' resolves to '::';
+2018-09-04 10:38:38 543 [Note] Server socket created on IP: '::'.
+2018-09-04 10:38:38 543 [Note] Event Scheduler: Loaded 0 events
+2018-09-04 10:38:38 543 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180906 08:55:38 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-06 08:55:38 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-06 08:55:38 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-06 08:55:38 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 564 ...
+2018-09-06 08:55:38 564 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-06 08:55:38 564 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-06 08:55:38 564 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-06 08:55:38 564 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-06 08:55:38 564 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-06 08:55:38 564 [Note] InnoDB: Memory barrier is not used
+2018-09-06 08:55:38 564 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-06 08:55:38 564 [Note] InnoDB: Using Linux native AIO
+2018-09-06 08:55:38 564 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-06 08:55:38 564 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-06 08:55:38 564 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-06 08:55:38 564 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-06 08:55:38 564 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 7060744 in the ib_logfiles!
+2018-09-06 08:55:38 564 [Note] InnoDB: Database was not shutdown normally!
+2018-09-06 08:55:38 564 [Note] InnoDB: Starting crash recovery.
+2018-09-06 08:55:38 564 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-06 08:55:38 564 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-06 08:55:38 564 [Note] InnoDB: from the doublewrite buffer...
+2018-09-06 08:55:38 564 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-06 08:55:38 564 [Note] InnoDB: Waiting for purge to start
+2018-09-06 08:55:38 564 [Note] InnoDB: 5.6.34 started; log sequence number 7060744
+2018-09-06 08:55:38 564 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-06 08:55:38 564 [Note] IPv6 is available.
+2018-09-06 08:55:38 564 [Note]   - '::' resolves to '::';
+2018-09-06 08:55:38 564 [Note] Server socket created on IP: '::'.
+2018-09-06 08:55:38 564 [Note] Event Scheduler: Loaded 0 events
+2018-09-06 08:55:38 564 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180906 08:56:38 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-06 08:56:38 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-06 08:56:38 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-06 08:56:38 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 564 ...
+2018-09-06 08:56:38 564 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-06 08:56:38 564 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-06 08:56:38 564 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-06 08:56:38 564 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-06 08:56:38 564 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-06 08:56:38 564 [Note] InnoDB: Memory barrier is not used
+2018-09-06 08:56:38 564 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-06 08:56:38 564 [Note] InnoDB: Using Linux native AIO
+2018-09-06 08:56:38 564 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-06 08:56:38 564 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-06 08:56:38 564 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-06 08:56:38 564 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-06 08:56:38 564 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 7060754 in the ib_logfiles!
+2018-09-06 08:56:38 564 [Note] InnoDB: Database was not shutdown normally!
+2018-09-06 08:56:38 564 [Note] InnoDB: Starting crash recovery.
+2018-09-06 08:56:38 564 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-06 08:56:38 564 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-06 08:56:38 564 [Note] InnoDB: from the doublewrite buffer...
+2018-09-06 08:56:38 564 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-06 08:56:38 564 [Note] InnoDB: Waiting for purge to start
+2018-09-06 08:56:38 564 [Note] InnoDB: 5.6.34 started; log sequence number 7060754
+2018-09-06 08:56:38 564 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-06 08:56:38 564 [Note] IPv6 is available.
+2018-09-06 08:56:38 564 [Note]   - '::' resolves to '::';
+2018-09-06 08:56:38 564 [Note] Server socket created on IP: '::'.
+2018-09-06 08:56:38 564 [Note] Event Scheduler: Loaded 0 events
+2018-09-06 08:56:38 564 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+180907 01:27:59 mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2018-09-07 01:27:59 0 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-07 01:27:59 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2018-09-07 01:27:59 0 [Note] /usr/sbin/mysqld (mysqld 5.6.34) starting as process 565 ...
+2018-09-07 01:27:59 565 [Warning] Using unique option prefix myisam-recover instead of myisam-recover-options is deprecated and will be removed in a future release. Please use the full name instead.
+2018-09-07 01:27:59 565 [Note] Plugin 'FEDERATED' is disabled.
+2018-09-07 01:27:59 565 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2018-09-07 01:27:59 565 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-09-07 01:27:59 565 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-09-07 01:27:59 565 [Note] InnoDB: Memory barrier is not used
+2018-09-07 01:27:59 565 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-09-07 01:27:59 565 [Note] InnoDB: Using Linux native AIO
+2018-09-07 01:27:59 565 [Note] InnoDB: Using CPU crc32 instructions
+2018-09-07 01:27:59 565 [Note] InnoDB: Initializing buffer pool, size = 32.0M
+2018-09-07 01:27:59 565 [Note] InnoDB: Completed initialization of buffer pool
+2018-09-07 01:27:59 565 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-09-07 01:27:59 565 [Note] InnoDB: The log sequence numbers 1600309 and 1600309 in ibdata files do not match the log sequence number 7062588 in the ib_logfiles!
+2018-09-07 01:27:59 565 [Note] InnoDB: Database was not shutdown normally!
+2018-09-07 01:27:59 565 [Note] InnoDB: Starting crash recovery.
+2018-09-07 01:27:59 565 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2018-09-07 01:27:59 565 [Note] InnoDB: Restoring possible half-written data pages 
+2018-09-07 01:27:59 565 [Note] InnoDB: from the doublewrite buffer...
+2018-09-07 01:28:00 565 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-09-07 01:28:00 565 [Note] InnoDB: Waiting for purge to start
+2018-09-07 01:28:00 565 [Note] InnoDB: 5.6.34 started; log sequence number 7062588
+2018-09-07 01:28:00 565 [Note] Server hostname (bind-address): '*'; port: 3306
+2018-09-07 01:28:00 565 [Note] IPv6 is available.
+2018-09-07 01:28:00 565 [Note]   - '::' resolves to '::';
+2018-09-07 01:28:00 565 [Note] Server socket created on IP: '::'.
+2018-09-07 01:28:00 565 [Note] Event Scheduler: Loaded 0 events
+2018-09-07 01:28:00 565 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.6.34'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)

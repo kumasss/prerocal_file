@@ -1,0 +1,68 @@
+
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">項目編集</h4>
+						</div>
+						<form id="form-update" class="form-horizontal" role="form" method="post" action="product_item.php">
+							<input type="hidden" name="command" value=""/>
+							<div id="update-form" class="modal-body">
+
+								<input type="hidden" name="id" value="<?php echo $editdata->id; ?>"/>
+
+								<div class="row">
+
+										<div class="control-group well">
+											<strong>商品基本情報</strong>
+										</div>
+
+										<div class="control-group">
+											<div class="span1">タイトル</div>
+											<input name="title" id="prd-title" class="form-control  span4" maxlength="30" placeholder="30文字まで" value="<?php echo $editdata->title; ?>"></input>
+										</div>
+
+										<div class="control-group">
+											<div class="span1">説明</div>
+											<textarea name="description" id="prd-desc" class="form-control  span4" rows="6" maxlength="200" placeholder="200文字まで" value=""><?php echo $editdata->description; ?></textarea>
+										</div>
+
+								</div>
+
+							</div>
+						</form>
+						<div class="modal-footer">
+							<button type="button" id="btn-update-action" class="btn btn-primary">更新</button>
+							<button type="button" id="btn-delete-action" class="btn btn-danger">削除</button>
+
+							<button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+
+
+
+<script>
+$(document).ready( function() {
+
+	$('input').keypress(function(ev) {
+		if ((ev.which && ev.which === 13) || (ev.keyCode && ev.keyCode === 13)) {
+			return false;
+		} else {
+			return true;
+		}
+	});
+
+
+	$('#btn-update-action').click( function() {
+		$('#form-update input[name=command]').val('update');
+		$('#form-update').submit();
+	});
+
+	$('#btn-delete-action').click( function() {
+		$('#form-update input[name=command]').val('delete');
+		$('#form-update').submit();
+	});
+
+
+});
+</script>

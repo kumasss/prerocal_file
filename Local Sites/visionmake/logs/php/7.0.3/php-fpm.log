@@ -1,0 +1,27 @@
+[03-Sep-2018 11:22:57] NOTICE: fpm is running, pid 1220
+[03-Sep-2018 11:22:57] NOTICE: ready to handle connections
+[03-Sep-2018 12:02:11] NOTICE: fpm is running, pid 353
+[03-Sep-2018 12:02:11] NOTICE: ready to handle connections
+[03-Sep-2018 13:34:45] NOTICE: fpm is running, pid 303
+[03-Sep-2018 13:34:45] NOTICE: ready to handle connections
+[03-Sep-2018 23:42:11] NOTICE: fpm is running, pid 237
+[03-Sep-2018 23:42:11] NOTICE: ready to handle connections
+[04-Sep-2018 01:13:51] NOTICE: fpm is running, pid 202
+[04-Sep-2018 01:13:51] NOTICE: ready to handle connections
+[04-Sep-2018 04:51:26] NOTICE: fpm is running, pid 337
+[04-Sep-2018 04:51:26] NOTICE: ready to handle connections
+[04-Sep-2018 04:56:45] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[04-Sep-2018 05:49:15] NOTICE: fpm is running, pid 261
+[04-Sep-2018 05:49:15] NOTICE: ready to handle connections
+[04-Sep-2018 06:20:25] NOTICE: fpm is running, pid 178
+[04-Sep-2018 06:20:25] NOTICE: ready to handle connections
+[04-Sep-2018 06:25:29] NOTICE: fpm is running, pid 197
+[04-Sep-2018 06:25:29] NOTICE: ready to handle connections
+[04-Sep-2018 10:38:37] NOTICE: fpm is running, pid 284
+[04-Sep-2018 10:38:37] NOTICE: ready to handle connections
+[06-Sep-2018 08:55:37] NOTICE: fpm is running, pid 227
+[06-Sep-2018 08:55:37] NOTICE: ready to handle connections
+[06-Sep-2018 08:56:37] NOTICE: fpm is running, pid 359
+[06-Sep-2018 08:56:37] NOTICE: ready to handle connections
+[07-Sep-2018 01:27:59] NOTICE: fpm is running, pid 335
+[07-Sep-2018 01:27:59] NOTICE: ready to handle connections

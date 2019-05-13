@@ -1,0 +1,199 @@
+
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+				</div>
+
+				<div id="api-error"></div>
+
+				<div class="panel-body">
+
+					<form id="form-product-list" class="form-inline" role="form">
+
+						<input type="hidden" id="form-product" name="pid" value=""/>
+						<input type="hidden" id="form-action" name="action" value=""/>
+
+						<div class="row">
+								<table style="width:100%;table-layout:fixed;" class="table table-hover table-bordered">
+									<thead>
+									<tr style="background: aliceblue;">
+										<th style="width:15%;">作成日</th>
+										<th style="width:40%;">商品名／ID</th>
+										<th style="width:10%;">金額</th>
+										<th style="width:10%;">販売数</th>
+										<th style="width:25%;">操作</th>
+									</tr>
+									</thead>
+									<tbody id="data-list" class="table-striped">
+<?php foreach ($records as $item): ?>
+									<tr>
+										<td><?php echo $item->created->format('Y年m月d日'); ?></td>
+										<td>
+											<a href="<?php echo URL; ?>/purchase/?id=<?php echo $item->id; ?>" target="_blank"><?php echo $item->shortTitle(); ?></a>
+											<br/><?php echo $item->id; ?>
+	<ol>
+	<?php foreach ($item->getUnits() as $i=>$unit): ?>
+		<li><a class="popup" href="product_item.php?pid=<?php echo $unit->id; ?>"><?php echo $unit->shortTitle(); ?></a></li>
+	<?php endforeach ?>
+	</ol>
+										</td>
+										<td><?php echo $item->price; ?>円</td>
+										<td><?php echo $item->total; ?></td>
+										<td style="text-align: center">
+											<a class="btn btn-primary edit"	 type="button" href="<?php echo $item->id; ?>">編集</a>
+											<a class="btn btn-default action" type="button" href="<?php echo $item->id; ?>" name="copy">複製</a>
+											　　
+<?php if( $item->total_contract>0) : ?>
+											　　　　
+<?php else: ?>
+											<a class="btn btn-danger action" type="button" href="<?php echo $item->id; ?>" name="delete">削除</a>
+<?php endif; ?>
+										</td>
+									</tr>
+<?php endforeach ?>
+									</tbody>
+								</table>
+						</div><!-- //end of row -->
+
+					</form>
+
+
+				</div><!-- //end of panel-body -->
+
+				<div class="panel-footer">
+				</div>
+
+			</div><!-- end of panel -->
+
+
+			<div  id="edit-subitem-dialog" class="modal fade">
+			</div><!-- //end of modal -->
+
+			<div  id="delete-confirm-dialog" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">登録商品の削除確認</h3>
+						</div>
+						<div class="modal-body">
+							<h4><span class="product-name"></span></h4>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="btn-delete-action" class="btn btn-primary">削除実行</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">中止</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<div  id="copy-confirm-dialog" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">登録商品の複製確認</h3>
+						</div>
+						<div class="modal-body">
+							<h4><span class="product-name"></span></h4>
+						</div>
+						<div class="modal-footer">
+							<button type="button" id="btn-copy-action" class="btn btn-primary">複製実行</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">中止</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+		<script>
+
+		$(document).ready( function() {
+
+			$(".popup").click(function(e){
+				e.preventDefault();
+				$.ajax({
+					type:"GET",
+					url:  $(this).attr('href'),
+					success: function(html) {
+						$('#edit-subitem-dialog').html(html).modal('show');
+					},
+					error: function() {
+							alert("通信エラーが発生しました。画面をリロードして設定しなおしてください");
+							return false;
+					},
+					complete: function() {
+					}
+				});
+
+			});
+
+
+			var command = '';
+			var productRef = '';
+
+			$('a.btn.edit').click( function(e) {
+				e.preventDefault();
+				$.cookie("productId",$(this).attr('href'), { expires: 700 });
+				$('a[data-toggle="tab"]').parent().removeClass('active');
+				$('a[href=#product]').click();
+			});
+
+			var execCommand = function() {
+
+				$('#sys-message').empty();
+
+				$('#form-action').val( command);
+				$('#form-product').val( productRef);
+
+				var data = $('#form-product-list').serializeArray();
+
+				$.ajax({
+						type:"POST",
+						url: "list.php",
+						data: data,
+						success: function(html) {
+							$('#list').html(html);
+						},
+						error: function() {
+								alert("通信エラーが発生しました。画面をリロードして設定しなおしてください");
+								return false;
+						},
+						complete: function() {
+						}
+					});
+			};
+
+
+			$('#btn-copy-action').click( function(e) {
+				e.preventDefault();
+				$('#copy-confirm-dialog').modal('hide');
+				execCommand();
+			});
+
+			$('#btn-delete-action').click( function(e) {
+				e.preventDefault();
+				$('#delete-confirm-dialog').modal('hide');
+				execCommand();
+			});
+
+			$('a.btn.action').click( function(e) {
+
+				e.preventDefault();
+
+				command = $(this).attr('name');
+				productRef = $(this).attr('href');
+				productName = $(this).parents('tr:first').find('td').eq(1).text();
+
+				if ( command == 'copy') {
+					$('.product-name').text( "「"+productName+"」を複製してもよろしいですか？");
+					$('#copy-confirm-dialog').modal('show');
+				} else if ( command == 'delete') {
+					$('.product-name').text( "「"+productName+"」を削除してもよろしいですか？");
+					$('#delete-confirm-dialog').modal('show');
+				} else {
+					execCommand();
+				}
+
+			});
+
+		});
+
+		</script>
